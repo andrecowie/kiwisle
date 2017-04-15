@@ -31,11 +31,12 @@ public class Game
     /**
      * A new instance of Kiwi island that reads data from "IslandData.txt".
      */
-    public Game() 
+    public Game(String name) 
     {   
         eventListeners = new HashSet<GameEventListener>();
-
+        _playerName = name;
         createNewGame();
+        
     }
     
     
@@ -702,7 +703,7 @@ public class Game
             listener.gameStateChanged();
         }
     }
-
+    
     
     /**
      * Loads terrain and occupant data from a file.
@@ -773,6 +774,7 @@ public class Game
     private void setUpPlayer(Scanner input) 
     {
         String playerName              = input.next();
+        playerName = _playerName;
         int    playerPosRow            = input.nextInt();
         int    playerPosCol            = input.nextInt();
         double playerMaxStamina        = input.nextDouble();
@@ -853,7 +855,9 @@ public class Game
         
     private String winMessage = "";
     private String loseMessage  = "";
-    private String playerMessage  = "";   
+    private String playerMessage  = "";  
+    
+    private String _playerName;
 
     
 

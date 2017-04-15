@@ -39,137 +39,13 @@ public class KiwiCountUI
     {
         assert game != null : "Make sure game object is created before UI";
         this.game = game;
-        beforeGame();
-//        setAsGameListener();
-//        initComponents();
-//        initIslandGrid();
-//        update();
-    }
-    
-    private class CloseListener implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            System.exit(0);
-        }
-    }
-    
-    private class StartListener implements ActionListener{
-        JPanel container;
-        private StartListener(JPanel _container){
-            container = _container;
-        }
-
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            introductionGame(container);
-        }
-    }
-    
-    private class NextListener implements ActionListener{
-        JPanel container;
-        
-        private NextListener(JPanel _container){
-            container = _container;
-        }
-        
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            setupGame(container);
-        }
-    }
-    
-    private class StartGameListener implements ActionListener{
-        JPanel container;
-        
-        private StartGameListener(JPanel _container){
-            container = _container;
-        }
-        
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            startGame(container);
-        }
-    }
-    
-    public void startGame(JPanel container){
-        this.remove(container);
         setAsGameListener();
         initComponents();
         initIslandGrid();
         update();
     }
     
-    public void setupGame(JPanel container){
-        container.removeAll();
-        container.updateUI();
-        
-        JButton start = new JButton();
-        start.setText("Start Game");
-        start.setToolTipText("");
-        start.setPreferredSize(new Dimension(100, 23));
-        start.setMaximumSize(new Dimension(100, 23));
-        start.setMaximumSize(new Dimension(100, 23));
-        start.addActionListener(new StartGameListener(container));
-        
-        container.add(start);
-    }
     
-    public void introductionGame(JPanel container){
-        container.removeAll();
-        container.updateUI();
-        
-        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible.");
-        howToPlay.setEditable(false);
-        howToPlay.setLineWrap(true);
-        
-        JButton next = new JButton();
-        next.setText("Next");
-        next.setToolTipText("");
-        next.setPreferredSize(new Dimension(100, 23));
-        next.setMaximumSize(new Dimension(100, 23));
-        next.setMinimumSize(new Dimension(100, 23));
-        next.addActionListener(new NextListener(container));
-        
-        container.add(howToPlay, BorderLayout.NORTH);
-        container.add(next, BorderLayout.SOUTH);
-    }
-    
-    public void beforeGame(){
-        JPanel welcome = new JPanel();
-        JButton start = new JButton();
-        JButton exit = new JButton();
-        JPanel buttons = new JPanel();
-        
-        start.addActionListener(new StartListener(welcome));
-        exit.addActionListener(new CloseListener());
-        
-        JLabel message = new JLabel("Welcome to KiwiIsland!", SwingConstants.CENTER);
-        
-        exit.setText("Exit");
-        exit.setToolTipText("");
-        exit.setMaximumSize(new java.awt.Dimension(100, 23));
-        exit.setMinimumSize(new java.awt.Dimension(100, 23));
-        exit.setPreferredSize(new java.awt.Dimension(100, 23));
-        
-        start.setText("Start");
-        start.setToolTipText("");
-        start.setMaximumSize(new java.awt.Dimension(100, 23));
-        start.setMinimumSize(new java.awt.Dimension(100, 23));
-        start.setPreferredSize(new java.awt.Dimension(100, 23));
-        
-        welcome.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        welcome.setLayout(new java.awt.BorderLayout(10, 0));
-        welcome.setPreferredSize(new Dimension(700, 300));
-        buttons.add(start);
-        buttons.add(exit);
-        welcome.add(message, BorderLayout.NORTH);
-        welcome.add(buttons, BorderLayout.SOUTH);
-        
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Welcome to KiwiIsland!");
-        getContentPane().add(welcome, java.awt.BorderLayout.CENTER);
-        pack();
-    }
     
     /**
      * This method is called by the game model every time something changes.
