@@ -6,10 +6,12 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GridLayout;
 import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,12 +20,15 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SpinnerListModel;
 import javax.swing.SwingConstants;
 import javax.swing.text.Document;
 import nz.ac.aut.ense701.gameModel.Game;
@@ -124,6 +129,40 @@ public class PreGame extends JFrame{
                 startGame(container, name.getText());
             }
         });
+        JPanel mapSizePanel = new JPanel();
+        mapSizePanel.setLayout(new BorderLayout());
+        
+        JPanel mapSize = new JPanel();
+        mapSize.setLayout(new GridLayout(0, 2));
+        
+        Integer[] mapSizes = new Integer[100];
+        for (int i = 0; i < 100; ++i){
+            mapSizes[i] = i+1;
+        }
+        
+        JLabel mapSizeLabel = new JLabel("Map Size:");
+        JLabel blankLabel = new JLabel("");
+        
+        JLabel heightLabel = new JLabel("Height: ");
+        JLabel widthLabel = new JLabel("Width: ");
+        
+        final JSpinner width = new JSpinner(new SpinnerListModel(mapSizes));
+        width.setValue(new Integer(50));
+        Component myWidthSpinner = width.getEditor();
+        JFormattedTextField widthText = ((JSpinner.DefaultEditor)myWidthSpinner).getTextField();
+        widthText.setColumns(3);
+        final JSpinner height = new JSpinner(new SpinnerListModel(mapSizes));
+        height.setValue(new Integer(50));
+        Component myHeightSpinner = height.getEditor();
+        JFormattedTextField heightText = ((JSpinner.DefaultEditor)myHeightSpinner).getTextField();
+        heightText.setColumns(3);
+        mapSize.add(mapSizeLabel);
+        mapSize.add(blankLabel);
+        mapSize.add(widthLabel);
+        mapSize.add(width);
+        mapSize.add(heightLabel);
+        mapSize.add(height);
+        mapSizePanel.add(mapSize, BorderLayout.NORTH);
                 
         
         nameLayout.add(enterName, BorderLayout.WEST);
@@ -131,6 +170,7 @@ public class PreGame extends JFrame{
         name.setPreferredSize(new Dimension(100, 50));
         name.setMaximumSize(new Dimension(100, 50));
         
+        container.add(mapSizePanel, BorderLayout.WEST);
         container.add(nameLayout, BorderLayout.NORTH);
         container.add(start, BorderLayout.SOUTH);
     }
