@@ -73,27 +73,12 @@ public class PreGame extends JFrame{
         }
     }
     
-    private class StartGameListener implements ActionListener{
-        JPanel container;
-        String name;
-        
-        private StartGameListener(JPanel _container, String _name){
-            container = _container;
-            name = _name;
-        }
-        
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            System.out.print(name);
-            startGame(container, name);
-        }
-    }
     
-    
-    public void startGame(JPanel container, String name){
+    public void startGame(JPanel container, String[] nameAndDifficulty, Dimension mapSize){
         this.remove(container);
         this.dispose();
-        final Game game = new Game(name);
+        
+        final Game game = new Game(nameAndDifficulty, mapSize);
         final KiwiCountUI  gui  = new KiwiCountUI(game);
         java.awt.EventQueue.invokeLater(new Runnable() 
         {
@@ -124,16 +109,8 @@ public class PreGame extends JFrame{
         enterName.setSize(new Dimension(400, 20));
         final JTextField name = new JTextField("");
         
-        start.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent ae){
-                startGame(container, name.getText());
-            }
-        });
         JPanel mapSizePanel = new JPanel();
         mapSizePanel.setLayout(new BorderLayout());
-        
-        JPanel mapSize = new JPanel();
-        mapSize.setLayout(new GridLayout(0, 2));
         
         Integer[] mapSizes = new Integer[100];
         for (int i = 0; i < 100; ++i){
@@ -156,19 +133,51 @@ public class PreGame extends JFrame{
         Component myHeightSpinner = height.getEditor();
         JFormattedTextField heightText = ((JSpinner.DefaultEditor)myHeightSpinner).getTextField();
         heightText.setColumns(3);
+        
+        String[] difficult = new String[3];
+        difficult[0] = "Easy";
+        difficult[1] = "Medium";
+        difficult[2] = "Hard";
+        final JSpinner difficulties = new JSpinner(new SpinnerListModel(difficult));
+        JLabel difficultLabel = new JLabel("Difficulty");
+        
+        JPanel mapSize = new JPanel();
+        mapSize.setLayout(new GridLayout(0, 2));
+        
         mapSize.add(mapSizeLabel);
         mapSize.add(blankLabel);
         mapSize.add(widthLabel);
         mapSize.add(width);
         mapSize.add(heightLabel);
         mapSize.add(height);
+        mapSize.add(difficultLabel);
+        mapSize.add(difficulties);
+        
         mapSizePanel.add(mapSize, BorderLayout.NORTH);
-                
         
         nameLayout.add(enterName, BorderLayout.WEST);
         nameLayout.add(name, BorderLayout.CENTER);
         name.setPreferredSize(new Dimension(100, 50));
         name.setMaximumSize(new Dimension(100, 50));
+        
+        start.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                if(name.getText().length() > 0){
+                    String[] nameAndDifficulty = new String[2];
+                    nameAndDifficulty[0] = name.getText();
+                    nameAndDifficulty[1] = (String) difficulties.getValue();
+                    startGame(container, nameAndDifficulty, new Dimension(((Integer)width.getValue()),((Integer) height.getValue())));
+                }else{
+                    JPanel errorPanel = new JPanel();
+                    errorPanel.setLayout(new BorderLayout());
+                    JLabel inputName = new JLabel("Please provide a name.");
+                    errorPanel.add(inputName, BorderLayout.NORTH);
+                    container.add(errorPanel, BorderLayout.CENTER);
+                    container.updateUI();
+                }
+                
+            }
+        });
         
         container.add(mapSizePanel, BorderLayout.WEST);
         container.add(nameLayout, BorderLayout.NORTH);

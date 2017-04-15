@@ -1,5 +1,6 @@
 package nz.ac.aut.ense701.gameModel;
 
+import java.awt.Dimension;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,10 +32,10 @@ public class Game
     /**
      * A new instance of Kiwi island that reads data from "IslandData.txt".
      */
-    public Game(String name) 
+    public Game(String[] nameAndDifficulty, Dimension mapSize) 
     {   
         eventListeners = new HashSet<GameEventListener>();
-        _playerName = name;
+        _playerName = nameAndDifficulty[0];
         createNewGame();
         
     }
