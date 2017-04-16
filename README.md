@@ -1,15 +1,21 @@
 # KIWISLE
-### Things for ITERATION 1
-* Setup size of the map.
-* Size of the map scales.
-* Give an overview of how to play the game on first run.
-* Create file on first run afteruser gets chance to create user account.
+## xD
+|Things for ITERATION 1| Result on Sunday 16th |
+|---|---|
+| Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.|
+| Size of the map scales.| Plan to implement this over the next few days however i anticipate it will be a buggy affair|
+| Give an overview of how to play the game on first run.| This as well as cleaning up how the game started was achieved. |
 
 Goals!
 
 Due in this Sunday.
 
-I think we should be using just Git and Github plus Markdown to document our developments.
+[PLANNER :aut sign in](https://tasks.office.com/autuni.onmicrosoft.com/en-US/Home/ProjectsList/) [ONENOTE :aut sign in](https://www.onenote.com/notebooks?auth=2)
+### Result and plan
+(Andre) We have found things we will need to work on with in the team. Additions have been made to the start sequence of the game on both the master branch and the devInitChange branch. I plan to work abit further into the mid term break than previously planned to get a headstart on our 2nd iteration. 
+
+### Thoughts on collaboration
+(Andre) I think we should be using just Git and Github plus Markdown to document our developments.
 Fragmenting the teams documentation and work between OneNote, Planner and then using Git + Github for our code seems inefficient for our digital purposes.
 The lack of teaching on how to work with Git has not been addressed properly in this degree properly I(Andre) feel. 
 When we where told theoritically of our "programmering toolbox" in our first papers. The tool of working together, Git has been missed or not instructive enough. I feel competent in it due to much use, but i commonly come across student uncertain discussion around the topic and how to utilise it's features. Due to the "Cyclone Cook Closure" and cancellations this hasn't been addressed. I think it could help with our teams efficiencies and transperancy. Teaching resource: [Good Git D3](https://onlywei.github.io/explain-git-with-d3/ "GIT D3")
