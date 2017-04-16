@@ -139,7 +139,7 @@ public class PreGame extends JFrame{
         container.removeAll();
         container.updateUI();
         
-        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible.\n\nThe game's winning conditions are that you need to eradicate the predators and know how many Kiwi's inhabit KiwiIsland.");
+        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible. \n\n Foods are used to heal your stamina which you require to move throughout the island. \n\nThe game's winning conditions are that you need to eradicate the predators or count how many Kiwi's inhabit KiwiIsland.");
         howToPlay.setEditable(false);
         howToPlay.setLineWrap(true);
         
