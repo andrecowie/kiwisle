@@ -24,15 +24,19 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
 import javax.swing.text.Document;
 import nz.ac.aut.ense701.gameModel.Game;
 
 /**
  *
- * @author dre
+ * @author andre
+ * This is a class to modify and simplify how our pre-game can interact 
+ * with game to allow the game to have more customization from the get go.
  */
 public class PreGame extends JFrame{
+    
     public PreGame(){
         beforeGame();
     }
@@ -84,7 +88,7 @@ public class PreGame extends JFrame{
         }
     }
     
-    
+    //This method is to start the game, in the future it will contain a larger range of values to change the construction of the game.
     public void startGame(JPanel container, String name){
         this.remove(container);
         this.dispose();
@@ -100,6 +104,7 @@ public class PreGame extends JFrame{
         });
     }
     
+    //This method is to setup the game i will add onto it on the new branch to create more links between a gui and the game creation.
     public void setupGame(final JPanel container){
         container.removeAll();
         container.updateUI();
@@ -135,11 +140,13 @@ public class PreGame extends JFrame{
         container.add(start, BorderLayout.SOUTH);
     }
     
+    //This is an informational text window to talk of the goals of KiwiIsland. We will look to add extra functionality to this by
+    //having it *not* appear everytime on launch as well as making it accessible by a button from the setup game menu.
     public void introductionGame(JPanel container){
         container.removeAll();
         container.updateUI();
         
-        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible. \n\n Foods are used to heal your stamina which you require to move throughout the island. \n\nThe game's winning conditions are that you need to eradicate the predators or count how many Kiwi's inhabit KiwiIsland.");
+        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible. \n\n Foods are used to heal your stamina which you require to move throughout the island. \n\nThe game's winning conditions are that you need to eradicate the predators or count how many Kiwi's inhabit KiwiIsland. Try to make your islands more inhabitable for the Kiwi's!");
         howToPlay.setEditable(false);
         howToPlay.setLineWrap(true);
         
@@ -155,6 +162,7 @@ public class PreGame extends JFrame{
         container.add(next, BorderLayout.SOUTH);
     }
     
+    //This is a simple class that contains two image files to be displayed over oneanother.
     public class ImagePanel extends JPanel{
         
         private BufferedImage image;
@@ -178,6 +186,8 @@ public class PreGame extends JFrame{
         }
     }
     
+    //Welcome sign could have quick user select and maybe quick game with dynamic options.
+    //This is a simple first start screen.
     public void beforeGame(){
         JPanel welcome = new JPanel();
         JButton start = new JButton();
@@ -191,8 +201,6 @@ public class PreGame extends JFrame{
         
         
         ImagePanel kiwi = new ImagePanel("resources/kiwi-bird.png", "resources/nz.png");
-        
-        
         
         exit.setText("Exit");
         exit.setToolTipText("");
