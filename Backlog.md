@@ -42,4 +42,20 @@ Our team didn't spend enough time together and on the project. We also failed to
 
 ## Iteration 2
 
+#### Planning
+
+The tasks we wish to achieve in iteration 2 are outlined below.
+
+- [ ] Dynamic map 
+
+- [ ] Random Terrain
+
+- [ ] Random Spawn Location of Player, Predator, Predator, Traps/Hazards and Objects
+
+- [ ] Icons for occupants 
+
+- [ ] Icons for players
+
+- [ ] Improved rendering for terrains
+
 ## Iteration 3
