@@ -1,13 +1,10 @@
 # KIWISLE
 ## xD
 
-[Team Agreement](./TeamAgreement.md)
-
-[Feature List(At the start of project)](./Features.md)
-
-[Potential Features](./PotentialFeatures.md)
-
-[Backlog](./Backlog.md)
+- [Team Agreement](./TeamAgreement.md)
+- [Feature List(At the start of project)](./Features.md)
+- [Potential Features](./PotentialFeatures.md)
+- [Backlog](./Backlog.md)
 
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
