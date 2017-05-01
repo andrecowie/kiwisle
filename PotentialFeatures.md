@@ -1,9 +1,9 @@
 - Making the map dynamically on creation 
-..- Random placement of traps, items, Kiwis, Predators, player and potentially terrain 
+..* Random placement of traps, items, Kiwis, Predators, player and potentially terrain 
 - Predators can move – hunt for kiwis, attack players, 
 - Difficulty system – easy, norm, hard 
-..- Map setup( size of the map, number of occupants) in reference to the difficulty
-....- Number of predators and traps will differ on the difficulty of the map (increases number of the predator and traps as difficulty gets harder) 
+..* Map setup( size of the map, number of occupants) in reference to the difficulty
+....* Number of predators and traps will differ on the difficulty of the map (increases number of the predator and traps as difficulty gets harder) 
 ....- Size of the map will differ on the difficulty of the map (increases its size as difficulty gets harder) 
 ..- Speed of the occupants  
 ....- How many grid the occupant can move at each turn 
