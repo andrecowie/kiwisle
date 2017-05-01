@@ -9,9 +9,9 @@
   * How many grid the occupant can move at each turn 
   * The interaction between each move and events. 
 - [x] Introduction to the game / rough game guide 
-  * [x]How to play the game 
-  * [x]How to win the game 
-  * [x]How to lose the game 
+   [x]How to play the game 
+   [x]How to win the game 
+   [x]How to lose the game 
 - Improvement on GUI 
   * From boxes to actual texture/adding images to occupants as well as the player 
   * Animation - sprites 
