@@ -7,14 +7,14 @@ This document will look at the items that need to be completed for the project t
 
 ## Iteration 1
 
-#### Results Matrix
+### Results Matrix
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
 | Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.|
 | Size of the map scales.| Plan to implement this over the next few days however i anticipate it will be a buggy affair|
 | Give an overview of how to play the game on first run.| This as well as cleaning up how the game started was achieved. |
 
-### Thoughts on ITERATION 1
+### Retrospective
 
 #### Andre
 ---
