@@ -2,6 +2,7 @@
 ## xD
 
 [Team Agreement](./TeamAgreement.md)
+[Feature List(At the start of project)](./Features.md)
 
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
