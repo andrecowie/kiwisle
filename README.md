@@ -5,5 +5,10 @@
 - [Feature List(At the start of project)](./Features.md)
 - [Potential Features](./PotentialFeatures.md)
 - [Backlog](./Backlog.md)
+- [Risks](./Risks.md)
 
-[PLANNER :aut sign in](https://tasks.office.com/autuni.onmicrosoft.com/en-US/Home/ProjectsList/) [ONENOTE :aut sign in](https://www.onenote.com/notebooks?auth=2)
+### Personal Logbooks
+- [Alex](./Logbooks/Alex.md)
+- [Andre](./Logbooks/Andre.md)
+- [Ben](./Logbooks/Ben.md)
+- [Eteroa](./Logbooks/Eteroa.md)
