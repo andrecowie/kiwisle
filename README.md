@@ -5,6 +5,8 @@
 
 [Feature List(At the start of project)](./Features.md)
 
+[Potential Features](./PotentialFeatures.md)
+
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
 | Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.|
