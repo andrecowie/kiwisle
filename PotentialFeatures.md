@@ -1,3 +1,6 @@
+# Potential Features
+[Home](./README.md)
+
 - Making the map dynamically on creation
   * Random placement of traps, items, Kiwis, Predators, player and potentially terrain
 - Predators can move – hunt for kiwis, attack players
