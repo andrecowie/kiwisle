@@ -1,7 +1,7 @@
 # KIWISLE
 ## xD
 
-(Team Agreement)[./TeamAgreement.md]
+[Team Agreement](./TeamAgreement.md)
 
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
