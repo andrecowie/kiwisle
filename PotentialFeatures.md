@@ -16,8 +16,8 @@
 
 This is due to the proposed extension of the map 
 
-Iteration 1:
-[x] Introduction to the game / rough game guide
-[x] How to play the game
-[x] How to win the game
-[x] How to lose the game
+### Iteration 1:
+- [x] Introduction to the game / rough game guide
+- [x] How to play the game
+- [x] How to win the game
+- [x] How to lose the game
