@@ -7,6 +7,13 @@ This document will look at the items that need to be completed for the project t
 
 ## Iteration 1
 
+### Planning 
+
+![alt text](./images/image1.png "Class Diagram")
+
+![alt text](./images/image2.png "Class Diagram 2")
+
+
 ### Results Matrix
 |Things for ITERATION 1| Result on Sunday 16th |
 |---|---|
