@@ -50,7 +50,7 @@ The tasks we wish to achieve in iteration 2 are outlined below.
 
 - [ ] Semi Random Terrain (M)
 
-- [ ] Random Spawn Location of Player, Predator, Predator, Traps/Hazards and Objects (XL)
+- [ ] Random Spawn Location of Player, Predator, Traps/Hazards and Objects (XL)
 
 - [ ] Icons for occupants (M)
 
