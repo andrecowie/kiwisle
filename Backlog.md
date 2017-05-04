@@ -58,4 +58,10 @@ The tasks we wish to achieve in iteration 2 are outlined below.
 
 - [ ] Improved rendering for terrains
 
+### Meeting 4/05
+
+Ben is working on overhauling the UI to replace the Strings that represent the terrain. His changes will impact the ability for the code to run in the short term. He will create new branch while he works on this task.
+
+We plan for the short term to keep the text file, Andre and Alex will look at manipulating the text file to enable the map to be more dynamic. They will work on devInitChange branch.
+
 ## Iteration 3
