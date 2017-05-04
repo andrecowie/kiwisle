@@ -12,3 +12,5 @@ Date | Hours | Description
 ### Iteration 2
 Date | Hours | Description
 --- | --- | ---
+2/05 | 2:30 | Working on migrating our documention to our github repo, so that our work is not fragmented between different services. Also had a meeting with Ben where we discussed our goals for iteration 2.
+4/05 | 1 | Had a meeting with Ben and Alex. Discussed our documentation and use of git. Also added some documentation to our readmes.
