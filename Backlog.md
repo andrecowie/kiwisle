@@ -46,17 +46,17 @@ Our team didn't spend enough time together and on the project. We also failed to
 
 The tasks we wish to achieve in iteration 2 are outlined below.
 
-- [ ] Dynamic map 
+- [ ] Dynamic map (L)
 
-- [ ] Random Terrain
+- [ ] Semi Random Terrain (M)
 
-- [ ] Random Spawn Location of Player, Predator, Predator, Traps/Hazards and Objects
+- [ ] Random Spawn Location of Player, Predator, Predator, Traps/Hazards and Objects (XL)
 
-- [ ] Icons for occupants 
+- [ ] Icons for occupants (M)
 
-- [ ] Icons for players
+- [ ] Icons for player (S)
 
-- [ ] Improved rendering for terrains
+- [ ] Improved rendering for terrains (M)
 
 ### Meeting 4/05
 
