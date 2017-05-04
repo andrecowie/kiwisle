@@ -6,6 +6,8 @@
 - [Potential Features](./PotentialFeatures.md)
 - [Backlog](./Backlog.md)
 - [Risks](./Risks.md)
+- [Issues](./Issues.md)
+- [Meetings](./Meetings.md)
 
 ### Personal Logbooks
 - [Alex](./Logbooks/Alex.md)
