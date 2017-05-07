@@ -15,3 +15,4 @@ Date | Hours | Description
 --- | --- | ---
 2/05 | 2:30 | Working on migrating our documention to our github repo, so that our work is not fragmented between different services. Also had a meeting with Ben where we discussed our goals for iteration 2.
 4/05 | 1 | Had a meeting with Ben and Alex. Discussed our documentation and use of git. Also added some documentation to our readmes.
+7/05 | 2 | Did some work on the devInitChange branch this branch now has dynamic map functionality so the island can be any size, it also has terrain being build not randomly but specific to how an island's terrain would be structured.
