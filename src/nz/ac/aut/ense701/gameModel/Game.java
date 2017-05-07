@@ -4,8 +4,13 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.HashSet;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -28,14 +33,18 @@ public class Game
     public static final int WEIGHT_INDEX = 3;
     public static final int MAXSIZE_INDEX = 4;
     public static final int SIZE_INDEX = 5;
+    private String difficulty;
+    private Dimension mapSize;
     
     /**
      * A new instance of Kiwi island that reads data from "IslandData.txt".
      */
-    public Game(String[] nameAndDifficulty, Dimension mapSize) 
+    public Game(String[] nameAndDifficulty, Dimension _mapSize) 
     {   
         eventListeners = new HashSet<GameEventListener>();
         _playerName = nameAndDifficulty[0];
+        difficulty = nameAndDifficulty[1];
+        mapSize = _mapSize;
         createNewGame();
         
     }
@@ -723,8 +732,8 @@ public class Game
             input.useDelimiter("\\s*,\\s*");
 
             // create the island
-            int numRows    = input.nextInt();
-            int numColumns = input.nextInt();
+            int numRows    = (int)mapSize.getHeight();
+            int numColumns = (int)mapSize.getWidth();
             island = new Island(numRows, numColumns);
 
             // read and setup the terrain
@@ -755,16 +764,41 @@ public class Game
      */
     private void setUpTerrain(Scanner input) 
     {
+        int rowSectionSize = island.getNumRows()/10;
+        int colSectionSize = island.getNumColumns()/10;
         for ( int row = 0 ; row < island.getNumRows() ; row++ ) 
         {
-            String terrainRow = input.next();
-            for ( int col = 0 ; col < terrainRow.length() ; col++ )
-            {
-                Position pos = new Position(island, row, col);
-                String   terrainString = terrainRow.substring(col, col+1);
-                Terrain  terrain = Terrain.getTerrainFromStringRepresentation(terrainString);
-                island.setTerrain(pos, terrain);
+            for (int col = 0; col < island.getNumColumns(); col++){
+                if ((row >= 0 && row < rowSectionSize) || (row >= island.getNumRows()-rowSectionSize && row < island.getNumRows()) || (col >= 0 && col < colSectionSize) || (col >= island.getNumColumns()-colSectionSize && col < island.getNumColumns())){
+                    Position pos = new Position(island, row, col);
+                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                    island.setTerrain(pos, terrain);
+                }else if((row >= rowSectionSize && row < rowSectionSize*2) || (row >= island.getNumRows()-rowSectionSize*2 && row < island.getNumRows()-rowSectionSize) || (col >= colSectionSize && col < colSectionSize*2) || (col >= island.getNumColumns()-colSectionSize*2 && col < island.getNumColumns()-colSectionSize)){
+                    Position pos = new Position(island, row, col);
+                    Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                    island.setTerrain(pos, terrain);
+                }else if((row >= rowSectionSize*2 && row < rowSectionSize*3) || (row >= island.getNumRows()-rowSectionSize*3 && row < island.getNumRows()-rowSectionSize*2) || (col >= colSectionSize*2 && col < colSectionSize*3) || (col >= island.getNumColumns()-colSectionSize*3 && col < island.getNumColumns()-colSectionSize*2)){
+                    Position pos = new Position(island, row, col);
+                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                    island.setTerrain(pos, terrain);
+                }else if((row >= rowSectionSize*3 && row < rowSectionSize*4) || (row >= island.getNumRows()-rowSectionSize*4 && row < island.getNumRows()-rowSectionSize*3) || (col >= colSectionSize*3 && col < colSectionSize*4) || (col >= island.getNumColumns()-colSectionSize*4 && col < island.getNumColumns()-colSectionSize*3)){
+                    Position pos = new Position(island, row, col);
+                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                    island.setTerrain(pos, terrain);
+                }else if((row >= rowSectionSize*4 && row < rowSectionSize*5) || (row >= island.getNumRows()-rowSectionSize*5 && row < island.getNumRows()-rowSectionSize*4) || (col >= colSectionSize*4 && col < colSectionSize*5) || (col >= island.getNumColumns()-colSectionSize*5 && col < island.getNumColumns()-colSectionSize*4)){
+                    Position pos = new Position(island, row, col);
+                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                    island.setTerrain(pos, terrain);
+                }
             }
+//            String terrainRow = input.next();
+//            for ( int col = 0 ; col < terrainRow.length() ; col++ )
+//            {
+//                Position pos = new Position(island, row, col);
+//                String   terrainString = terrainRow.substring(col, col+1);
+//                Terrain  terrain = Terrain.getTerrainFromStringRepresentation(terrainString);
+//                island.setTerrain(pos, terrain);
+//            }
         }
     }
 
@@ -774,13 +808,15 @@ public class Game
      */
     private void setUpPlayer(Scanner input) 
     {
-        String playerName              = input.next();
-        playerName = _playerName;
-        int    playerPosRow            = input.nextInt();
-        int    playerPosCol            = input.nextInt();
-        double playerMaxStamina        = input.nextDouble();
-        double playerMaxBackpackWeight = input.nextDouble();
-        double playerMaxBackpackSize   = input.nextDouble();
+        String playerName = _playerName;
+        int[] columnBounds = {0+island.getNumColumns()/5, island.getNumColumns() - island.getNumColumns()/5};
+        int[] rowBounds = {0+island.getNumRows()/5, island.getNumRows() - island.getNumRows()/5};
+        Random rand = new Random();
+        int    playerPosRow            = rand.nextInt(rowBounds[1])+rowBounds[0];
+        int    playerPosCol            = rand.nextInt(columnBounds[1])+columnBounds[0];
+        double playerMaxStamina        = 100.0;
+        double playerMaxBackpackWeight = 10.0;
+        double playerMaxBackpackSize   = 5.0;
         
         Position pos = new Position(island, playerPosRow, playerPosCol);
         player = new Player(pos, playerName, 
@@ -795,14 +831,37 @@ public class Game
      */
     private void setUpOccupants(Scanner input) 
     {
-        int numItems = input.nextInt();
-        for ( int i = 0 ; i < numItems ; i++ ) 
+        class OccupantSpawner{
+            String occType;
+            String occName;
+            String occDesc;
+            int    occRow;
+            int    occCol;
+            public OccupantSpawner(String _occType,String _occName, String _occDesc, int _occRow, int _occCol){
+                occType  = _occType;
+                occName  = _occName; 
+                occDesc  = _occDesc;
+                occRow   = _occRow;
+                occCol   = _occCol;
+            }
+        }
+        ArrayList occupants = new ArrayList();
+        Random rand = new Random();
+        if(difficulty == "Easy"){
+            occupants.add(new OccupantSpawner("K", "Kiwi", "A little spotted kiwi", rand.nextInt(island.getNumRows()/5)+(island.getNumRows()/5)*2 ,rand.nextInt(island.getNumColumns()/5)+(island.getNumColumns()/5)*2));
+            occupants.add(new OccupantSpawner("P", "Shark", "A Great White", rand.nextInt(island.getNumRows()/5),rand.nextInt(island.getNumColumns()/5)));
+        }else if(difficulty == "Medium"){
+            
+        }else if(difficulty == "Hard"){
+            
+        }
+        for ( int i = 0 ; i < occupants.size() ; i++ ) 
         {
-            String occType  = input.next();
-            String occName  = input.next(); 
-            String occDesc  = input.next();
-            int    occRow   = input.nextInt();
-            int    occCol   = input.nextInt();
+            String occType  = ((OccupantSpawner)occupants.get(i)).occType;
+            String occName  = ((OccupantSpawner)occupants.get(i)).occName;
+            String occDesc  = ((OccupantSpawner)occupants.get(i)).occDesc;
+            int    occRow   = ((OccupantSpawner)occupants.get(i)).occRow;
+            int    occCol   = ((OccupantSpawner)occupants.get(i)).occCol;
             Position occPos = new Position(island, occRow, occCol);
             Occupant occupant    = null;
 
