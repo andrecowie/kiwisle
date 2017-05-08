@@ -56,6 +56,11 @@ This document will look at the items that need to be completed for the project t
     - [x] Player told of Lost Condition
     - [x] Goal of KiwiIsland
   
+# Acceptance Testing Matrix
+
+Feature | Scenario | Given | When | Then
+---|---|---|---|---
+
 ## Iteration 1
 
 ### Planning 
@@ -94,6 +99,7 @@ Clear table of contents of deliverables.
 Acceptance tests for all User Stories.
 Improve Commit Messages.
 More Software Added.
+Text Wrapping Of Information Screen Could be Improved.
 
 ## Iteration 2
 
@@ -126,5 +132,6 @@ We plan for the short term to keep the text file, Andre and Alex will look at ma
 
 Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
+Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May 2017
 
 ## Iteration 3
