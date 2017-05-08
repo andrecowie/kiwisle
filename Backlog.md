@@ -133,5 +133,6 @@ We plan for the short term to keep the text file, Andre and Alex will look at ma
 Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
 Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May 2017
+Text on the Information Screen is wrapping unnecassarily | The text always wraps | Yet to be | -
 
 ## Iteration 3
