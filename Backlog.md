@@ -45,9 +45,9 @@ This document will look at the items that need to be completed for the project t
   - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
     - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.
   - [x] As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete.
-    - [x] Set Width
-    - [x] Set Height
-    - [x] Map Size Scales
+    - [x] Input Width (Iter 1)
+    - [x] Input Height (Iter 1)
+    - [x] Map Size Scales (Iter 2)
   - [ ] As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.
     - [x] Player can select Easy, Medium, Hard
     - [ ] Difficulty setting impacts the number of Predators and the Predators Hunting Vicinity
@@ -66,11 +66,11 @@ This document will look at the items that need to be completed for the project t
 
 
 ### Results Matrix
-|Things for ITERATION 1| Result on Sunday 16th |
-|---|---|
-| Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.|
-| Size of the map scales.| Plan to implement this over the next few days however i anticipate it will be a buggy affair|
-| Give an overview of how to play the game on first run.| This as well as cleaning up how the game started was achieved. |
+|Things for ITERATION 1| Result on Sunday 16th | User Stories Completed |
+|---|---|---|
+| Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.| "As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete. Completed Input Width and Input Height but not Size of Map Scales"|
+| Size of the map scales.| Plan to implement this over the next few days however i anticipate it will be a buggy affair| Unfortunately the user story was incomplete, it will move to iteration 2's backlog. This user story had three Acceptance Tests. We Completed two of the three in iteration 1|
+| Give an overview of how to play the game on first run.| This as well as cleaning up how the game started was achieved. | "As a player I want KiwiIsland to have an introduction and options before I play so that I have better understanding of why I should play Kiwi Island."
 
 ### Retrospective
 
