@@ -23,14 +23,38 @@ This document will look at the items that need to be completed for the project t
     - [ ] The Game has updated Iconsets
       - [ ] The Game's terrain has updated visuals
       - [ ] The Game's predators have updated visuals
+      - [ ] The Game's Players have updated visuals
+      - [ ] The Game's Kiwis have updated visuals
   - [ ] As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.
+    - [ ] Players spawn location is valid but random
+    - [ ] Kiwis spawn locations valid but random
+    - [ ] Predators spawn locations valid but random
+    - [ ] Tools spawn locations valid but random
+    - [ ] Hazard positions valid but random
   - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
+    - [ ] Vision Items Available
+      - [ ] Vision Items can be collected
+      - [ ] Vision Items can be used
+      - [ ] Vision Item when used Makes area visible
   - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+    - [ ] Make predators removed when trapped
   - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
+    - [ ] Predators can move
+    - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
+    - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the 
   - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
-  - [ ] As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete.
+    - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.
+  - [x] As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete.
+    - [x] Set Width
+    - [x] Set Height
+    - [x] Map Size Scales
   - [ ] As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.
-  - [ ] As a player I want to know an overview of how to play the game before I begin playing the game so that the game is more beginner friendly.
+    - [x] Player can select Easy, Medium, Hard
+    - [ ] Difficulty setting impacts the number of Predators and the Predators Hunting Vicinity
+  - [x] As a player I want to know an overview of how to play the game before I begin playing the game so that the game is more beginner friendly.
+    - [x] Player told of Win Condition
+    - [x] Player told of Lost Condition
+    - [x] Goal of KiwiIsland
   
 ## Iteration 1
 
@@ -100,7 +124,7 @@ We plan for the short term to keep the text file, Andre and Alex will look at ma
 
 ## Bugs
 
-Description | Solved (How) | When
---- | --- | ---
+Description | Reproduced By |Solved (How) | When
+--- | --- | --- | ---
 
 ## Iteration 3
