@@ -20,6 +20,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,7 +30,9 @@ import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SpinnerListModel;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
+import javax.swing.text.DefaultFormatter;
 import javax.swing.text.Document;
 import nz.ac.aut.ense701.gameModel.Game;
 
@@ -112,27 +115,31 @@ public class PreGame extends JFrame{
         JPanel mapSizePanel = new JPanel();
         mapSizePanel.setLayout(new BorderLayout());
         
-        Integer[] mapSizes = new Integer[100];
-        for (int i = 0; i < 100; ++i){
-            mapSizes[i] = i+1;
-        }
-        
         JLabel mapSizeLabel = new JLabel("Map Size:");
         JLabel blankLabel = new JLabel("");
         
         JLabel heightLabel = new JLabel("Height: ");
         JLabel widthLabel = new JLabel("Width: ");
         
-        final JSpinner width = new JSpinner(new SpinnerListModel(mapSizes));
-        width.setValue(new Integer(50));
-        Component myWidthSpinner = width.getEditor();
+        SpinnerNumberModel widthModel = new SpinnerNumberModel();
+        widthModel.setStepSize(1);
+        widthModel.setValue(25);
+        widthModel.setMaximum(50);
+        widthModel.setMinimum(5);
+        SpinnerNumberModel heightModel = new SpinnerNumberModel();
+        heightModel.setStepSize(1);
+        heightModel.setValue(25);
+        heightModel.setMaximum(50);
+        heightModel.setMinimum(5);
+        final JSpinner width = new JSpinner(widthModel);
+        JComponent myWidthSpinner = width.getEditor();
         JFormattedTextField widthText = ((JSpinner.DefaultEditor)myWidthSpinner).getTextField();
         widthText.setColumns(3);
-        final JSpinner height = new JSpinner(new SpinnerListModel(mapSizes));
-        height.setValue(new Integer(50));
-        Component myHeightSpinner = height.getEditor();
+        final JSpinner height = new JSpinner(heightModel);
+        JComponent myHeightSpinner = height.getEditor();
         JFormattedTextField heightText = ((JSpinner.DefaultEditor)myHeightSpinner).getTextField();
         heightText.setColumns(3);
+        
         
         String[] difficult = new String[3];
         difficult[0] = "Easy";
@@ -152,6 +159,7 @@ public class PreGame extends JFrame{
         mapSize.add(height);
         mapSize.add(difficultLabel);
         mapSize.add(difficulties);
+        
         
         mapSizePanel.add(mapSize, BorderLayout.NORTH);
         
