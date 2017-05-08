@@ -1,12 +1,37 @@
 # Backlog
 [Home](./README.md)
 
+- Ongoing Project Material.
+- Software Product.
+- Quality Assurance.
+- Planning & Tracking.
+- Review & Forward Planning.
+
 This document will look at the items that need to be completed for the project to be successful.
 
 - [x] [Iteration 1](##iteration-1)
 - [ ] [Iteration 2](##iteration-2)
 - [ ] [Iteration 3](##iteration-3)
 
+# Backlog
+- Items
+  - [x] As a player I want KiwiIsland to have an introduction and options before I play so that I have better understanding of why I should play Kiwi Island.
+    - [x] Introduction Screen
+    - [x] Information Screen
+    - [x] Settings Screen
+  - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
+    - [ ] The Game has updated Iconsets
+      - [ ] The Game's terrain has updated visuals
+      - [ ] The Game's predators have updated visuals
+  - [ ] As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.
+  - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
+  - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+  - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
+  - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
+  - [ ] As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete.
+  - [ ] As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.
+  - [ ] As a player I want to know an overview of how to play the game before I begin playing the game so that the game is more beginner friendly.
+  
 ## Iteration 1
 
 ### Planning 
@@ -40,6 +65,12 @@ The communication within the team has been poor. It seems that more team meeting
 ---
 Our team didn't spend enough time together and on the project. We also failed to meet the assignment spec. Going forward we will address these issues by setting more time for meetings. Completing more work. Making sure the work meets the courses guidelines. And clearly documenting our process with an improved system.
 
+### Specific Feedback
+Clear table of contents of deliverables.
+Acceptance tests for all User Stories.
+Improve Commit Messages.
+More Software Added.
+
 ## Iteration 2
 
 #### Planning
@@ -47,8 +78,11 @@ Our team didn't spend enough time together and on the project. We also failed to
 The tasks we wish to achieve in iteration 2 are outlined below.
 
 - [ ] Dynamic map (L)
+  As a User, I want the map to be different on each play, so that each game is unique.
+  As a User, I want to be able to set the size of the map, so that each game 
 
 - [ ] Semi Random Terrain (M)
+  As a User, I want the map to represent a Island but to have differing
 
 - [ ] Random Spawn Location of Player, Predator, Traps/Hazards and Objects (XL)
 
@@ -63,5 +97,10 @@ The tasks we wish to achieve in iteration 2 are outlined below.
 Ben is working on overhauling the UI to replace the Strings that represent the terrain. His changes will impact the ability for the code to run in the short term. He will create new branch while he works on this task.
 
 We plan for the short term to keep the text file, Andre and Alex will look at manipulating the text file to enable the map to be more dynamic. They will work on devInitChange branch.
+
+## Bugs
+
+Description | Solved (How) | When
+--- | --- | ---
 
 ## Iteration 3
