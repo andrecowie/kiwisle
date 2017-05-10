@@ -90,8 +90,6 @@ This document will look at the items that need to be completed for the project t
 | Then: | It would be possible to control the scale of the field of view of the camera to allow for a bigger map that you could explore more thoroughly with, this with and a sleeker new UI could make Kiwi Island more exciting for the player.|
 |---|---|
 
-Upgrade of User Interface || | | 
-
 ## Iteration 1
 
 ### Planning 
