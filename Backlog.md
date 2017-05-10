@@ -8,9 +8,9 @@
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
-- [Iteration 1](#iteratione)
-- [Iteration 2](#iteratwo)
-- [Iteration 3](#iterathree)
+- [ ] [Iteration 1](#iteration-one)
+- [Iteration 2](#iteration-two)
+- [Iteration 3](#iteration-three)
 
 # Backlog
 - Items
@@ -84,7 +84,7 @@
 | | |
 
 
-# IteratiOne
+# Iteration One
 
 ### Planning 
 
@@ -124,7 +124,7 @@ Improve Commit Messages.
 More Software Added.
 Text Wrapping Of Information Screen Could be Improved.
 
-# Iteratwo
+# Iteration Two
 
 #### Planning
 
@@ -158,4 +158,4 @@ Description | Reproduced By |Solved (How) | When
 Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May 2017
 Text on the Information Screen is wrapping unnecassarily | The text always wraps | Yet to be | -
 
-# Iterathree
+# Iteration Three
