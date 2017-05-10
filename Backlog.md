@@ -8,8 +8,8 @@
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
-- [x] [Iteration 1](##iteration-1)
-- [ ] [Iteration 2](##iteration-2)
+- [x] [Iteration 1](#iterone)
+- [ ] [Iteration 2](##Iteration-2)
 - [ ] [Iteration 3](##iteration-3)
 
 # Backlog
@@ -83,8 +83,8 @@
 | Then: | It would be possible to control the scale of the field of view of the camera to allow for a bigger map that you could explore more thoroughly with, this with and a sleeker new UI could make Kiwi Island more exciting for the player.|
 | | |
 
-
-## Iteration 1
+{: id="iterone"}
+# Iteration 1
 
 ### Planning 
 
