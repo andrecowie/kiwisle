@@ -8,9 +8,9 @@
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
-- [ ] [Iteration 1](#iteration-one)
-- [Iteration 2](#iteration-two)
-- [Iteration 3](#iteration-three)
+- [x] [Iteration 1](#iteration-one)
+- [ ] [Iteration 2](#iteration-two)
+- [ ] [Iteration 3](#iteration-three)
 
 # Backlog
 - Items
