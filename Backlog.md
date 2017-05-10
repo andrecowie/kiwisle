@@ -1,5 +1,4 @@
-# Backlog
-[Home](./README.md)
+### [Home](./README.md) [Logbooks](./Logbooks) [Meetings](./Meetings.md)
 
 - Ongoing Project Material.
 - Software Product.
@@ -7,7 +6,7 @@
 - Planning & Tracking.
 - Review & Forward Planning.
 
-This document will look at the items that need to be completed for the project to be successful.
+    This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
 - [x] [Iteration 1](##iteration-1)
 - [ ] [Iteration 2](##iteration-2)
@@ -58,37 +57,32 @@ This document will look at the items that need to be completed for the project t
   
 # Acceptance Testing
 
-# Features 
+## Features 
 
+---
 ### Introduction and Options screen
 ---
 
+| | |
+|:-:|:-:|
 |Scenario: | As a player I want KiwiIsland to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
-|---|---|
-
 |Given: | A window containing a title screen for kiwi-island, a quick information screen ("Could look into adding functionality like a quick tip for each different time that a player starts the game.") and then an options screen to customize the games dynamics. |
-|---|---|
-
 | When: | At the start of running the KiwiIsland jar. |
-|---|---|
-
 | Then: | Move into your customized game with different sizes and difficulties. To find/count the kiwis and to hunt the predators|
-|---|---|
+| | |
 
+---
 ### Upgrade of User Interface
 ---
 
+| | |
+|---|---|
 |Scenario: | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
-|---|---|
-
 |Given: | Throughout the game we hope to have improved icons of the map game view. Looking to overhaul the user interface to make it sleeker as well as inputs to allow the game to be played at a higher speed would be ideal for the replayability of the game.|
-|---|---|
-
 | When: |  In the main game as the player plays the game the map will be improved, from what the original fork of KiwiIsland looked like.|
-|---|---|
-
 | Then: | It would be possible to control the scale of the field of view of the camera to allow for a bigger map that you could explore more thoroughly with, this with and a sleeker new UI could make Kiwi Island more exciting for the player.|
-|---|---|
+| | |
+
 
 ## Iteration 1
 
