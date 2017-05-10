@@ -8,9 +8,9 @@
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
-- [x] [Iteration 1](#iterone)
-- [ ] [Iteration 2](##Iteration-2)
-- [ ] [Iteration 3](##iteration-3)
+- [x] [Iteration 1](#Iteratione)
+- [ ] [Iteration 2](#Iteratwo)
+- [ ] [Iteration 3](#Iterathree)
 
 # Backlog
 - Items
@@ -83,8 +83,8 @@
 | Then: | It would be possible to control the scale of the field of view of the camera to allow for a bigger map that you could explore more thoroughly with, this with and a sleeker new UI could make Kiwi Island more exciting for the player.|
 | | |
 
-{: id="iterone"}
-# Iteration 1
+
+# IteratiOne
 
 ### Planning 
 
@@ -124,7 +124,7 @@ Improve Commit Messages.
 More Software Added.
 Text Wrapping Of Information Screen Could be Improved.
 
-## Iteration 2
+# Iteratwo
 
 #### Planning
 
@@ -158,4 +158,4 @@ Description | Reproduced By |Solved (How) | When
 Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May 2017
 Text on the Information Screen is wrapping unnecassarily | The text always wraps | Yet to be | -
 
-## Iteration 3
+# Iterathree
