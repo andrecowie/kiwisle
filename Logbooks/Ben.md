@@ -2,6 +2,9 @@
 [Home](../README.md)
 [Backlog](../Backlog.md)
 
+| Date | Hours | Description |
+|---|---|---|
+ 
 ### Iteration 2
 | | | |
 |---|---|---|
