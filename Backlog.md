@@ -281,6 +281,9 @@ The team isn't collaborating enough if at all. Inconsistent meetings, as well as
 Maybe it's me.
 #### Ben 
 More meetings, and more work done by the team compared to Iteration 1. However It could be improved by more. I also learnt how to use github properly and try not to use local repository too much and keep committing to the github. For final iteration I believe we can spend more time for SE - setting dedicated team meetings, and allowing everyone to work on the project so we can lessen our burden on each other.
+#### Alex
+As I see it, the primary problem for the inconsistency in this project is due to a lack of time needed to gather and coordinate the team. The team seems to steer off course quickly as we all have other commitments. There was more work done towards this project by the team but I think we were just as fractured as we were before. Communication seems to have marginally improved but are still not frequent enough to steer the team in the right direction.
+The project does not have a clearly defined goal other than to add features, decided by the development team. I think this demotivates the team and does not provide any impetus to really get things done.
 
 
 # Iteration Three
