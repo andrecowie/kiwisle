@@ -24,7 +24,7 @@
   - [Results](#results-matrix-2)
 - [x] [Iteration 2](#iteration-two)
 - [ ] [Iteration 3](#iteration-three)
-  - [Thoughts](#thoughts-for-iteration-three
+  - [Thoughts](#thoughts-for-iteration-three)
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
