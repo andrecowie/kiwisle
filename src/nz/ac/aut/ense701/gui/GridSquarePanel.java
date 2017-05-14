@@ -45,37 +45,39 @@ public class GridSquarePanel extends javax.swing.JPanel
         boolean squareVisible = game.isVisible(row, column);
         boolean squareExplored = game.isExplored(row, column);
         Toolkit toolkit = Toolkit.getDefaultToolkit();
+        String prefix = "../resources/images/";
+        String ext = ".png";
+        String filename = "";
+        String textureImagePath = prefix + filename + ext;
+        
         Color      color = null;
         
+         
         switch ( terrain )
         {
-            case SAND     : Image imageSand = toolkit.getImage("beach_sand.png"); 
-            Image scaledImage = imageSand.getScaledInstance(50, 70, Image.SCALE_DEFAULT);
-            ImageIcon iconSand = new ImageIcon(scaledImage);
-            break;
-            
-            case FOREST   : Image imageForest = toolkit.getImage("forest_grass.png"); 
-            Image scaledImage1 = imageForest.getScaledInstance(50, 70, Image.SCALE_DEFAULT);
-            ImageIcon iconForest = new ImageIcon(scaledImage1);
-            break;
-            
-            case WETLAND :Image imageWetLand = toolkit.getImage("Marsh_Turf_Texture.png"); 
-            Image scaledImage2 = imageWetLand.getScaledInstance(50, 70, Image.SCALE_DEFAULT);
-            ImageIcon iconWetLand = new ImageIcon(scaledImage2);
-            break;
-            
-            case SCRUB :  Image imageScrub = toolkit.getImage("scrub.png"); 
-            Image scaledImage3 = imageScrub.getScaledInstance(50, 70, Image.SCALE_DEFAULT);
-            ImageIcon iconScrub = new ImageIcon(scaledImage3);
-            break;
-            
-            case WATER    :  Image imageWater = toolkit.getImage("water.png"); 
-            Image scaledImage4 = imageWater.getScaledInstance(50, 70, Image.SCALE_DEFAULT);
-            ImageIcon iconWater = new ImageIcon(scaledImage4);
-            break;
-            
+            case SAND     : {
+            try {
+                filename = "beach_sand";
+                backgroundImage = ImageIO.read(new File(textureImagePath));
+            } catch (IOException ex) {
+                Logger.getLogger(GridSquarePanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        };break;
+            case FOREST   : filename = "forest_grass";
+                BufferedImage backgroundImage1 = ImageIO.read(new File(textureImagePath));
+break;
+            case WETLAND : filename = "Marsh_Turf_Texture";
+                BufferedImage backgroundImage2 = ImageIO.read(new File(textureImagePath));
+break;
+            case SCRUB : filename = "scrub";
+                BufferedImage backgroundImage3 = ImageIO.read(new File(textureImagePath));
+break;
+            case WATER    : filename = "water";
+                BufferedImage backgroundImage4 = ImageIO.read(new File(textureImagePath));
+break;
             default  : color = Color.LIGHT_GRAY; break;
         }
+        
         
         if ( squareExplored || squareVisible )
         {
