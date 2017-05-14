@@ -308,6 +308,8 @@ The project does not have a clearly defined goal other than to add features, dec
     - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the
   - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
     - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.
+    - [ ] Improved rendering for terrains (M)
+    
     
 ### Thoughts for iteration Three
 From the user stories above, there will be more work done on the user interface. There problems with getting the grid square and icons implememted. We have a lot of icons for kiwis, predators, traps, etc but implementing them has been more time-consuming that previously thought.
