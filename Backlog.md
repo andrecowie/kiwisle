@@ -192,6 +192,25 @@ testisPlayerMovePossibleValidMove
 testPlayerMoveNotEnoughStamina
 testCountKiwi
 
+testPlayerMoveNonFatalHazardDead
+assertFalse("Player should not be alive.", player.isAlive());
+
+testUseItemTrapFinalPredator
+assertTrue("Check player moves", trapAllPredators());
+
+private boolean trapAllPredators
+@Test
+   public void testUseItemTrapFinalPredator(){
+
+       assertTrue("Check player moves", trapAllPredators());
+       assertTrue("Game should be won", game.getState()== GameState.WON);    
+   }
+
+   @Test
+    public void testPlayerMoveToInvalidPosition(){
+        //A move NORTH would be invalid from player's start position
+        assertFalse("Move not valid", game.playerMove(MoveDirection.NORTH));
+    }
 
 # Iteration One
 
