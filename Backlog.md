@@ -288,7 +288,7 @@ The project does not have a clearly defined goal other than to add features, dec
 
 # Iteration Three
 
-# Backlog
+# Backlog (Iteration Three)
   - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
     - [ ] The Game has updated Iconsets
       - [ ] The Game's terrain has updated visuals
