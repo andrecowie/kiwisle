@@ -178,7 +178,8 @@ Listed below are the unit tests that fail when run. The primary reason they seem
 ### testPlayerMoveToInvalidPosition Failed: Move not valid
 ### testisPlayerMovePossibleValidMove Failed: Player should not have required stamina
 ### testPlayerMoveNotEnoughStamina Failed: This move invalid
-### testCountKiwi Failed: Wrong stamina expected: 47.0 but was 49
+### testCountKiwi Failed: This move valid
+### testPlayerMoveNonFatalHazardNotDead Failed: Wrong stamina expected 47.0 but was 49
 
 
 
