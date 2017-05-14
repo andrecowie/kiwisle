@@ -181,6 +181,17 @@
 | Then: | The player will have a better understanding of KiwiIsland and can enjoy the gameplay more. |
 | | |
 
+## Failed Unit Tests
+
+Add failures here.
+
+testUseItemTrapFinalPredator
+testPlayerMoveFatalHazard
+testPlayerMoveToInvalidPosition
+testisPlayerMovePossibleValidMove
+testPlayerMoveNotEnoughStamina
+testCountKiwi
+
 
 # Iteration One
 
