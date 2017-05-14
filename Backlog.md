@@ -67,7 +67,7 @@
 
 | | |
 |:-:|:-:|
-|Scenario: | As a player I want KiwiIsland to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
+|Scenario: | As a player I want Kiwi Island to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
 |Given: | A window containing a title screen for kiwi-island, a quick information screen ("Could look into adding functionality like a quick tip for each different time that a player starts the game.") and then an options screen to customize the games dynamics. |
 | When: | At the start of running KiwiIsland. |
 | Then: | Move into your customized game with different sizes and difficulties. To find/count the kiwis and to hunt the predators|
