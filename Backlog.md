@@ -16,7 +16,7 @@
   - [Planning](###planning-1)
   - [Results Matrix](###results-matrix-1)
   - [Retrospective](###retrospective-1)
-  [Specific Feedback](###specific-feedback-1)
+  - [Specific Feedback](###specific-feedback-1)
 - [x] [Iteration 2](#iteration-two)
   - [Planning](###planning-2)
   - [Bugs](##bugs-2)
