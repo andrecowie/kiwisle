@@ -22,7 +22,6 @@
   - [Planning](#planning-2)
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
-- [x] [Iteration 2](#iteration-two)
 - [ ] [Iteration 3](#iteration-three)
   - [Thoughts](#thoughts-for-iteration-three)
 
