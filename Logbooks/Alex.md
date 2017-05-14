@@ -17,4 +17,4 @@
 
 ||||
 |---|---|---|
-| 14/05/2017 | 2 hours | Finishing up on the documentation ready for upload. |
+| 14/05/2017 | 2 hours | Dynamic map task completed by Andre therefore moving to: Finishing up on the documentation ready for upload. |
