@@ -27,7 +27,7 @@ import nz.ac.aut.ense701.gameModel.Terrain;
  * @version 1.0 - created
  */
 
-public class GridSquarePanel extends javax.swing.JPanel implements ComponentListener
+public class GridSquarePanel extends javax.swing.JPanel
 {
     ImageIcon imageIcon;
     /** 
@@ -42,6 +42,9 @@ public class GridSquarePanel extends javax.swing.JPanel implements ComponentList
         this.row    = row;
         this.column = column;
         imageIcon = new ImageIcon("resources/images/Player.png"); // load the image to a imageIcon
+        Image playerImage = imageIcon.getImage();
+        Image newimg = playerImage.getScaledInstance(30, 30,  java.awt.Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(newimg);
         initComponents();
     }
 
@@ -83,6 +86,11 @@ public class GridSquarePanel extends javax.swing.JPanel implements ComponentList
             }
             lblText.setBackground(color);
             setBorder(game.hasPlayer(row,column) ? activeBorder : normalBorder);
+            if (game.hasPlayer(row, column)){
+                lblText.setIcon(imageIcon);
+            }else{
+                lblText.setIcon(null);
+            }
 //            ImageIcon teraIcon = new ImageIcon(textureImagePath);
 //            Image teraImage = teraIcon.getImage();
 //            Image playerImage = imageIcon.getImage();
@@ -159,24 +167,4 @@ public class GridSquarePanel extends javax.swing.JPanel implements ComponentList
     
     private static final Border normalBorder = new LineBorder(Color.BLACK, 0);
     private static final Border activeBorder = new LineBorder(Color.RED, 1);
-
-    @Override
-    public void componentResized(ComponentEvent ce) {
-        System.out.print("Resized");
-    }
-
-    @Override
-    public void componentMoved(ComponentEvent ce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void componentShown(ComponentEvent ce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void componentHidden(ComponentEvent ce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

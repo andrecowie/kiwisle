@@ -401,7 +401,6 @@ public class Game
     public boolean collectItem(Object item)
     {
         boolean success = (item instanceof Item) && (player.collect((Item)item));
-        System.out.print("Game Collect Item: "+success+" "+item);
         if(success)
         {
             // player has picked up an item: remove from grid square

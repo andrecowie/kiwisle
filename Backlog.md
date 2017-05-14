@@ -24,12 +24,12 @@
       - [ ] The Game's predators have updated visuals
       - [ ] The Game's Players have updated visuals
       - [ ] The Game's Kiwis have updated visuals
-  - [ ] As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.
-    - [ ] Players spawn location is valid but random
-    - [ ] Kiwis spawn locations valid but random
-    - [ ] Predators spawn locations valid but random
-    - [ ] Tools spawn locations valid but random
-    - [ ] Hazard positions valid but random
+  - [x] As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.
+    - [x] Players spawn location is valid but random
+    - [x] Kiwis spawn locations valid but random
+    - [x] Predators spawn locations valid but random
+    - [x] Tools spawn locations valid but random
+    - [x] Hazard positions valid but random
   - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
     - [ ] Vision Items Available
       - [ ] Vision Items can be collected
@@ -40,24 +40,24 @@
   - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
     - [ ] Predators can move
     - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
-    - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the 
+    - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the
   - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
     - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.
   - [x] As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete.
     - [x] Input Width (Iter 1)
     - [x] Input Height (Iter 1)
     - [x] Map Size Scales (Iter 2)
-  - [ ] As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.
+  - [x] As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.
     - [x] Player can select Easy, Medium, Hard
-    - [ ] Difficulty setting impacts the number of Predators and the Predators Hunting Vicinity
+    - [x] Difficulty setting impacts the number of Predators and the Predators Hunting Vicinity
   - [x] As a player I want to know an overview of how to play the game before I begin playing the game so that the game is more beginner friendly.
     - [x] Player told of Win Condition
     - [x] Player told of Lost Condition
     - [x] Goal of KiwiIsland
-  
+
 # Acceptance Testing
 
-## Features 
+## Features
 
 ---
 ### Introduction and Options screen
@@ -67,7 +67,7 @@
 |:-:|:-:|
 |Scenario: | As a player I want KiwiIsland to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
 |Given: | A window containing a title screen for kiwi-island, a quick information screen ("Could look into adding functionality like a quick tip for each different time that a player starts the game.") and then an options screen to customize the games dynamics. |
-| When: | At the start of running the KiwiIsland jar. |
+| When: | At the start of running KiwiIsland. |
 | Then: | Move into your customized game with different sizes and difficulties. To find/count the kiwis and to hunt the predators|
 | | |
 
@@ -83,10 +83,94 @@
 | Then: | It would be possible to control the scale of the field of view of the camera to allow for a bigger map that you could explore more thoroughly with, this with and a sleeker new UI could make Kiwi Island more exciting for the player.|
 | | |
 
+---
+### Random Occupants
+---
+
+|||
+|---|---|
+|Scenario: | As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive. |
+|Given: | Random spawn locations of the occupants of the map including the player. |
+| When: |  At the start of each game. |
+| Then: | It would make the game have more replay value.|
+| | |
+
+---
+### Vision Item
+---
+
+|||
+|---|---|
+|Scenario: | As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning. |
+|Given: | The ability to locate vision items. |
+| When: | When navigating kiwi island. |
+| Then: | The player could expose parts of the map to enable them to be more strategic with their use of stamina. |
+| | |
+
+---
+### Predator Eradication
+---
+
+|||
+|---|---|
+|Scenario: | As a user I want to be able to trap predators and to kill them so that they are removed from the current game. |
+|Given: | Being notified that when their trap catches a predator that the predator was killed |
+| When: | A trap is used on a predator  |
+| Then: | The Player will be more rewarded for removing dangers to the kiwis. |
+| | |
+
+---
+### Predator Movement
+---
+
+|||
+|---|---|
+|Scenario: | As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience. |
+|Given: | Predators moving in the grid as the player moves|
+| When: | The player chooses a direction for their next move |
+| Then: | The game will be more interactive for the player. |
+| | |
+
+---
+### Predator Hunting
+---
+
+|||
+|---|---|
+|Scenario: | As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself. |
+|Given: | Predators can remove Kiwis from game and also take the players stamina or kill the player. |
+| When: | A predator is in the same location as a Kiwi or Player. |
+| Then: | The game will be more difficult and will have an opposing role. |
+| | |
+
+---
+### Difficulty Levels
+---
+
+|||
+|---|---|
+|Scenario: | As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value. |
+|Given: | A choice to choose a difficulty |
+| When: | Before the game starts. |
+| Then: | The game will have more or less occupants and the predators will have added speed. |
+| | |
+
+---
+### Game Introduction
+---
+
+|||
+|---|---|
+|Scenario: | As a player I want to know an overview of how to play the game before I begin playing the game so that the game is more beginner friendly. |
+|Given: | Basic information regarding what the goals of the Game are. |
+| When: | Before the game begins |
+| Then: | The player will have a better understanding of KiwiIsland and can enjoy the gameplay more. |
+| | |
+
 
 # Iteration One
 
-### Planning 
+### Planning
 
 ![alt text](./images/image1.png "Class Diagram")
 
@@ -104,7 +188,7 @@
 
 #### Andre
 ---
-I am disappointed in our team's communication. We received a bad mark and we will need to work on our roles and expectations for this paper. I think we found the speed of this iterative approach for the portfolio very fast, especially given the time allocated with relation to all of our teams external commitments. While being our first project together I feel we can use these circumstances to improve our focus for the upcoming iterations to yield better results. I have been doing some work on the entry screen and contemplating the way to refactor or change the build flow of the game object. It is unscalable for KiwiIsland to be built by a single text file intertwined so tightly with the map and game. Passing the name through as I am doing with this commit is not the best change but it gives me the confidence to begin thinking about changing more of the initialiseIslandFromFile as well as providing a good branch point. I will continue to work on a new branch with a change in the games setup process. Looking especially into the setUpTerrain, setUpPlayer and potentially the setUpOccupants methods within the Game class. 
+I am disappointed in our team's communication. We received a bad mark and we will need to work on our roles and expectations for this paper. I think we found the speed of this iterative approach for the portfolio very fast, especially given the time allocated with relation to all of our teams external commitments. While being our first project together I feel we can use these circumstances to improve our focus for the upcoming iterations to yield better results. I have been doing some work on the entry screen and contemplating the way to refactor or change the build flow of the game object. It is unscalable for KiwiIsland to be built by a single text file intertwined so tightly with the map and game. Passing the name through as I am doing with this commit is not the best change but it gives me the confidence to begin thinking about changing more of the initialiseIslandFromFile as well as providing a good branch point. I will continue to work on a new branch with a change in the games setup process. Looking especially into the setUpTerrain, setUpPlayer and potentially the setUpOccupants methods within the Game class.
 #### Ben
 ---
 We need to improve our teams communication, and have to make changes for more effective team meeting. Since we recieved a bad mark for our planning, we now know that our current team meeting strategy isnt working at the moment. Time management for everyone is required as everyone in this paper is focusing more on the Research and development paper.
@@ -130,18 +214,21 @@ Text Wrapping Of Information Screen Could be Improved.
 
 The tasks we wish to achieve in iteration 2 are outlined below.
 
-- [ ] Dynamic map (L)
+- [x] Dynamic map (L)
   As a User, I want the map to be different on each play, so that each game is unique.
-  As a User, I want to be able to set the size of the map, so that each game 
+  As a User, I want to be able to set the size of the map, so that each game
 
-- [ ] Semi Random Terrain (M)
+- [x] Difficulty Levels
+  Impact the number occupants in the game
+
+- [x] Semi Random Terrain (M)
   As a User, I want the map to represent a Island but to have differing
 
-- [ ] Random Spawn Location of Player, Predator, Traps/Hazards and Objects (XL)
+- [x] Random Spawn Location of Player, Predator, Traps/Hazards and Objects (XL)
 
 - [ ] Icons for occupants (M)
 
-- [ ] Icons for player (S)
+- [x] Icons for player (S) (Note need to improve the png.)
 
 - [ ] Improved rendering for terrains (M)
 
@@ -155,7 +242,27 @@ We plan for the short term to keep the text file, Andre and Alex will look at ma
 
 Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
-Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May 2017
-Text on the Information Screen is wrapping unnecassarily | The text always wraps | Yet to be | -
+Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May
+Text on the Information Screen is wrapping unnecassarily | The text always wraps |Making the pregame Jframe larger | 10th May
+Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | Yet to be. | -
+
+### Results Matrix
+
+|Things for ITERATION 2| Result on Sunday 14th | User Stories Completed |
+|---|---|---|
+| Dynamic Map | Completed to a nice standard. Will now change with every game. Can also scale the map. | As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete. |
+| Difficulty Levels | Completed could be improved, difficulties make the number of occupants change. Will look to make the difficulties impact the predators movement in the next iteration. | As a Player i want to have the ability to choose a difficulty level to make the game more immersive as well as replay value.|
+| Semi Random Terrain | Completed and is working well so that the map will generally resemble an island but is prone to randomness too. | As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive. |
+| Random Spawn Locations | Completed the players and all occupants are generated with randomness| As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.  |
+| Icons for Occupants | Incomplete. | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+| Icons for Player | Semi Complete. Able to make the player icon render need to improve the icon and maybe give the player a choice of female and male icon. | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+| Icons for Terrain | Incomplete. Have some icons. No one has added them to the code to make them render... | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+
+### Retrospective
+
+#### Andre
+The team isn't collaborating enough if at all. Inconsistent meetings, as well as the team not willingly volunteering to try to take ownership for any piece of the project is resulting in this assignment being my most stressful. I don't want to have to delegate work to my team members. And especially as we haven't assigned roles within the team i would expect us all to try to be a self-managing team. I feel like no one has properly attempted to add any features to the project and that all the coding and planning is falling onto my shoulders. No issues have been raised within the team regarding knowledge of how to add value to the project, and if they were i would love to try to help my team mates work with me to deliver a better product. Going into the final iteration I may have to try to take a more managing role in the project to try to enable my team mates more. Also when i feel forced into working extra hard in adding functionality and new features/changes which takes away from the time i could spend developing unit tests. As well as creating my algorithms in more dynamic, decoupled ways.
+
+
 
 # Iteration Three
