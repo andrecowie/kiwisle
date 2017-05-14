@@ -171,6 +171,13 @@
 
 Add failures here.
 
+testUseItemTrapFinalPredator
+testPlayerMoveFatalHazard
+testPlayerMoveToInvalidPosition
+testisPlayerMovePossibleValidMove
+testPlayerMoveNotEnoughStamina
+testCountKiwi
+
 
 # Iteration One
 
