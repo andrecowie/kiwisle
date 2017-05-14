@@ -1,6 +1,7 @@
 # Alex's Logbook
 
-|Date|Hours|Description|
+| Date | Hours | Description |
+|---|---|---|
 
 Date: 10/05/2017
 
