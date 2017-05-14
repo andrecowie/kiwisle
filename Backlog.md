@@ -288,3 +288,23 @@ The project does not have a clearly defined goal other than to add features, dec
 
 # Iteration Three
 
+# Backlog
+  - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
+    - [ ] The Game has updated Iconsets
+      - [ ] The Game's terrain has updated visuals
+      - [ ] The Game's predators have updated visuals
+      - [ ] The Game's Players have updated visuals
+      - [ ] The Game's Kiwis have updated visuals
+        - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
+    - [ ] Vision Items Available
+      - [ ] Vision Items can be collected
+      - [ ] Vision Items can be used
+      - [ ] Vision Item when used Makes area visible
+  - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+    - [ ] Make predators removed when trapped
+  - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
+    - [ ] Predators can move
+    - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
+    - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the
+  - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
+    - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.
