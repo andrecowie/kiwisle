@@ -9,7 +9,9 @@
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
 - [x] [Iteration 1](#iteration-one)
-- [ ] [Iteration 2](#iteration-two)
+
+- [x] [Iteration 2](#iteration-two)
+
 - [ ] [Iteration 3](#iteration-three)
 
 # Backlog
@@ -261,7 +263,8 @@ Ability to have JLabel icons as the icons for the occupants and terrain | You ca
 ### Retrospective
 
 #### Andre
-The team isn't collaborating enough if at all. Inconsistent meetings, as well as the team not willingly volunteering to try to take ownership for any piece of the project is resulting in this assignment being my most stressful. I don't want to have to delegate work to my team members. And especially as we haven't assigned roles within the team i would expect us all to try to be a self-managing team. I feel like no one has properly attempted to add any features to the project and that all the coding and planning is falling onto my shoulders. No issues have been raised within the team regarding knowledge of how to add value to the project, and if they were i would love to try to help my team mates work with me to deliver a better product. Going into the final iteration I may have to try to take a more managing role in the project to try to enable my team mates more. Also when i feel forced into working extra hard in adding functionality and new features/changes which takes away from the time i could spend developing unit tests. As well as creating my algorithms in more dynamic, decoupled ways.
+The team isn't collaborating enough if at all. Inconsistent meetings, as well as the team not willingly volunteering to try to take ownership for any piece of the project is resulting in this assignment being my most stressful. I don't want to have to delegate work to my team members. And especially as we haven't assigned roles within the team i would expect us all to try to be a self-managing team. I feel like no one has properly attempted to add any features to the project and that all the coding and planning is falling onto my shoulders. No issues have been raised within the team regarding knowledge of how to add value to the project, and if they were i would love to try to help my team mates work with me to deliver a better product. Going into the final iteration I may have to try to take a more managing role in the project to try to enable my team mates more. Also when i feel forced into working extra hard in adding functionality and new features/changes which takes away from the time i could spend developing unit tests. As well as creating my algorithms in more dynamic, decoupled ways. 
+Maybe it's me.
 
 
 
