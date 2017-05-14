@@ -1,16 +1,30 @@
 ### [Home](./README.md) [Logbooks](./Logbooks) [Meetings](./Meetings.md)
 
-- Ongoing Project Material.
-- Software Product.
-- Quality Assurance.
-- Planning & Tracking.
-- Review & Forward Planning.
-
-    This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
-
+- [Backlog](#backlog)
+- [Acceptance Testing](#acceptance-testing)
+  - [Features](#features)
+    - [Introduction and Options screen](#introduction-and-options-screen)
+    - [Upgrade of User Interface](###upgrade-of-user-interface)
+    - [Random Occupants](###random-occupants)
+    - [Vision Item](###vision-item)
+    - [Predator Eradication](###predator-eradication)
+    - [Predator Movement](###predator-movement)
+    - [Predator Hunting](###predator-hunting)
+    - [Difficulty Levels](###difficulty-levels-)
+    - [Game Introduction](###game-introduction)
 - [x] [Iteration 1](#iteration-one)
 - [ ] [Iteration 2](#iteration-two)
+  - [Planning](###planning-1)
+  - [Results Matrix](###results-matrix-1)
+  - [Retrospective](###retrospective-1)
+  [Specific Feedback](###specific-feedback-1)
+- [x] [Iteration 2](#iteration-two)
+  - [Planning](###planning-2)
+  - [Bugs](##bugs-2)
+  - [Results](###results-matrix-2)
 - [ ] [Iteration 3](#iteration-three)
+
+    This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
 # Backlog
 - Items
@@ -170,21 +184,21 @@
 
 # Iteration One
 
-### Planning
+### Planning 1
 
 ![alt text](./images/image1.png "Class Diagram")
 
 ![alt text](./images/image2.png "Class Diagram 2")
 
 
-### Results Matrix
+### Results Matrix 1
 |Things for ITERATION 1| Result on Sunday 16th | User Stories Completed |
 |---|---|---|
 | Setup size of the map.| Fields have been added to accept a size of the map however funtionality will need to be changed in the Game object that was not completely forseen with the difficulty around the game being built by a text field.| "As a player I want to be able to setup the size of the map before the game begins, so that the game can take more or less moves to complete. Completed Input Width and Input Height but not Size of Map Scales"|
 | Size of the map scales.| Plan to implement this over the next few days however i anticipate it will be a buggy affair| Unfortunately the user story was incomplete, it will move to iteration 2's backlog. This user story had three Acceptance Tests. We Completed two of the three in iteration 1|
 | Give an overview of how to play the game on first run.| This as well as cleaning up how the game started was achieved. | "As a player I want KiwiIsland to have an introduction and options before I play so that I have better understanding of why I should play Kiwi Island."
 
-### Retrospective
+### Retrospective 1
 
 #### Andre
 ---
@@ -201,7 +215,7 @@ The communication within the team has been poor. It seems that more team meeting
 ---
 Our team didn't spend enough time together and on the project. We also failed to meet the assignment spec. Going forward we will address these issues by setting more time for meetings. Completing more work. Making sure the work meets the courses guidelines. And clearly documenting our process with an improved system.
 
-### Specific Feedback
+### Specific Feedback 1
 Clear table of contents of deliverables.
 Acceptance tests for all User Stories.
 Improve Commit Messages.
@@ -210,7 +224,7 @@ Text Wrapping Of Information Screen Could be Improved.
 
 # Iteration Two
 
-#### Planning
+#### Planning 2
 
 The tasks we wish to achieve in iteration 2 are outlined below.
 
@@ -238,7 +252,7 @@ Ben is working on overhauling the UI to replace the Strings that represent the t
 
 We plan for the short term to keep the text file, Andre and Alex will look at manipulating the text file to enable the map to be more dynamic. They will work on devInitChange branch.
 
-## Bugs
+## Bugs 2
 
 Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
@@ -246,7 +260,7 @@ Size of map width and height, could not be changed with keyboard | Putting numbe
 Text on the Information Screen is wrapping unnecassarily | The text always wraps |Making the pregame Jframe larger | 10th May
 Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | Yet to be. | -
 
-### Results Matrix
+### Results Matrix 2
 
 |Things for ITERATION 2| Result on Sunday 14th | User Stories Completed |
 |---|---|---|
@@ -258,10 +272,10 @@ Ability to have JLabel icons as the icons for the occupants and terrain | You ca
 | Icons for Player | Semi Complete. Able to make the player icon render need to improve the icon and maybe give the player a choice of female and male icon. | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
 | Icons for Terrain | Incomplete. Have some icons. No one has added them to the code to make them render... | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
 
-### Retrospective
+### Retrospective 2
 
 #### Andre
-The team isn't collaborating enough if at all. Inconsistent meetings, as well as the team not willingly volunteering to try to take ownership for any piece of the project is resulting in this assignment being my most stressful. I don't want to have to delegate work to my team members. And especially as we haven't assigned roles within the team i would expect us all to try to be a self-managing team. I feel like no one has properly attempted to add any features to the project and that all the coding and planning is falling onto my shoulders. No issues have been raised within the team regarding knowledge of how to add value to the project, and if they were i would love to try to help my team mates work with me to deliver a better product. Going into the final iteration I may have to try to take a more managing role in the project to try to enable my team mates more. Also when i feel forced into working extra hard in adding functionality and new features/changes which takes away from the time i could spend developing unit tests. As well as creating my algorithms in more dynamic, decoupled ways.
+
 
 
 

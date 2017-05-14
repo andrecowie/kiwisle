@@ -39,6 +39,7 @@ public class Game
     /**
      * A new instance of Kiwi island that reads data from "IslandData.txt".
      */
+    
     public Game(String[] nameAndDifficulty, Dimension _mapSize) 
     {   
         eventListeners = new HashSet<GameEventListener>();
