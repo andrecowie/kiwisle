@@ -23,7 +23,9 @@
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
 - [ ] [Iteration 3](#iteration-three)
-  - [Thoughts](#thoughts-for-iteration-three)
+  - [Planning](#planning-3)
+    - [Items Remaining](#user-stories-and-remaining-tasks)
+    - [Thoughts](#thoughts-for-iteration-three)
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
@@ -300,7 +302,8 @@ The project does not have a clearly defined goal other than to add features, dec
 
 # Iteration Three
 
-# Backlog (Iteration Three)
+## Planning 3
+### User Stories and Remaining Tasks
   - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
     - [ ] The Game has updated Iconsets
       - [ ] The Game's terrain has updated visuals
