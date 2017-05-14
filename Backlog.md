@@ -286,8 +286,6 @@ Ability to have JLabel icons as the icons for the occupants and terrain | You ca
 ### Retrospective 2
 
 #### Andre
-
-
-
+We need to collaborate and communicate more. We have come to the realisation that we will need to utilize techniques like pair programming. We improved from the first iteration but there is definetly more room for improvement. The areas we have improved in is communication and we are all trying to 'commit' more. We will need to focus as a team on managing our own expectations and working well together to deliver a more elegant product. With this iteration we worked slowly through the week on documentation, meetings, and with inconsistent digital communication. But now at the end, this weekend is turning things around and we are trying to work well on delivering a good commit.
 
 # Iteration Three
