@@ -1,6 +1,14 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import nz.ac.aut.ense701.gameModel.Game;
@@ -15,6 +23,7 @@ import nz.ac.aut.ense701.gameModel.Terrain;
 
 public class GridSquarePanel extends javax.swing.JPanel 
 {
+    ImageIcon imageIcon;
     /** 
      * Creates new GridSquarePanel.
      * @param game the game to represent
@@ -26,19 +35,23 @@ public class GridSquarePanel extends javax.swing.JPanel
         this.game   = game;
         this.row    = row;
         this.column = column;
+        imageIcon = new ImageIcon("Player.png"); // load the image to a imageIcon
+        Image image = imageIcon.getImage(); // transform it 
+        Image newimg = image.getScaledInstance(20, 20,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+        imageIcon = new ImageIcon(newimg);
+        
         initComponents();
     }
 
     /**
      * Updates the representation of the grid square panel.
      */
-    public void update()
+    public void update() 
     {
         // get the GridSquare object from the world
         Terrain terrain   = game.getTerrain(row, column);
         boolean squareVisible = game.isVisible(row, column);
         boolean squareExplored = game.isExplored(row, column);
-        
         Color      color;
         
         switch ( terrain )
@@ -54,19 +67,29 @@ public class GridSquarePanel extends javax.swing.JPanel
         if ( squareExplored || squareVisible )
         {
             // Set the text of the JLabel according to the occupant
-            lblText.setText(game.getOccupantStringRepresentation(row,column));
+            
             // Set the colour. 
+            
             if ( squareVisible && !squareExplored ) 
             {
                 // When explored the colour is brighter
-                color = new Color(Math.min(255, color.getRed()   + 128), 
-                                  Math.min(255, color.getGreen() + 128), 
-                                  Math.min(255, color.getBlue()  + 128));
+                color = new Color(Math.min(255, color.getRed()  ), 
+                                  Math.min(255, color.getGreen() ), 
+                                  Math.min(255, color.getBlue()));
             }
             lblText.setBackground(color);
+            if(game.hasPlayer(row, column)){
+                lblText.setIcon(imageIcon);
+                lblText.setText(null);
+            }else{
+                lblText.setText(game.getOccupantStringRepresentation(row,column));
+                lblText.setIcon(null);
+            }
             // set border colour according to 
             // whether the player is in the grid square or not
             setBorder(game.hasPlayer(row,column) ? activeBorder : normalBorder);
+            
+            updateUI();
         }
         else
         {
@@ -103,6 +126,6 @@ public class GridSquarePanel extends javax.swing.JPanel
     private Game game;
     private int row, column;
     
-    private static final Border normalBorder = new LineBorder(Color.BLACK, 1);
+    private static final Border normalBorder = new LineBorder(Color.BLACK, 0);
     private static final Border activeBorder = new LineBorder(Color.RED, 3);
 }

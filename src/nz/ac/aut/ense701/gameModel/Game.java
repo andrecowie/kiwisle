@@ -288,6 +288,7 @@ public class Game
      */
     public boolean canCollect(Object itemToCollect)
     {
+        
         boolean result = (itemToCollect != null)&&(itemToCollect instanceof Item);
         if(result)
         {
@@ -400,6 +401,7 @@ public class Game
     public boolean collectItem(Object item)
     {
         boolean success = (item instanceof Item) && (player.collect((Item)item));
+        System.out.print("Game Collect Item: "+success+" "+item);
         if(success)
         {
             // player has picked up an item: remove from grid square
@@ -764,32 +766,275 @@ public class Game
      */
     private void setUpTerrain(Scanner input) 
     {
-        int rowSectionSize = island.getNumRows()/10;
-        int colSectionSize = island.getNumColumns()/10;
+        int rowSectionSize = island.getNumRows()/9;
+        int colSectionSize = island.getNumColumns()/9;
+        
         for ( int row = 0 ; row < island.getNumRows() ; row++ ) 
         {
+            // Going through the game grid and creating the island
             for (int col = 0; col < island.getNumColumns(); col++){
-                if ((row >= 0 && row < rowSectionSize) || (row >= island.getNumRows()-rowSectionSize && row < island.getNumRows()) || (col >= 0 && col < colSectionSize) || (col >= island.getNumColumns()-colSectionSize && col < island.getNumColumns())){
-                    Position pos = new Position(island, row, col);
-                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
-                    island.setTerrain(pos, terrain);
-                }else if((row >= rowSectionSize && row < rowSectionSize*2) || (row >= island.getNumRows()-rowSectionSize*2 && row < island.getNumRows()-rowSectionSize) || (col >= colSectionSize && col < colSectionSize*2) || (col >= island.getNumColumns()-colSectionSize*2 && col < island.getNumColumns()-colSectionSize)){
-                    Position pos = new Position(island, row, col);
-                    Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
-                    island.setTerrain(pos, terrain);
-                }else if((row >= rowSectionSize*2 && row < rowSectionSize*3) || (row >= island.getNumRows()-rowSectionSize*3 && row < island.getNumRows()-rowSectionSize*2) || (col >= colSectionSize*2 && col < colSectionSize*3) || (col >= island.getNumColumns()-colSectionSize*3 && col < island.getNumColumns()-colSectionSize*2)){
-                    Position pos = new Position(island, row, col);
-                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
-                    island.setTerrain(pos, terrain);
-                }else if((row >= rowSectionSize*3 && row < rowSectionSize*4) || (row >= island.getNumRows()-rowSectionSize*4 && row < island.getNumRows()-rowSectionSize*3) || (col >= colSectionSize*3 && col < colSectionSize*4) || (col >= island.getNumColumns()-colSectionSize*4 && col < island.getNumColumns()-colSectionSize*3)){
-                    Position pos = new Position(island, row, col);
-                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
-                    island.setTerrain(pos, terrain);
-                }else if((row >= rowSectionSize*4 && row < rowSectionSize*5) || (row >= island.getNumRows()-rowSectionSize*5 && row < island.getNumRows()-rowSectionSize*4) || (col >= colSectionSize*4 && col < colSectionSize*5) || (col >= island.getNumColumns()-colSectionSize*5 && col < island.getNumColumns()-colSectionSize*4)){
-                    Position pos = new Position(island, row, col);
-                    Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
-                    island.setTerrain(pos, terrain);
+                // If to create the forest 
+                Random rand = new Random();
+                int possibility = rand.nextInt(100)+1;
+                if(row >= rowSectionSize*4 && row < (rowSectionSize*6)+1){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }
+                    
+                }else if(row >= island.getNumRows()-rowSectionSize*6 && row < island.getNumRows()-rowSectionSize*4){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if (col >= colSectionSize*4 && col < colSectionSize*6){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if (col >= island.getNumColumns()-colSectionSize*6 && col < island.getNumColumns()-colSectionSize*4){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }
                 }
+                // if to create the shrub
+                if(row >= rowSectionSize*3 && row < rowSectionSize*4){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if (row >= island.getNumRows()-rowSectionSize*4 && row < island.getNumRows()-rowSectionSize*3) {
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= colSectionSize*3 && col < colSectionSize*4){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= island.getNumColumns()-colSectionSize*4 && col < island.getNumColumns()-colSectionSize*3){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("*");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }
+                //if to create the wetland
+                if(row >= rowSectionSize*2 && row < rowSectionSize*3){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(row >= island.getNumRows()-rowSectionSize*3 && row < island.getNumRows()-rowSectionSize*2){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= colSectionSize*2 && col < colSectionSize*3) {
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= island.getNumColumns()-colSectionSize*3 && col < island.getNumColumns()-colSectionSize*2){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("^");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }
+                //if to create the sand
+                if(row >= rowSectionSize && row < rowSectionSize*2){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(row >= (island.getNumRows()-rowSectionSize*2) && row < island.getNumRows()-rowSectionSize){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if (col >= colSectionSize && col < colSectionSize*2){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= island.getNumColumns()-colSectionSize*2 && col < island.getNumColumns()-colSectionSize){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }else if(possibility <= 20){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("#");
+                        island.setTerrain(pos, terrain);
+                    }
+                }
+                //if to create the water
+                if(row >= 0 && row < rowSectionSize){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(row >= (island.getNumRows()-rowSectionSize )){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= 0 && col < colSectionSize){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }else if(col >= (island.getNumColumns()-colSectionSize )){
+                    if(possibility >20 && possibility< 80){
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation("~");
+                        island.setTerrain(pos, terrain);
+                    }else{
+                        Position pos = new Position(island, row, col);
+                        Terrain terrain = Terrain.getTerrainFromStringRepresentation(".");
+                        island.setTerrain(pos, terrain);
+                    }
+                }
+                
             }
 //            String terrainRow = input.next();
 //            for ( int col = 0 ; col < terrainRow.length() ; col++ )
@@ -829,12 +1074,14 @@ public class Game
      * Creates occupants listed in the file and adds them to the island.
      * @param input data from the level file
      */
-    private void setUpOccupants(Scanner input) 
-    {
-        class OccupantSpawner{
+    class OccupantSpawner{
             String occType;
             String occName;
             String occDesc;
+            double hazardImpact;
+            double weight;
+            double size;
+            double energy;
             int    occRow;
             int    occCol;
             public OccupantSpawner(String _occType,String _occName, String _occDesc, int _occRow, int _occCol){
@@ -844,16 +1091,45 @@ public class Game
                 occRow   = _occRow;
                 occCol   = _occCol;
             }
+            public OccupantSpawner(String _occType,String _occName, String _occDesc, Float impact,int _occRow, int _occCol){
+                occType  = _occType;
+                occName  = _occName; 
+                occDesc  = _occDesc;
+                occRow   = _occRow;
+                occCol   = _occCol;
+                hazardImpact = impact;
+            }public OccupantSpawner(String _occType,String _occName, String _occDesc, Float _weight, Float _size,int _occRow, int _occCol){
+                occType  = _occType;
+                occName  = _occName; 
+                occDesc  = _occDesc;
+                occRow   = _occRow;
+                occCol   = _occCol;
+                weight = _weight.floatValue();
+                size = _size.floatValue();
+            }
+            public OccupantSpawner(String _occType,String _occName, String _occDesc, Float _weight, Float _size, Float _energy,int _occRow, int _occCol){
+                occType  = _occType;
+                occName  = _occName; 
+                occDesc  = _occDesc;
+                occRow   = _occRow;
+                occCol   = _occCol;
+                weight = _weight.floatValue();
+                size = _size.floatValue();
+                energy = _energy.floatValue();
+                
+            }
         }
-        ArrayList occupants = new ArrayList();
-        Random rand = new Random();
+  
+    private void setUpOccupants(Scanner input) 
+    {
+        
+        ArrayList occupants = null;     
         if(difficulty == "Easy"){
-            occupants.add(new OccupantSpawner("K", "Kiwi", "A little spotted kiwi", rand.nextInt(island.getNumRows()/5)+(island.getNumRows()/5)*2 ,rand.nextInt(island.getNumColumns()/5)+(island.getNumColumns()/5)*2));
-            occupants.add(new OccupantSpawner("P", "Shark", "A Great White", rand.nextInt(island.getNumRows()/5),rand.nextInt(island.getNumColumns()/5)));
+          occupants = createOccupants(5, 2, 4, 4, 4, 10);
         }else if(difficulty == "Medium"){
-            
+          occupants = createOccupants(8, 3, 6, 5, 3, 7);  
         }else if(difficulty == "Hard"){
-            
+            occupants = createOccupants(10, 2, 8, 6, 3, 6);
         }
         for ( int i = 0 ; i < occupants.size() ; i++ ) 
         {
@@ -867,20 +1143,22 @@ public class Game
 
             if ( occType.equals("T") )
             {
-                double weight = input.nextDouble();
-                double size   = input.nextDouble();
+                
+                double weight = ((OccupantSpawner)occupants.get(i)).weight;
+                double size   = ((OccupantSpawner)occupants.get(i)).size;
                 occupant = new Tool(occPos, occName, occDesc, weight, size);
+                
             }
             else if ( occType.equals("E") )
             {
-                double weight = input.nextDouble();
-                double size   = input.nextDouble();
-                double energy = input.nextDouble();
+                double weight = ((OccupantSpawner)occupants.get(i)).weight;
+                double size   = ((OccupantSpawner)occupants.get(i)).size;
+                double energy = ((OccupantSpawner)occupants.get(i)).energy;
                 occupant = new Food(occPos, occName, occDesc, weight, size, energy);
             }
             else if ( occType.equals("H") )
             {
-                double impact = input.nextDouble();
+                double impact = ((OccupantSpawner)occupants.get(i)).hazardImpact;
                 occupant = new Hazard(occPos, occName, occDesc,impact);
             }
             else if ( occType.equals("K") )
@@ -899,7 +1177,234 @@ public class Game
             }
             if ( occupant != null ) island.addOccupant(occPos, occupant);
         }
-    }    
+        
+    }
+    
+    /*
+     This method is to create a number of occupants.
+    */
+    private ArrayList createOccupants(int numkiwi, int numpred, int numfauna, int numhazard, int numtool, int numfood){
+        ArrayList occupants = new ArrayList();
+        Random rand = new Random();
+        ArrayList<Dimension> occupantLocations = new ArrayList<Dimension>();     
+          //5 Kiwis 
+            for(int i = 0;i < numkiwi; i++){
+                int x;
+                int y;
+                do{
+                    x = rand.nextInt(island.getNumRows());
+                    y = rand.nextInt(island.getNumColumns());
+                }while(occupantLocations.contains(new Dimension(x,y)));
+                occupantLocations.add(new Dimension(x,y));
+                occupants.add(new OccupantSpawner("K", "Kiwi", "A little spotted kiwi", x,y));
+            }
+            //2 Predators
+            for(int i = 0;i < numpred; i++){
+                int x;
+                int y;
+                do{
+                    x = rand.nextInt(island.getNumRows());
+                    y = rand.nextInt(island.getNumColumns());
+                }while(occupantLocations.contains(new Dimension(x,y)));
+                String[] predator = randomPredator();
+                occupants.add(new OccupantSpawner(predator[0], predator[1], predator[2], x, y));
+            }
+            //4 Fauna
+            for(int i = 0;i < numfauna; i++){
+                int x;
+                int y;
+                do{
+                    x = rand.nextInt(island.getNumRows());
+                    y = rand.nextInt(island.getNumColumns());
+                }while(occupantLocations.contains(new Dimension(x,y)));
+                occupantLocations.add(new Dimension(x,y));
+                String[] fauna = randomFauna();
+                occupants.add(new OccupantSpawner(fauna[0], fauna[1], fauna[2], x, y));
+            }
+            //4 Hazards
+            for(int i = 0;i < numhazard; i++){
+                int x = rand.nextInt(island.getNumRows());
+                int y = rand.nextInt(island.getNumColumns());
+                String[] hazard = randomHazard();
+                occupants.add(new OccupantSpawner(hazard[0], hazard[1], hazard[2], Float.parseFloat(hazard[3]) ,x, y));
+            }
+            //4 Tools
+            for(int i = 0;i < numtool; i++){
+                int x = rand.nextInt(island.getNumRows());
+                int y = rand.nextInt(island.getNumColumns());
+                String[] tool = randomTool();
+                occupants.add(new OccupantSpawner(tool[0], tool[1], tool[2], Float.parseFloat(tool[3]), Float.parseFloat(tool[4]),x, y));
+            }
+            //10 Food
+            for(int i = 0;i < numfood; i++){
+                int x = rand.nextInt(island.getNumRows());
+                int y = rand.nextInt(island.getNumColumns());
+                String[] food = randomFood();
+                occupants.add(new OccupantSpawner(food[0], food[1], food[2], Float.parseFloat(food[3]), Float.parseFloat(food[4]),Float.parseFloat(food[5]) ,x, y));
+            }
+            return occupants;
+    };
+    
+    private String[] randomPredator(){
+        String [] a;
+        a = new String[3];
+        a[0] = "P";
+        Random rand = new Random();
+        switch(rand.nextInt(5)+1){
+            case 1:
+                a[1] = "Cat";
+                a[2] = "A wild cat";
+                break;
+            case 2:
+                a[1] = "Rat";
+                a[2] = "A Norwegian rat";
+                break;
+            case 3:
+                a[1] = "Kiore";
+                a[2] = "A pacific rat";
+                break;
+            case 4:
+                a[1] = "Stoat";
+                a[2] = "A brown and white stoat";
+                break;
+            case 5:
+                a[1] = "Possum";
+                a[2] = "A bushy tailed possum";
+                break;
+        }
+        return a;
+        
+    }
+    private String[] randomFauna(){
+        String [] a;
+        a = new String[3];
+        a[0] = "F";
+        Random rand = new Random();
+        switch(rand.nextInt(6)+1){
+            case 1:
+                a[1] = "Oystercatcher";
+                a[2] = "A variable oystercatcher sitting on sand";
+                break;
+            case 2:
+                a[1] = "Crab";
+                a[2] = "A scuttling crab";
+                break;
+            case 3:
+                a[1] = "Fernbird";
+                a[2] = "A shy fernbird";
+                break;
+            case 4:
+                a[1] = "Heron";
+                a[2] = "A white-faced heron";
+                break;
+            case 5:
+                a[1] = "Robin";
+                a[2] = "A black robin";
+                break;
+            case 6:
+                a[1] = "Tui";
+                a[2] = "A singing tui";
+                break;
+        }
+        return a;
+    }
+    private String[] randomHazard(){
+        String [] a;
+        a = new String[4];
+        a[0] = "H";
+        Random rand = new Random();
+        switch(rand.nextInt(6)+1){
+            case 1:
+                a[1] = "Cliff";
+                a[2] = "A fall down a steep rocky cliff";
+                a[3] = "1.0";
+                break;
+            case 2:
+                a[1] = "Pond";
+                a[2] = "A fall into a deep pond";
+                a[3] = "1.0";
+                break;
+            case 3:
+                a[1] = "Rock";
+                a[2] = "A large falling rock";
+                a[3] = "1.0";
+                break;
+            case 4:
+                a[1] = "Sunburn";
+                a[2] = "Too much sun has given you bad sunburn";
+                a[3] = "0.3";
+                break;
+            case 5:
+                a[1] = "Fall";
+                a[2] = "Tripping on roots hurt your ankle";
+                a[3] = "0.5";
+                break;
+            case 6:
+                a[1] = "Broken Trap";
+                a[2] = "Your predator trap has broken";
+                a[3] = "0.0";
+                break;
+        }
+        return a;
+    }
+    private String[] randomTool(){
+        String [] a;
+        a = new String[5];
+        a[0] = "T";
+        Random rand = new Random();
+        switch(rand.nextInt(2)+1){
+            case 1:
+                a[1] = "Trap";
+                a[2] = "A trap for predators";
+                a[3] = "1.0";
+                a[4] = "1.0";
+                break;
+            case 2:
+                a[1] = "Screwdriver";
+                a[2] = "A screwdriver that is useful for fixing traps";
+                a[3] = "0.5";
+                a[4] = "0.75";
+                break;
+        }
+        return a;
+    }
+    private String[] randomFood(){
+        String [] a;
+        a = new String[6];
+        a[0] = "E";
+        Random rand = new Random();
+        switch(rand.nextInt(4)+1){
+            case 1:
+                a[1] = "Sandwich";
+                a[2] = "A nice and healthy sandwich";
+                a[3] = "2.0";
+                a[4] = "1.0";
+                a[5] = "50.0";
+                break;
+            case 2:
+                a[1] = "Apple";
+                a[2] = "A juicy apple";
+                a[3] = "2.0";
+                a[4] = "3.0";
+                a[5] = "50.0";
+                break;
+            case 3:
+                a[1] = "Muesli Bar";
+                a[2] = "A juicy and nutricious muesli bar";
+                a[3] = "1.0";
+                a[4] = "1.0";
+                a[5] = "50.0";
+                break;
+            case 4:
+                a[1] = "Orange Juice";
+                a[2] = "A bottle of juice";
+                a[3] = "2.0";
+                a[4] = "3.0";
+                a[5] = "50.0";
+                break;
+        }
+        return a;
+    }
 
 
     private Island island;

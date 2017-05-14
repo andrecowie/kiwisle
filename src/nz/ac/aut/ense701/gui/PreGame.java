@@ -115,30 +115,18 @@ public class PreGame extends JFrame{
         JPanel mapSizePanel = new JPanel();
         mapSizePanel.setLayout(new BorderLayout());
         
-        JLabel mapSizeLabel = new JLabel("Map Size:");
+        JLabel mapSizeLabel = new JLabel("Map Size(10-50):");
         JLabel blankLabel = new JLabel("");
         
-        JLabel heightLabel = new JLabel("Height: ");
-        JLabel widthLabel = new JLabel("Width: ");
-        
-        SpinnerNumberModel widthModel = new SpinnerNumberModel();
-        widthModel.setStepSize(1);
-        widthModel.setValue(25);
-        widthModel.setMaximum(50);
-        widthModel.setMinimum(5);
-        SpinnerNumberModel heightModel = new SpinnerNumberModel();
-        heightModel.setStepSize(1);
-        heightModel.setValue(25);
-        heightModel.setMaximum(50);
-        heightModel.setMinimum(5);
-        final JSpinner width = new JSpinner(widthModel);
-        JComponent myWidthSpinner = width.getEditor();
-        JFormattedTextField widthText = ((JSpinner.DefaultEditor)myWidthSpinner).getTextField();
-        widthText.setColumns(3);
-        final JSpinner height = new JSpinner(heightModel);
-        JComponent myHeightSpinner = height.getEditor();
-        JFormattedTextField heightText = ((JSpinner.DefaultEditor)myHeightSpinner).getTextField();
-        heightText.setColumns(3);
+        SpinnerNumberModel sizeModel = new SpinnerNumberModel();
+        sizeModel.setStepSize(1);
+        sizeModel.setValue(25);
+        sizeModel.setMaximum(50);
+        sizeModel.setMinimum(10);
+        final JSpinner size = new JSpinner(sizeModel);
+        JComponent mySizeSpinner = size.getEditor();
+        JFormattedTextField sizeText = ((JSpinner.DefaultEditor)mySizeSpinner).getTextField();
+        sizeText.setColumns(3);
         
         
         String[] difficult = new String[3];
@@ -152,11 +140,8 @@ public class PreGame extends JFrame{
         mapSize.setLayout(new GridLayout(0, 2));
         
         mapSize.add(mapSizeLabel);
-        mapSize.add(blankLabel);
-        mapSize.add(widthLabel);
-        mapSize.add(width);
-        mapSize.add(heightLabel);
-        mapSize.add(height);
+        mapSize.add(size);
+        
         mapSize.add(difficultLabel);
         mapSize.add(difficulties);
         
@@ -174,7 +159,7 @@ public class PreGame extends JFrame{
                     String[] nameAndDifficulty = new String[2];
                     nameAndDifficulty[0] = name.getText();
                     nameAndDifficulty[1] = (String) difficulties.getValue();
-                    startGame(container, nameAndDifficulty, new Dimension(((Integer)width.getValue()),((Integer) height.getValue())));
+                    startGame(container, nameAndDifficulty, new Dimension(((Integer)size.getValue()),((Integer)size.getValue())));
                 }else{
                     JPanel errorPanel = new JPanel();
                     errorPanel.setLayout(new BorderLayout());
@@ -229,8 +214,8 @@ public class PreGame extends JFrame{
         @Override
         protected void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(image2, 229, 0, this);
-            g.drawImage(image, 230, 50, this);
+            g.drawImage(image2, 350, 0, this);
+            g.drawImage(image, 350, 50, this);
             
         }
     }
@@ -265,7 +250,7 @@ public class PreGame extends JFrame{
         
         welcome.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         welcome.setLayout(new java.awt.BorderLayout(10, 0));
-        welcome.setPreferredSize(new Dimension(700, 350));
+        welcome.setPreferredSize(new Dimension(1000, 350));
         buttons.add(start);
         buttons.add(exit);
         welcome.add(message, BorderLayout.NORTH);

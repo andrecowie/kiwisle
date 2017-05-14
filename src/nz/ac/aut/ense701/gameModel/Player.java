@@ -297,8 +297,10 @@ public class Player
     public boolean collect(Item item)
     {
         boolean success = false;
+        System.out.print("Player Collect Item:"+item+"Carryable? "+item.isOkToCarry());
         if ( item != null && item.isOkToCarry() )
         {
+            System.out.print("Item is Carriable.");
             double  addedSize   = getCurrentBackpackSize() + item.getSize();
             boolean enoughRoom  = (addedSize <= this.maxBackpackSize);
             double  addedWeight = getCurrentBackpackWeight() + item.getWeight();
