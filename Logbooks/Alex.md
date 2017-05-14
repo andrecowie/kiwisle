@@ -1,5 +1,7 @@
 # Alex's Logbook
 
+|Date|Hours|Description|
+
 Date: 10/05/2017
 
 Working on allowing the user to set a bigger map size.
