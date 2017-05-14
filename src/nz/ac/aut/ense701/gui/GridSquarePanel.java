@@ -2,8 +2,14 @@ package nz.ac.aut.ense701.gui;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.GridLayout;
 import java.awt.Image;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.image.BufferedImage;
+import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,7 +27,7 @@ import nz.ac.aut.ense701.gameModel.Terrain;
  * @version 1.0 - created
  */
 
-public class GridSquarePanel extends javax.swing.JPanel 
+public class GridSquarePanel extends javax.swing.JPanel implements ComponentListener
 {
     ImageIcon imageIcon;
     /** 
@@ -35,11 +41,7 @@ public class GridSquarePanel extends javax.swing.JPanel
         this.game   = game;
         this.row    = row;
         this.column = column;
-        imageIcon = new ImageIcon("Player.png"); // load the image to a imageIcon
-        Image image = imageIcon.getImage(); // transform it 
-        Image newimg = image.getScaledInstance(20, 20,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-        imageIcon = new ImageIcon(newimg);
-        
+        imageIcon = new ImageIcon("resources/images/Player.png"); // load the image to a imageIcon
         initComponents();
     }
 
@@ -53,43 +55,72 @@ public class GridSquarePanel extends javax.swing.JPanel
         boolean squareVisible = game.isVisible(row, column);
         boolean squareExplored = game.isExplored(row, column);
         Color      color;
+        String textureImagePath = null;
         
         switch ( terrain )
         {
-            case SAND     : color = Color.YELLOW; break;
-            case FOREST   : color = Color.GREEN;  break;
-            case WETLAND : color = Color.BLUE; break;
-            case SCRUB : color = Color.DARK_GRAY;   break;
-            case WATER    : color = Color.CYAN;   break;
+            case SAND     : color = Color.YELLOW; textureImagePath = "resources/images/beach_sand.png";break;
+            case FOREST   : color = Color.GREEN;textureImagePath = "resources/images/forest_grass.png";break;
+            case WETLAND : color = Color.BLUE;textureImagePath = "resources/images/Marsh_Turf_Texture.png"; break;
+            case SCRUB : color = Color.DARK_GRAY;textureImagePath = "resources/images/scrub.png"; break;
+            case WATER    : color = Color.CYAN;textureImagePath = "resources/images/water.png";   break;
             default  : color = Color.LIGHT_GRAY; break;
         }
         
         if ( squareExplored || squareVisible )
         {
             // Set the text of the JLabel according to the occupant
-            
+            lblText.setText(game.getOccupantStringRepresentation(row,column));
             // Set the colour. 
             
             if ( squareVisible && !squareExplored ) 
             {
+                
                 // When explored the colour is brighter
                 color = new Color(Math.min(255, color.getRed()  ), 
                                   Math.min(255, color.getGreen() ), 
                                   Math.min(255, color.getBlue()));
             }
             lblText.setBackground(color);
-            if(game.hasPlayer(row, column)){
-                lblText.setIcon(imageIcon);
-                lblText.setText(null);
-            }else{
-                lblText.setText(game.getOccupantStringRepresentation(row,column));
-                lblText.setIcon(null);
-            }
-            // set border colour according to 
-            // whether the player is in the grid square or not
             setBorder(game.hasPlayer(row,column) ? activeBorder : normalBorder);
+//            ImageIcon teraIcon = new ImageIcon(textureImagePath);
+//            Image teraImage = teraIcon.getImage();
+//            Image playerImage = imageIcon.getImage();
+//            Image teraNewImg;
+//            Image newimg;
+//            Image image;
+//            Graphics g2;
+//            
+//            
+//            if(game.hasPlayer(row, column)){
+//                if(getHeight() == 0){
+//                image = new BufferedImage(50,50,  TYPE_INT_RGB);
+//                teraNewImg = teraImage.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+//                newimg = playerImage.getScaledInstance(20, 20,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+//                g2 = image.getGraphics();
+//                g2.drawImage(teraNewImg, 0, 0, this);
+//                g2.drawImage(newimg, 0, 0, this);
+//                g2.dispose();
+//            }else{
+//                image = new BufferedImage(getHeight(),getWidth(),  TYPE_INT_RGB);
+//                teraNewImg = teraImage.getScaledInstance(getHeight(), getWidth(),  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+//                newimg = playerImage.getScaledInstance(getHeight()/2, getWidth()/2,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+//                g2 = image.getGraphics();
+//                
+//                g2.drawImage(newimg, 0, 0, this);
+//                g2.drawImage(teraNewImg, 0, 0, this);
+//                
+//                g2.dispose();
+//            }
+//            imageIcon = new ImageIcon(image);
+//                lblText.setIcon(imageIcon);
+//                lblText.setText(null);
+//            }else{
+//                lblText.setText(game.getOccupantStringRepresentation(row,column));
+//                lblText.setIcon(new ImageIcon(teraImage));
+//            }
+//            updateUI();
             
-            updateUI();
         }
         else
         {
@@ -127,5 +158,25 @@ public class GridSquarePanel extends javax.swing.JPanel
     private int row, column;
     
     private static final Border normalBorder = new LineBorder(Color.BLACK, 0);
-    private static final Border activeBorder = new LineBorder(Color.RED, 3);
+    private static final Border activeBorder = new LineBorder(Color.RED, 1);
+
+    @Override
+    public void componentResized(ComponentEvent ce) {
+        System.out.print("Resized");
+    }
+
+    @Override
+    public void componentMoved(ComponentEvent ce) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void componentShown(ComponentEvent ce) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void componentHidden(ComponentEvent ce) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
