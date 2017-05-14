@@ -24,6 +24,7 @@
   - [Results](#results-matrix-2)
 - [x] [Iteration 2](#iteration-two)
 - [ ] [Iteration 3](#iteration-three)
+  - [Thoughts](#thoughts-for-iteration-three
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
@@ -323,6 +324,6 @@ The project does not have a clearly defined goal other than to add features, dec
     - [ ] Improved rendering for terrains (M)
 
 
-### Thoughts for iteration Three
+### Thoughts for Iteration Three
 From the user stories above, there will be more work done on the user interface. There problems with getting the grid square and icons implememted. We have a lot of icons for kiwis, predators, traps, etc but implementing them has been more time-consuming that previously thought.
 We want the predators to be able to move around the map and perhaps stalk the player or eat / kill the kiwis. About a third of the user stories will be put into this iteration.
