@@ -12,6 +12,7 @@
     - [Predator Hunting](###predator-hunting)
     - [Difficulty Levels](###difficulty-levels-)
     - [Game Introduction](###game-introduction)
+    - [Failed Tests](##failed-unit-tests)
 - [x] [Iteration 1](#iteration-one)
   - [Planning](###planning-1)
   - [Results Matrix](###results-matrix-1)
