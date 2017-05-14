@@ -194,7 +194,6 @@ Listed below are the unit tests that fail when run. The primary reason they seem
 - testCountKiwi Failed: This move valid
 - testPlayerMoveNonFatalHazardNotDead Failed: Wrong stamina expected 47.0 but was 49
 
-
 # Iteration One
 
 ### Planning 1
