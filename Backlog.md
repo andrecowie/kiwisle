@@ -13,7 +13,6 @@
     - [Difficulty Levels](###difficulty-levels-)
     - [Game Introduction](###game-introduction)
 - [x] [Iteration 1](#iteration-one)
-- [ ] [Iteration 2](#iteration-two)
   - [Planning](###planning-1)
   - [Results Matrix](###results-matrix-1)
   - [Retrospective](###retrospective-1)
