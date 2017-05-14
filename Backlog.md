@@ -22,6 +22,7 @@
   - [Planning](#planning-2)
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
+- [x] [Iteration 2](#iteration-two)
 - [ ] [Iteration 3](#iteration-three)
 
     This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
@@ -79,7 +80,7 @@
 
 | | |
 |:-:|:-:|
-|Scenario: | As a player I want KiwiIsland to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
+|Scenario: | As a player I want Kiwi Island to have an introduction and options before I play so that I have a better understanding of why I should play Kiwi Island. |
 |Given: | A window containing a title screen for kiwi-island, a quick information screen ("Could look into adding functionality like a quick tip for each different time that a player starts the game.") and then an options screen to customize the games dynamics. |
 | When: | At the start of running KiwiIsland. |
 | Then: | Move into your customized game with different sizes and difficulties. To find/count the kiwis and to hunt the predators|
@@ -182,7 +183,6 @@
 | | |
 
 ## Failed Unit Tests
-
 Add failures here.
 
 testUseItemTrapFinalPredator
@@ -198,19 +198,19 @@ assertFalse("Player should not be alive.", player.isAlive());
 testUseItemTrapFinalPredator
 assertTrue("Check player moves", trapAllPredators());
 
-private boolean trapAllPredators
-@Test
-   public void testUseItemTrapFinalPredator(){
+Listed below are the unit tests that fail when run. The primary reason they seem to fail is that they were made with a set game board in mind. The old code base sets up a fixed game world with every item in the same spot. Perhaps in a later iteration we create more robust unit tests.
 
-       assertTrue("Check player moves", trapAllPredators());
-       assertTrue("Game should be won", game.getState()== GameState.WON);    
-   }
+- testUseItemTrapFinalPredator Failed: check player moves
+- testPlayerMoveFatalHazard caused an ERROR: invalid row for position (10)
+- testPlayerMoveToInvalidPosition Failed: Move not valid
+- testisPlayerMovePossibleValidMove Failed: Player should not have required stamina
+- testPlayerMoveNotEnoughStamina Failed: This move invalid
+- testCountKiwi Failed: This move valid
+- testPlayerMoveNonFatalHazardNotDead Failed: Wrong stamina expected 47.0 but was 49
 
-   @Test
-    public void testPlayerMoveToInvalidPosition(){
-        //A move NORTH would be invalid from player's start position
-        assertFalse("Move not valid", game.playerMove(MoveDirection.NORTH));
-    }
+
+
+>>>>>>> master
 
 # Iteration One
 
@@ -305,6 +305,36 @@ Ability to have JLabel icons as the icons for the occupants and terrain | You ca
 ### Retrospective 2
 
 #### Andre
-We need to collaborate and communicate more. We have come to the realisation that we will need to utilize techniques like pair programming. We improved from the first iteration but there is definetly more room for improvement. The areas we have improved in is communication and we are all trying to 'commit' more. We will need to focus as a team on managing our own expectations and working well together to deliver a more elegant product. With this iteration we worked slowly through the week on documentation, meetings, and with inconsistent digital communication. But now at the end, this weekend is turning things around and we are trying to work well on delivering a good commit.
+We need to collaborate and communicate more. We have come to the realisation that we will need to utilize techniques like pair programming. We improved from the first iteration but there is definetly more room for improvement. We have improved our communication and we are all trying to 'commit' more than the first iteration. We will need to focus as a team on managing our own expectations and working well together to deliver a more elegant product. With this iteration we worked slowly through the week on documentation, meetings, and with inconsistent digital communication. But now at the end, this weekend is turning things around and we are trying to work well on delivering a good commit.
+
+#### Ben
+More meetings, and more work done by the team compared to Iteration 1. However It could be improved by more. I also learnt how to use github properly and try not to use local repository too much and keep committing to the github. For final iteration I believe we can spend more time for SE - setting dedicated team meetings, and allowing everyone to work on the project so we can lessen our burden on each other.
+
+#### Alex
+As I see it, the primary problem for the inconsistency in this project is due to a lack of time needed to gather and coordinate the team. The team seems to steer off course quickly as we all have other commitments. There was more work done towards this project by the team but I think we were just as fractured as we were before. Communication seems to have marginally improved but are still not frequent enough to steer the team in the right direction.
+The project does not have a clearly defined goal other than to add features, decided by the development team. I think this demotivates the team and does not provide any impetus to really get things done.
+
+
 
 # Iteration Three
+
+# Backlog (Iteration Three)
+  - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
+    - [ ] The Game has updated Iconsets
+      - [ ] The Game's terrain has updated visuals
+      - [ ] The Game's predators have updated visuals
+      - [ ] The Game's Players have updated visuals
+      - [ ] The Game's Kiwis have updated visuals
+        - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
+    - [ ] Vision Items Available
+      - [ ] Vision Items can be collected
+      - [ ] Vision Items can be used
+      - [ ] Vision Item when used Makes area visible
+  - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+    - [ ] Make predators removed when trapped
+  - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
+    - [ ] Predators can move
+    - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
+    - [ ] Predators can damage a users Stamina if the user doesn't trap the predator and is on the same position as the
+  - [ ] As a player I want the predators to be able to hunt both me, the player and the kiwis so that I have a sense of urgency to find all the kiwis quickly as well as the tool's to protect myself.
+    - [ ] If A predator is in the vicinity of a Player or A Kiwi it will actively try to move towards it.

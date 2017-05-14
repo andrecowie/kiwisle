@@ -13,3 +13,5 @@
 |8/05|3| Worked on the local copy to add texture to the terrains
 |11/05|2| More work for adding the terrains
 |12/05|3| Worked on fixing bugs adding textures to Kiwi Island terrains
+|13/05|3| Restart on the terrain UI again, because we dont need the kiwiisland.txt anymore.
+|14/05|4| Working on the terrainUI, adding retrospective and other documents on github
