@@ -27,7 +27,7 @@
     - [Items Remaining](#user-stories-and-remaining-tasks)
     - [Thoughts](#thoughts-for-iteration-three)
 
-    This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
+This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
 # Backlog
 - Items
