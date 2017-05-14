@@ -173,12 +173,12 @@
 
 Listed below are the unit tests that fail when run. The primary reason they seem to fail is that they were made with a set game board in made. The old code base sets up a fixed game world with every item in the same spot. Perhaps in a later iteration we create more robust unit tests.
 
-## testUseItemTrapFinalPredator Failed: check player moves
-## testPlayerMoveFatalHazard caused an ERROR: invalid row for position (10)
-## testPlayerMoveToInvalidPosition Failed: Move not valid
-## testisPlayerMovePossibleValidMove Failed: Player should not have required stamina
-## testPlayerMoveNotEnoughStamina Failed: This move invalid
-## testCountKiwi Failed: Wrong stamina expected: 47.0 but was 49
+### testUseItemTrapFinalPredator Failed: check player moves
+### testPlayerMoveFatalHazard caused an ERROR: invalid row for position (10)
+### testPlayerMoveToInvalidPosition Failed: Move not valid
+### testisPlayerMovePossibleValidMove Failed: Player should not have required stamina
+### testPlayerMoveNotEnoughStamina Failed: This move invalid
+### testCountKiwi Failed: Wrong stamina expected: 47.0 but was 49
 
 
 
