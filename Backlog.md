@@ -23,6 +23,9 @@
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
 - [ ] [Iteration 3](#iteration-three)
+  - [Process Improvement](#process-improvement)
+    - [Pair Programming](#team-programming)
+    - [GitHub Documentation](#github-documentation)
   - [Planning](#planning-3)
     - [Items Remaining](#user-stories-and-remaining-tasks)
     - [Thoughts](#thoughts-for-iteration-three)
@@ -302,6 +305,18 @@ The project does not have a clearly defined goal other than to add features, dec
 
 
 # Iteration Three
+
+## Process Improvement
+We have identified two processes which can improve our teams output and collaboration.
+
+### Team Programming
+We plan to set aside two days of the week for pair programming. The times will be after the Thursday lecture at 5:00pm and on Sunday evenings within 7:30pm and 8:30pm. We think this will be an effective method of collaborating together. We will measure this by documenting the outcomes and the hours spent of each pair programming session. The Thursday meeting will be in person, and the Sunday evening meetings will be done digital via a facebook group call.
+
+[Pair Programming Table](./Meetings.md)
+
+### GitHub Documentation
+From iteration 2 we have moved our documentation from MS OneNote and Planner to GitHub. This allowed better collaboration compared with iteration 1. The team has better control of the documents. We can also have two members working on the same document while working on seperate components of the document and then use the merge functionality to keep both member's additions.
+
 
 ## Planning 3
 ### User Stories and Remaining Tasks
