@@ -33,3 +33,9 @@ at it and just adjusting it a bit.
 
 Week 8 
 Currently uodated my log book with all that has been happening throughout the project. 
+
+Week 9 
+Andre explained to all of us about what is need to be done before out final product at June 1st 
+
+Week 10 
+Had a meeting that would explain what else to do. Asked me to do some documentation. 
