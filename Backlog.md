@@ -23,6 +23,9 @@
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
 - [ ] [Iteration 3](#iteration-three)
+  - [Process Improvement](#process-improvement)
+    - [Pair Programming](#team-programming)
+    - [GitHub Documentation](#github-documentation)
   - [Planning](#planning-3)
     - [Items Remaining](#user-stories-and-remaining-tasks)
     - [Thoughts](#thoughts-for-iteration-three)
@@ -273,8 +276,7 @@ Description | Reproduced By |Solved (How) | When
 Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May
 Text on the Information Screen is wrapping unnecassarily | The text always wraps |Making the pregame Jframe larger | 10th May
 Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | Yet to be. | -
-![alt text](./resources/bug.png "On new game player remains")
-A current bug regarding the basic png for the player that on death and game reload causes this issue.
+![alt text](./resources/bug.png "On new game player remains") | A current bug regarding the basic png for the player that on death and game reload causes this issue. |
 
 ### Results Matrix 2
 
@@ -303,6 +305,18 @@ The project does not have a clearly defined goal other than to add features, dec
 
 
 # Iteration Three
+
+## Process Improvement
+We have identified two processes which can improve our teams output and collaboration.
+
+### Team Programming
+We plan to set aside two days of the week for pair programming. The times will be after the Thursday lecture at 5:00pm and on Sunday evenings within 7:30pm and 8:30pm. We think this will be an effective method of collaborating together. We will measure this by documenting the outcomes and the hours spent of each pair programming session. The Thursday meeting will be in person, and the Sunday evening meetings will be done digital via a facebook group call.
+
+[Pair Programming Table](./Meetings.md)
+
+### GitHub Documentation
+From iteration 2 we have moved our documentation from MS OneNote and Planner to GitHub. This allowed better collaboration compared with iteration 1. The team has better control of the documents. We can also have two members working on the same document while working on seperate components of the document and then use the merge functionality to keep both member's additions.
+
 
 ## Planning 3
 ### User Stories and Remaining Tasks
