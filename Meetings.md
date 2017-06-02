@@ -15,5 +15,5 @@ Date | Attendees | Action Points
 Date/Time | Time Spent | Did | Retro
 ---|---|---|---
 16/05 9:00am | 1 Hour | Discussed how we would implement the Team programming. Set times for future team programming sessions. | Team agrees "that this should be great" -Ben.
-18/05 5:00pm | 1 Hour | We sat down for a team meeting and discussed how we would implement the gridsquarepanel graphical icons. We also reviewed the pregame class to think of any other additions, potentially different characters if we can get the grid square panel development to go the way we assume.
-21/05 7:30pm | 30 Min | Ben and Andre begun work on doing some graphics for the icons and the player. It was productive to be able to ask questions to one another on our opinion of how the aesthetics should look.
+18/05 5:00pm | 1 Hour | We sat down for a team meeting and discussed how we would implement the gridsquarepanel graphical icons. We also reviewed the pregame class to think of any other additions, potentially different characters if we can get the grid square panel development to go the way we assume.| Nice to get everyone up to date with the challenges around the graphics.
+21/05 7:30pm | 30 Min | Ben and Andre begun work on doing some graphics for the icons and the player. It was productive to be able to ask questions to one another on our opinion of how the aesthetics should look.|Begun work on new graphics
