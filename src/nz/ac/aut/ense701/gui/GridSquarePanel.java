@@ -29,25 +29,24 @@ import nz.ac.aut.ense701.gameModel.Terrain;
 
 public class GridSquarePanel extends javax.swing.JPanel
 {
-    ImageIcon imageIcon;
+    MyImages imageGenerator;
     /** 
      * Creates new GridSquarePanel.
      * @param game the game to represent
      * @param row the row to represent
      * @param column the column to represent
+     * @param _imageGenerator
      */
-    public GridSquarePanel(Game game, int row, int column)
+    public GridSquarePanel(Game game, int row, int column, MyImages _imageGenerator)
     {
         this.game   = game;
         this.row    = row;
         this.column = column;
-        imageIcon = new ImageIcon("resources/images/Player.png"); // load the image to a imageIcon
-        Image playerImage = imageIcon.getImage();
-        Image newimg = playerImage.getScaledInstance(30, 30,  java.awt.Image.SCALE_SMOOTH);
-        imageIcon = new ImageIcon(newimg);
+        imageGenerator=_imageGenerator;
         initComponents();
     }
-
+    
+    
     /**
      * Updates the representation of the grid square panel.
      */
@@ -57,85 +56,17 @@ public class GridSquarePanel extends javax.swing.JPanel
         Terrain terrain   = game.getTerrain(row, column);
         boolean squareVisible = game.isVisible(row, column);
         boolean squareExplored = game.isExplored(row, column);
-        Color      color;
-        String textureImagePath = null;
-        
-        switch ( terrain )
-        {
-            case SAND     : color = Color.YELLOW; textureImagePath = "resources/images/beach_sand.png";break;
-            case FOREST   : color = Color.GREEN;textureImagePath = "resources/images/forest_grass.png";break;
-            case WETLAND : color = Color.BLUE;textureImagePath = "resources/images/Marsh_Turf_Texture.png"; break;
-            case SCRUB : color = Color.DARK_GRAY;textureImagePath = "resources/images/scrub.png"; break;
-            case WATER    : color = Color.CYAN;textureImagePath = "resources/images/water.png";   break;
-            default  : color = Color.LIGHT_GRAY; break;
-        }
-        
-        if ( squareExplored || squareVisible )
-        {
-            // Set the text of the JLabel according to the occupant
-            lblText.setText(game.getOccupantStringRepresentation(row,column));
-            // Set the colour. 
-            
-            if ( squareVisible && !squareExplored ) 
-            {
-                
-                // When explored the colour is brighter
-                color = new Color(Math.min(255, color.getRed()  ), 
-                                  Math.min(255, color.getGreen() ), 
-                                  Math.min(255, color.getBlue()));
-            }
-            lblText.setBackground(color);
-            setBorder(game.hasPlayer(row,column) ? activeBorder : normalBorder);
-            if (game.hasPlayer(row, column)){
-                lblText.setIcon(imageIcon);
-            }else{
-                lblText.setIcon(null);
-            }
-//            ImageIcon teraIcon = new ImageIcon(textureImagePath);
-//            Image teraImage = teraIcon.getImage();
-//            Image playerImage = imageIcon.getImage();
-//            Image teraNewImg;
-//            Image newimg;
-//            Image image;
-//            Graphics g2;
-//            
-//            
-//            if(game.hasPlayer(row, column)){
-//                if(getHeight() == 0){
-//                image = new BufferedImage(50,50,  TYPE_INT_RGB);
-//                teraNewImg = teraImage.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-//                newimg = playerImage.getScaledInstance(20, 20,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-//                g2 = image.getGraphics();
-//                g2.drawImage(teraNewImg, 0, 0, this);
-//                g2.drawImage(newimg, 0, 0, this);
-//                g2.dispose();
-//            }else{
-//                image = new BufferedImage(getHeight(),getWidth(),  TYPE_INT_RGB);
-//                teraNewImg = teraImage.getScaledInstance(getHeight(), getWidth(),  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-//                newimg = playerImage.getScaledInstance(getHeight()/2, getWidth()/2,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-//                g2 = image.getGraphics();
-//                
-//                g2.drawImage(newimg, 0, 0, this);
-//                g2.drawImage(teraNewImg, 0, 0, this);
-//                
-//                g2.dispose();
-//            }
-//            imageIcon = new ImageIcon(image);
-//                lblText.setIcon(imageIcon);
-//                lblText.setText(null);
-//            }else{
-//                lblText.setText(game.getOccupantStringRepresentation(row,column));
-//                lblText.setIcon(new ImageIcon(teraImage));
-//            }
-//            updateUI();
-            
-        }
-        else
-        {
+        ImageIcon imageIcon = null;
+        if(squareVisible || squareExplored){
+            lblText.setText("");
+            lblText.setIcon(imageGenerator.getIcon(terrain, game.hasPlayer(row, column)));
+            setBorder(normalBorder);
+        }else{
             lblText.setText("");
             lblText.setBackground(null);
             setBorder(normalBorder);
         }
+
     }
     
     /** This method is called from within the constructor to
