@@ -36,7 +36,7 @@
 - [Evaluation of Process Improvements](#evaluation-of-process-improvements)
   - [Pair Programming](#team-programming)
   - [GitHub Documentation](#github-documentation)
-- [Project Retrospective](#project-retrospective)
+- [Project Retrospective](#team-project-retrospective)
 
 This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
@@ -391,4 +391,4 @@ Game loading very slowly not being able to update. | This was a technical challe
 
 Team xD!
 
-[!alt text](./resources/groupphoto.jpg)
+![alt text](./resources/groupphoto.jpg)
