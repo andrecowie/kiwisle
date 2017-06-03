@@ -238,9 +238,7 @@ The communication within the team has been poor. It seems that more team meeting
 
 #### Ete
 ---
-The communication within our team was so poor that even myself found the process confusing. Meeting need to be done but beside that there was a massive miscoummunication between each other. A problem that I faced in this was that no one told me what excalty was happening in the iteration and felt left out at the same time. Becasue they would disscuss certains part without my knowledge. Another reason wouldbe that we also had other papers invovled and we didnt leave any time for this. are in the way and how to overcome them. hshgfshgfhgf
----
-The team coomunication has been 
+The team communication has been not as good as we wanted and that there were times where  miscomunnication arose. Also we even need more meetings to help each other understand what is happeing in the process of the kiwi island program. But we also prioritsed other papers then this one which is why we didn't spend as much time on it . 
 
 #### Overall
 ---
