@@ -26,3 +26,16 @@
 |12/05| 2 | I worked at the Random Map Generation almost got the terrain to a random level looking good|
 |13/05| 1.30 | Finished off the random map generation. Started to think about the difficulties the occupant spawner etc. |
 |14/05| 5 | Working hard to finish off some of the other teams tasks had a good play with the Gridpanel class to attempt rendering icons to the JLabels hit a bit of a roadbump so commented out my code with the ugly icons (Thanks Ben ;). Tried also to work with a player icon which also worked. Did work on the difficulties and the spawning of items. Sorry for not being able to commit as I worked was away in dunedin and couldn't reliably access a network. Called with Ben and Alex in the evening to discuss and do documentation. |
+
+### Iteration 3
+| | | |
+|---|---|---|
+| 16/05 | 1.00 | Worked with the team around the process improvements for our final iteration. We layed out a plan to pair/mob program on Thursdays and Sundays. |
+| 18/05 | 1.00 | Sat down with the team and worked on creating an algorithm to solve the issues Ben was having with the grid square panel class. |
+| 21/05 | 0.30 | Started creating new iconsets with Ben on skype. |
+| 23/05 | 1.00 | Worked on the icons as well as defining a new feature for the endgame. |
+| 25/05 | 2.00 | Sat with the team minus Ben after class, then went to the library and worked through with Ete and Alex how i had constructed the pregame class and what i planned to implement for the icons i was creating. I also went home and worked on some of the base icons making them the same size. |
+| 30/05 | 2.00 | We discussed the final terrain outcomes aswell as committing them and found a player icon to use. |
+| 01/06 | 1.00 | Alex, Ete and I started to implement the icons into the grid square panel class. |
+| 02/06 | 3.00| I worked at home on further implementation of the icons in the grid square panel class. Got it working at a basic level now need to create more icons for the different occupants also created an endgame class. |
+| 03/06 | 4.00 | I created lots of icons for the different occupants, implemented them through the MyImages class. I now plan to work on the EndGame class and then a new Vision item. |
