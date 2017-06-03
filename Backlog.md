@@ -63,8 +63,8 @@ This document will look at the items that need to be completed for the project t
       - [ ] Vision Items can be collected
       - [ ] Vision Items can be used
       - [ ] Vision Item when used Makes area visible
-  - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
-    - [ ] Make predators removed when trapped
+  - [x] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+    - [x] Make predators removed when trapped
   - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
     - [ ] Predators can move
     - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
@@ -347,8 +347,8 @@ From iteration 2 we have moved our documentation from MS OneNote and Planner to 
       - [ ] Vision Items can be collected
       - [ ] Vision Items can be used
       - [ ] Vision Item when used Makes area visible
-  - [ ] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
-    - [ ] Make predators removed when trapped
+  - [x] As a user I want to be able to trap predators and to kill them so that they are removed from the current game.
+    - [x] Make predators removed when trapped
   - [ ] As a player I want the predators in the game to be able to move around kiwi island so that there is a more interactive and challenging experience.
     - [ ] Predators can move
     - [ ] Predators can remove Kiwis if the Predator moves onto a Kiwis position.
