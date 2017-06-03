@@ -53,13 +53,14 @@ public class GridSquarePanel extends javax.swing.JPanel
     public void update() 
     {
         // get the GridSquare object from the world
+        String occupantType = game.getOccupantStringRepresentation(row, column);
         Terrain terrain   = game.getTerrain(row, column);
         boolean squareVisible = game.isVisible(row, column);
         boolean squareExplored = game.isExplored(row, column);
         ImageIcon imageIcon = null;
         if(squareVisible || squareExplored){
             lblText.setText("");
-            lblText.setIcon(imageGenerator.getIcon(terrain, game.hasPlayer(row, column)));
+            lblText.setIcon(imageGenerator.getIcon(terrain, game.hasPlayer(row, column), (occupantType.equals("") ? null : occupantType)));
             setBorder(normalBorder);
         }else{
             lblText.setText("");

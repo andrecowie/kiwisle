@@ -15,11 +15,12 @@
         <group>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Terrain.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Position.java</file>
+            <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/EndGame.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/KiwiCountUI.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/main/Main.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/GridSquarePanel.java</file>
             <file>file:/home/dre/github/KiwiIsland/README.md</file>
-            <file>file:/home/dre/github/KiwiIsland/test/nz/ac/aut/ense701/gameModel/GameTest.java</file>
+            <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/MyImages.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Player.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Game.java</file>
             <file>file:/home/dre/github/KiwiIsland/test/nz/ac/aut/ense701/gameModel/FaunaTest.java</file>
