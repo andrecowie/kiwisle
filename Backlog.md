@@ -22,6 +22,7 @@
   - [Planning](#planning-2)
   - [Bugs](#bugs-2)
   - [Results](#results-matrix-2)
+  - [Retrospective](#retrospective-2)
 - [ ] [Iteration 3](#iteration-three)
   - [Process Improvement](#process-improvement)
     - [Pair Programming](#team-programming)
@@ -29,6 +30,13 @@
   - [Planning](#planning-3)
     - [Items Remaining](#user-stories-and-remaining-tasks)
     - [Thoughts](#thoughts-for-iteration-three)
+  - [Bugs](#bugs-3)
+  - [Results Matrix](#results-matrix-3)
+  - [Retrospective](#retrospective-3)
+- [Evaluation of Process Improvements](#evaluation-of-process-improvements)
+  - [Pair Programming](#team-programming)
+  - [GitHub Documentation](#github-documentation)
+- [Project Retrospective](#project-retrospective)
 
 This document will look at the items that need to be completed for the project to be successful, in an as transperant agile way as possible. Given the process.
 
