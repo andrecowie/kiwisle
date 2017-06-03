@@ -230,7 +230,8 @@ The communication within the team has been poor. It seems that more team meeting
 
 #### Ete
 ---
-The communication within our team was so poor that even myself found the process confusing. Meeting need to be done but beside that there was a massive miscoummunication between each other. A problem that I faced in this was that no one told me what excalty was happening in the iteration and felt left out at the same time. Becasue they would disscuss certains part without my knowledge. Another reason wouldbe that we also had other papers invovled and we didnt leave any time for this. 
+The communication within our team was so poor that even myself found the process confusing. Meeting need to be done but beside that there was a massive miscoummunication between each other. A problem that I faced in this was that no one told me what excalty was happening in the iteration and felt left out at the same time. Becasue they would disscuss certains part without my knowledge. Another reason wouldbe that we also had other papers invovled and we didnt leave any time for this. are in the way and how to overcome them. I think problems from the iteration planning phase have propagated through to iteration 1 such as having developer stories as user stories. This may have lead to confusion and a lack of cohesion within the team. Unfortunately, I think this project had a low priority on everyone's 'to do' list and got overlooked.
+
 ---
 The team coomunication has been 
 
