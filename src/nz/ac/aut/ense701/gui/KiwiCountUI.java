@@ -68,7 +68,12 @@ public class KiwiCountUI
                     game.getLoseMessage(), "Game over!",
                     JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
-            new EndGame(game);
+            final EndGame endofgame = new EndGame(game);
+            java.awt.EventQueue.invokeLater(new Runnable(){
+                public void run(){
+                    endofgame.setVisible(true);
+                }
+            });
         }
         else if ( game.getState() == GameState.WON )
         {
@@ -77,7 +82,12 @@ public class KiwiCountUI
                     game.getWinMessage(), "Well Done!",
                     JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
-            new EndGame(game);
+            final EndGame endofgame = new EndGame(game);
+            java.awt.EventQueue.invokeLater(new Runnable(){
+                public void run(){
+                    endofgame.setVisible(true);
+                }
+            });
         }
         else if (game.messageForPlayer())
         {

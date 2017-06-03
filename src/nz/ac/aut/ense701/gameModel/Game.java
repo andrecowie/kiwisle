@@ -33,8 +33,8 @@ public class Game
     public static final int WEIGHT_INDEX = 3;
     public static final int MAXSIZE_INDEX = 4;
     public static final int SIZE_INDEX = 5;
-    private String difficulty;
-    private Dimension mapSize;
+    public String difficulty;
+    public Dimension mapSize;
     
     /**
      * A new instance of Kiwi island that reads data from "IslandData.txt".
@@ -1422,7 +1422,7 @@ public class Game
     private String loseMessage  = "";
     private String playerMessage  = "";  
     
-    private String _playerName;
+    public String _playerName;
 
     
 

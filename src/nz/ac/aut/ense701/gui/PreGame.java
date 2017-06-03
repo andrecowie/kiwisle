@@ -19,6 +19,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFormattedTextField;
@@ -186,9 +187,21 @@ public class PreGame extends JFrame{
         container.removeAll();
         container.updateUI();
         
-        JTextArea howToPlay = new JTextArea("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.\n\nYou can also find tools and food to help you on your journey.\n\nTools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible. \n\n Foods are used to heal your stamina which you require to move throughout the island. \n\nThe game's winning conditions are that you need to eradicate the predators or count how many Kiwi's inhabit KiwiIsland. Try to make your islands more inhabitable for the Kiwi's!");
-        howToPlay.setEditable(false);
-        howToPlay.setLineWrap(true);
+        JLabel goal = new JLabel("In KiwiIsland your goal is to navigate the island and count all the kiwis that inhabit the island.", SwingConstants.CENTER);
+        JLabel help = new JLabel("You can also find tools and food to help you on your journey.", SwingConstants.CENTER);
+        JLabel tools = new JLabel("Tools can be used to eradicate the predators on the island to make the Kiwi's Island more hospitible.", SwingConstants.CENTER);
+        JLabel food = new JLabel("Food are used to heal your stamina which you require to move throughout the island.", SwingConstants.CENTER);
+        JLabel winning = new JLabel("The game's winning conditions are that you need to eradicate the predators or count how many Kiwi's inhabit KiwiIsland.", SwingConstants.CENTER);
+        JLabel goal2 = new JLabel("Try to make your islands more inhabitable for the Kiwi's!", SwingConstants.CENTER);
+        JPanel helpContainer = new JPanel();
+        
+        helpContainer.setLayout(new GridLayout(0,1));
+        helpContainer.add(goal);
+        helpContainer.add(help);
+        helpContainer.add(tools);
+        helpContainer.add(food);
+        helpContainer.add(winning);
+        helpContainer.add(goal2);
         
         JButton next = new JButton();
         next.setText("Next");
@@ -198,33 +211,12 @@ public class PreGame extends JFrame{
         next.setMinimumSize(new Dimension(100, 23));
         next.addActionListener(new NextListener(container));
         
-        container.add(howToPlay, BorderLayout.NORTH);
+        container.add(helpContainer, BorderLayout.CENTER);
         container.add(next, BorderLayout.SOUTH);
     }
     
     //This is a simple class that contains two image files to be displayed over oneanother.
-    public class ImagePanel extends JPanel{
-        
-        private BufferedImage image;
-        private BufferedImage image2;
-        
-        public ImagePanel(String x, String y){
-            try {
-                image = ImageIO.read(new File(x));
-                image2 = ImageIO.read(new File(y));
-            } catch (IOException ex){
-                System.err.print(ex.toString());
-            }
-        }
-        
-        @Override
-        protected void paintComponent(Graphics g){
-            super.paintComponent(g);
-            g.drawImage(image2, 350, 0, this);
-            g.drawImage(image, 350, 50, this);
-            
-        }
-    }
+
     
     //Welcome sign could have quick user select and maybe quick game with dynamic options.
     //This is a simple first start screen.
