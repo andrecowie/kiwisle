@@ -39,3 +39,10 @@ Andre explained to all of us about what is need to be done before out final prod
 
 Week 10 
 Had a meeting that would explain what else to do. Asked me to do some documentation. 
+
+Week 11
+Meet up with Andre , Ben and Alex and we ended talked about the last few things to complete our final interation and to final submission.
+
+Week12 
+This week has been very stressful as many things are due on this week I meet up with Andre and Alex after class and we disscussed 
+how  the reflection and also the final sumbbmission 
