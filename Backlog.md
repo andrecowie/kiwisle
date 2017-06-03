@@ -38,12 +38,12 @@ This document will look at the items that need to be completed for the project t
     - [x] Introduction Screen
     - [x] Information Screen
     - [x] Settings Screen
-  - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
-    - [ ] The Game has updated Iconsets
-      - [ ] The Game's terrain has updated visuals
-      - [ ] The Game's predators have updated visuals
-      - [ ] The Game's Players have updated visuals
-      - [ ] The Game's Kiwis have updated visuals
+  - [x] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
+    - [x] The Game has updated Iconsets
+      - [x] The Game's terrain has updated visuals
+      - [x] The Game's predators have updated visuals
+      - [x] The Game's Players have updated visuals
+      - [x] The Game's Kiwis have updated visuals
   - [x] As a player I want the kiwi island map and it's occupants to be laid out differently for each game so that the game has more replay value as well as being more immersive.
     - [x] Players spawn location is valid but random
     - [x] Kiwis spawn locations valid but random
@@ -328,13 +328,13 @@ From iteration 2 we have moved our documentation from MS OneNote and Planner to 
 
 ## Planning 3
 ### User Stories and Remaining Tasks
-  - [ ] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
-    - [ ] The Game has updated Iconsets
-      - [ ] The Game's terrain has updated visuals
-      - [ ] The Game's predators have updated visuals
-      - [ ] The Game's Players have updated visuals
-      - [ ] The Game's Kiwis have updated visuals
-        - [ ] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
+  - [x] As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time.
+    - [x] The Game has updated Iconsets
+      - [x] The Game's terrain has updated visuals
+      - [x] The Game's predators have updated visuals
+      - [x] The Game's Players have updated visuals
+      - [x] The Game's Kiwis have updated visuals
+        - [x] As a player I want to be able to see the area around me in the map so that I can be more strategic in terms of my map positioning.
     - [ ] Vision Items Available
       - [ ] Vision Items can be collected
       - [ ] Vision Items can be used
@@ -353,3 +353,28 @@ From iteration 2 we have moved our documentation from MS OneNote and Planner to 
 ### Thoughts for Iteration Three
 From the user stories above, there will be more work done on the user interface. There problems with getting the grid square and icons implememted. We have a lot of icons for kiwis, predators, traps, etc but implementing them has been more time-consuming that previously thought.
 We want the predators to be able to move around the map and perhaps stalk the player or eat / kill the kiwis. About a third of the user stories will be put into this iteration.
+
+## Bugs 3
+
+### Results Matrix 3
+
+|Things for ITERATION 3| Result on Sunday 4th | User Stories Completed |
+|---|---|---|
+ 
+### Retrospective 3
+
+#### Andre
+
+#### Ben
+
+#### Alex
+
+#### Ete
+
+## Evaluation of Process Improvements
+
+### Team Programming
+
+### Github Documentation
+
+## Project Retrospective
