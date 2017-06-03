@@ -287,8 +287,8 @@ Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
 Size of map width and height, could not be changed with keyboard | Putting numbers into width height field with keyboard would not register in the JSpinner commit with bug: 251b4d5 | Changing the JSpinner model from a List Model, to a NumberModel commit: e304247 | 7th May
 Text on the Information Screen is wrapping unnecassarily | The text always wraps |Making the pregame Jframe larger | 10th May
-Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | Yet to be. | -
-![alt text](./resources/bug.png "On new game player remains") | A current bug regarding the basic png for the player that on death and game reload causes this issue. |
+Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | Discussed in iteration 3 bugs. | Solved in the third iteration.
+![alt text](./resources/bug.png "On new game player remains") | A current bug regarding the basic png for the player that on death and game reload causes this issue. | Discussed in iteration 3 bugs. | Solved in the third iteration.
 
 ### Results Matrix 2
 
@@ -361,6 +361,11 @@ We want the predators to be able to move around the map and perhaps stalk the pl
 
 ## Bugs 3
 
+Description | Reproduced By |Solved (How) | When
+--- | --- | --- | ---
+Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | We have solved this issue by making the game screen fixed size. Making the game fixed size allows for the iconsets we designed to be rendered in their natural ratio. | 1st June Meeting/Mobbing
+![alt text](./resources/bug.png "On new game player remains") | A current bug regarding the basic png for the player that on death and game reload causes this issue. | We have fixed this issue by discussing a new piece of functionality for an endgame display. This will allow us to display (department of) conversation resources. As well as give users a post game feeling. | Discussed on the 18th Mobbing.
+Game loading very slowly not being able to update. | This was a technical challenge we faced with the grid square panel class. We would be trying to customize the class to change the graphics, however the way we would use jlabel icons would slow the game down. | Ee looked to create an image loading class to make the icons load smoothly. | 1st June Meeting/Mobbing.
 ### Results Matrix 3
 
 |Things for ITERATION 3| Result on Sunday 4th | User Stories Completed |
@@ -382,4 +387,8 @@ We want the predators to be able to move around the map and perhaps stalk the pl
 
 ### Github Documentation
 
-## Project Retrospective
+## Team Project Retrospective
+
+Team xD!
+
+[!alt text](./resources/groupphoto.jpg)
