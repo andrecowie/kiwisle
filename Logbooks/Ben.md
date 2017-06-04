@@ -15,3 +15,11 @@
 |12/05|3| Worked on fixing bugs adding textures to Kiwi Island terrains
 |13/05|3| Restart on the terrain UI again, because we dont need the kiwiisland.txt anymore.
 |14/05|4| Working on the terrainUI, adding retrospective and other documents on github
+
+
+### Iteration 3
+
+Week 11 - Meeting on how to finish our final submissision and iteration 
+
+Week 12 - Been busy with other assignments as well as SE - worked on some of the codings and the documents 
+          Online meeting with the team working on the docs.
