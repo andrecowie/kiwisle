@@ -401,9 +401,14 @@ Working on github to do our documentation was a big improvement for the team. It
 
 ## Team Project Retrospective
   The team formed in the first Software Enginneering lab. We all beginning working together at the start of the project in the labs. We began going through a norming phase in our first iteration as we grew more familiar with one another. Unfortunately as we where not familiar with one another's strengths and weaknesses it was difficult for the team to add much value to the product in the first iteration. However the team kept communication channels open and went through a bit of a storming phase once the iteration 1 results where released.
+  
   We then begin to move into a performing stage and changed our process for documentation out of onenote to github. This drastically improved the teams ability to collaborate and improve the illustration of the team's process. With this change our second iteration produced a lot more value to the product and also helped the team work together on the project. The big outcome of having a dynamic map was delievered in this iteration.
+  
   In our final iteration the team decided to spend time together working on and reviewing the code. This improved the teams collaboration even more and helped all of the team discuss the implementation of the proposed features and how they could be added into the final product. This third iteration's process improvement really defined the result of the project for the team and made us produce a much improved version of kiwiisland. We also all learned valuable skills particularly in this final iteration relating to code review, code collaboration and communicating our ideas of different implementation strategies.
+  
   Overall the team formed with members that had never meet or worked together and we where able to refine our process over our iterations. The first iteration we had difficulties understanding the goals of the project and what was the expected output for the team. In the second iteration we clearly improved our process and spent more time producing documenation of our teams process. And in the final iteration we improved our collaboration by meeting more regularly and discussing more critically the goals of our project. It has been a pleasure working in this team as we have made new friendships with one another and where able to identify areas where both individuals and the team as a whole needed to improve. 
+  
+  
 Team xD!
 
 ![alt text](./resources/groupphoto.jpg)
