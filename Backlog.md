@@ -389,7 +389,7 @@ The final iteration showed a continuing improvement from both the second and fir
 #### Alex
 
 #### Ete
-
+In the final interation it shows that as a team we have become better and more effecient with our work. We have meet up more and gotten to understand each other and let each other understand where we are in the team.  We worked more better and effiecnt at this time . There was a slow start becasue our other responisbs and other papaers for uni. But we manage to kick back. I believe that our communication had improved the best since the first iteration. Becasue we were all on the same page and knew what needed to be done.m 
 ## Evaluation of Process Improvements
 
 ### Team Programming
