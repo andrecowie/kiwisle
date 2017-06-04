@@ -39,3 +39,4 @@
 | 01/06 | 1.00 | Alex, Ete and I started to implement the icons into the grid square panel class. |
 | 02/06 | 3.00| I worked at home on further implementation of the icons in the grid square panel class. Got it working at a basic level now need to create more icons for the different occupants also created an endgame class. |
 | 03/06 | 4.00 | I created lots of icons for the different occupants, implemented them through the MyImages class. I now plan to work on the EndGame class and then a new Vision item. |
+|04/06 | 4.00 | Working on Endgame Class and playing with vision item.|
