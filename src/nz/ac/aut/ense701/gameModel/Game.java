@@ -502,22 +502,22 @@ public class Game
                     GridSquare block42 = island.getGridSquare(new Position(island, playerRow + 2, playerCol));                    
                     GridSquare block43 = island.getGridSquare(new Position(island, playerRow + 2, playerCol +1));                    
                     GridSquare block44 = island.getGridSquare(new Position(island, playerRow + 2, playerCol +2));                    
-                    block11.setExplored();
-                    block12.setExplored();
-                    block13.setExplored();
-                    block14.setExplored();
-                    block21.setExplored();
-                    block22.setExplored();
-                    block23.setExplored();
-                    block24.setExplored();
-                    block31.setExplored();
-                    block32.setExplored();
-                    block33.setExplored();
-                    block34.setExplored();
-                    block41.setExplored();
-                    block42.setExplored();
-                    block43.setExplored();
-                    block44.setExplored();
+                    block11.setVisible();
+                    block12.setVisible();
+                    block13.setVisible();
+                    block14.setVisible();
+                    block21.setVisible();
+                    block22.setVisible();
+                    block23.setVisible();
+                    block24.setVisible();
+                    block31.setVisible();
+                    block32.setVisible();
+                    block33.setVisible();
+                    block34.setVisible();
+                    block41.setVisible();
+                    block42.setVisible();
+                    block43.setVisible();
+                    block44.setVisible();
                    
                 }else{
                     System.out.print("Cant use bino here.");

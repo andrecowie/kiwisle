@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="AndrePC" name="nz.ac.aut.ense701.gameModel.GameTest" skipped="0" tests="31" time="0.12" timestamp="2017-06-03T12:00:18">
+<testsuite errors="0" failures="0" hostname="AndrePC" name="nz.ac.aut.ense701.gameModel.GameTest" skipped="0" tests="31" time="0.117" timestamp="2017-06-04T03:30:53">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="NZ" />
@@ -59,7 +59,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner nz.ac.aut.ense701.gameModel.GameTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dre/github/KiwiIsland/build/test/results/TEST-nz.ac.aut.ense701.gameModel.GameTest.xml crashfile=/home/dre/github/KiwiIsland/build/junitvmwatcher7426493440573011400.properties propsfile=/home/dre/github/KiwiIsland/build/junit6410435151690500732.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner nz.ac.aut.ense701.gameModel.GameTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dre/github/KiwiIsland/build/test/results/TEST-nz.ac.aut.ense701.gameModel.GameTest.xml crashfile=/home/dre/github/KiwiIsland/build/junitvmwatcher5778592035903256500.properties propsfile=/home/dre/github/KiwiIsland/build/junit2710903866810388246.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -252,7 +252,6 @@
     <property name="libs.DataBindingME-SVG.src" value="/usr/share/netbeans/mobility/sources/netbeans_databindingme_svg-src.zip" />
     <property name="dist.jar" value="dist/KiwiIsland.jar" />
     <property name="libs.spring-framework400.maven-pom" value="" />
-    <property name="netbeans.automatic.build" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.project.name" value="KiwiIsland" />
     <property name="netbeans.hash.code" value="unique=0f499adfe-12bb-4fd5-8f5d-ba19f18888c8_c622f41a-93d6-4a5c-9267-72086cd2f43d" />
@@ -323,8 +322,8 @@
     <property name="annotation.processing.enabled" value="true" />
     <property name="libs.jsf20.src" value="" />
     <property name="libs.jpa20-persistence.src" value="" />
-    <property name="libs.jsf12.src" value="" />
     <property name="libs.DataBindingME-SVG.maven-pom" value="" />
+    <property name="libs.jsf12.src" value="" />
     <property name="libs.struts.javadoc" value="/usr/share/netbeans/enterprise/docs/struts-1.3.10-javadoc.zip" />
     <property name="ignore.failing.tests" value="true" />
     <property name="libs.javaee-web-api-7.0.src" value="" />
@@ -337,8 +336,8 @@
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
     <property name="default.javac.source" value="1.8" />
     <property name="debug-transport-by-os" value="dt_socket" />
-    <property name="libs.MySQLDriver.src" value="" />
     <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.8.0_121-b13" />
     <property name="jna.platform.library.path" value="/usr/lib64:/lib64:/usr/lib:/lib:/usr/lib32:/usr/lib/ffmpeg2.8:/usr/lib/tls:/usr/lib32/tls:/usr/lib/opencollada:/usr/lib/libfakeroot:/usr/lib/R/lib" />
@@ -360,8 +359,8 @@
     <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.jpa2-persistence.javadoc" value="/usr/share/netbeans/java/modules/ext/docs/javax.persistence-2.1.0-doc.zip" />
     <property name="libs.DataBindingME.javadoc" value="/usr/share/netbeans/mobility/modules/docs/netbeans_databindingme-api.zip" />
-    <property name="java.class.path" value="/home/dre/github/KiwiIsland/build/classes:/usr/share/netbeans/platform/modules/ext/junit-4.12.jar:/usr/share/netbeans/platform/modules/ext/hamcrest-core-1.3.jar:/home/dre/github/KiwiIsland/build/test/classes:/usr/share/netbeans/extide/ant/lib/ant-launcher.jar:/usr/share/netbeans/extide/ant/lib/ant.jar:/usr/share/netbeans/extide/ant/lib/ant-junit.jar:/usr/share/netbeans/extide/ant/lib/ant-junit4.jar" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="/home/dre/github/KiwiIsland/build/classes:/usr/share/netbeans/platform/modules/ext/junit-4.12.jar:/usr/share/netbeans/platform/modules/ext/hamcrest-core-1.3.jar:/home/dre/github/KiwiIsland/build/test/classes:/usr/share/netbeans/extide/ant/lib/ant-launcher.jar:/usr/share/netbeans/extide/ant/lib/ant.jar:/usr/share/netbeans/extide/ant/lib/ant-junit.jar:/usr/share/netbeans/extide/ant/lib/ant-junit4.jar" />
     <property name="addExports:java.desktop/java.awt.peer" value="ALL-UNNAMED" />
     <property name="addExports:java.desktop/com.sun.beans.editors" value="ALL-UNNAMED" />
     <property name="do.mkdist" value="true" />
@@ -379,8 +378,8 @@
     <property name="nb.internal.action.name" value="test" />
     <property name="libs.javaee-api-7.0.javadoc" value="/usr/share/netbeans/enterprise/docs/javaee-doc-api.jar" />
     <property name="libs.eclipselink.classpath" value="/usr/share/netbeans/java/modules/ext/eclipselink/eclipselink.jar:/usr/share/netbeans/java/modules/ext/eclipselink/javax.persistence_2.1.0.v201304241213.jar:/usr/share/netbeans/java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="libs.beans-binding.javadoc" value="/usr/share/netbeans/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="libs.CopyLibs.classpath" value="/usr/share/netbeans/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="/usr/share/netbeans/ide/modules/org-apache-commons-logging.jar:/usr/share/netbeans/java/modules/ext/cglib-2.2.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-aop-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-aspects-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-beans-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-build-src-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-context-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-context-support-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-core-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-expression-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-framework-bom-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-instrument-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-jdbc-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-jms-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-orm-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-oxm-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-struts-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-test-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-tx-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-web-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-webmvc-3.2.7.RELEASE.jar:/usr/share/netbeans/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.2.7.RELEASE.jar" />
@@ -389,8 +388,8 @@
     <property name="run.jvmargs" value="" />
     <property name="libs.hibernate4-persistence.classpath" value="/usr/share/netbeans/java/modules/ext/hibernate4/antlr-2.7.7.jar:/usr/share/netbeans/java/modules/ext/hibernate4/c3p0-0.9.2.1.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-c3p0-4.3.1.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/mchange-commons-java-0.2.3.4.jar:/usr/share/netbeans/java/modules/ext/hibernate4/dom4j-1.6.1.jar:/usr/share/netbeans/java/modules/ext/hibernate4/ehcache-core-2.4.3.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-ehcache-4.3.1.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-core-4.3.1.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/jboss-logging-3.1.3.GA.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-commons-annotations-4.0.4.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-entitymanager-4.3.1.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/javassist-3.18.1-GA.jar:/usr/share/netbeans/java/modules/ext/hibernate4/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/usr/share/netbeans/java/modules/ext/hibernate4/slf4j-api-1.6.1.jar:/usr/share/netbeans/java/modules/ext/hibernate4/slf4j-simple-1.6.1.jar:/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
     <property name="libs.JAXB-ENDORSED.src" value="" />
-    <property name="libs.testng.javadoc" value="/usr/share/netbeans/platform/docs/testng-6.8.1-javadoc.zip" />
     <property name="libs.DataBindingME-PIM.src" value="/usr/share/netbeans/mobility/sources/netbeans_databindingme_pim-src.zip" />
+    <property name="libs.testng.javadoc" value="/usr/share/netbeans/platform/docs/testng-6.8.1-javadoc.zip" />
     <property name="libs.PostgreSQLDriver.classpath" value="/usr/share/netbeans/ide/modules/ext/postgresql-9.4.1209.jar" />
     <property name="libs.jsf12.maven-pom" value="" />
     <property name="libs.hibernate4-persistencemodelgen.classpath" value="/usr/share/netbeans/java/modules/ext/hibernate4/hibernate-jpamodelgen-4.3.1.Final.jar" />
@@ -401,10 +400,10 @@
     <property name="build.dir" value="build" />
     <property name="libs.jsp-compilation.classpath" value="/usr/share/netbeans/extide/ant/lib/ant.jar:/usr/share/netbeans/enterprise/modules/ext/servlet3.1-jsp2.3-api.jar:/usr/share/netbeans/enterprise/modules/ext/glassfish-jspparser-4.0.jar:/usr/share/netbeans/enterprise/modules/ext/jsf-2_2/javax.faces.jar:/usr/share/netbeans/enterprise/modules/ext/jstl-api.jar:/usr/share/netbeans/extide/ant/lib/ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
-    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="javadoc.nonavbar" value="false" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="jdkBug6558476" value="false" />
+    <property name="javadoc.nonavbar" value="false" />
     <property name="libs.spring-webmvc4.0.classpath" value="/usr/share/netbeans/java/modules/ext/spring-4/spring-webmvc-4.0.1.RELEASE.jar" />
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
@@ -412,9 +411,9 @@
   </properties>
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetNumRows" time="0.042" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCollectValid" time="0.002" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveValidNoHazards" time="0.002" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveValidNoHazards" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testIsPlayerMovePossibleInvalidMove" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseFoodValid" time="0.002" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseFoodValid" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseToolNoTrap" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemBrokenTrap" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetNumColumns" time="0.001" />
@@ -422,985 +421,985 @@
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveDeadPlayer" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseTrapNoPredator" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testDropValid" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetKiwiCountInitial" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testIsPlayerMovePossibleValidMove" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanCollectNotCollectable" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetKiwiCountInitial" time="0.0" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testIsPlayerMovePossibleValidMove" time="0.0" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanCollectNotCollectable" time="0.0" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseToolTrapNotBroken" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemToolFixTrap" time="0.0" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemToolFixTrap" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanCollectCollectable" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetInitialState" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetInitialState" time="0.0" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemFoodCausesIncrease" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveNotEnoughStamina" time="0.0" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemFoodNoIncrease" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveNotEnoughStamina" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemFoodNoIncrease" time="0.0" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetPlayerValues" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseTrapValid" time="0.0" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetPlayer" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseTrapValid" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testGetPlayer" time="0.0" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCollectNotCollectable" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemTrap" time="0.0" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testDropNotValidPositionFull" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCountKiwi" time="0.0" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testUseItemTrap" time="0.001" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testDropNotValidPositionFull" time="0.0" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCountKiwi" time="0.001" />
   <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testCanUseTool" time="0.001" />
-  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveNonFatalHazardNotDead" time="0.002" />
+  <testcase classname="nz.ac.aut.ense701.gameModel.GameTest" name="testPlayerMoveNonFatalHazardNotDead" time="0.001" />
   <system-out><![CDATA[---------------------------------------------------
-| E  |    |    | E  |    |    |    | T  | E  |    |
+| E  |    |    |    |    |    |    |    |    |    |
+|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|
+---------------------------------------------------
+|    |    |    | H  |    | E  |    |    |    | E  |
+|....|~~~~|####|....|....|....|####|....|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |@   |    | E  |    | P  |    |
+|~~~~|....|....|^^^^|^^^^|....|....|####|....|~~~~|
+---------------------------------------------------
+|    |    |    | E  |    |    |    |    | HF | H  |
+|....|....|####|****|****|####|####|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    | K  |    |    | K  |    | K  | E  |
+|~~~~|....|####|^^^^|****|****|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+| FE | T  |    |    | HF | F  |    | T  | K  |    |
+|~~~~|....|####|####|****|^^^^|****|....|~~~~|~~~~|
+---------------------------------------------------
+| E  |    |    |    |    |    |    |    |    |    |
+|~~~~|####|####|^^^^|****|****|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    | P  |    | E  |    | K  |    |
+|~~~~|....|####|....|####|^^^^|####|....|....|~~~~|
+---------------------------------------------------
+|    |    | T  | T  |    |    |    |    |    |    |
+|....|....|~~~~|....|....|~~~~|....|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | E  |    |    |    |    |
+|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    |    | E  |    |    |    |
 |~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|
 ---------------------------------------------------
-|    |    | H  |    |    |    | K  |    | K  | F  |
-|....|....|....|####|....|....|....|####|....|~~~~|
+|    |    |    |    |    |    |    | K  | FEH|    |
+|~~~~|....|....|....|....|####|####|....|~~~~|....|
+---------------------------------------------------
+| EK |    |    |    |    |    |@H  | T  |    |    |
+|....|....|####|....|####|^^^^|^^^^|####|~~~~|....|
+---------------------------------------------------
+|    |    | K  |    | H  |    | P  |    | TP |    |
+|....|####|####|^^^^|****|####|^^^^|####|####|....|
+---------------------------------------------------
+|    |    | K  | FE |    |    |    |    |    |    |
+|~~~~|~~~~|####|^^^^|^^^^|^^^^|^^^^|####|....|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    | E  |    |    |
+|~~~~|....|####|^^^^|****|****|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    | F  | E  |    |    |    | E  |
+|~~~~|####|^^^^|####|^^^^|****|####|####|....|....|
+---------------------------------------------------
+|    |    |    |    | E  |    |    | K  |    |    |
+|~~~~|....|....|####|....|....|^^^^|^^^^|....|....|
+---------------------------------------------------
+|    |    |    |    |    |    | FE |    | H  |    |
+|~~~~|~~~~|....|....|....|....|####|....|....|....|
+---------------------------------------------------
+|    |    |    | T  | T  |    |    |    |    | E  |
+|~~~~|~~~~|....|~~~~|....|....|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    | E  |    |    |    | K  |    |    |    |    |
+|....|....|~~~~|....|....|~~~~|~~~~|....|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    | E  |    |    |    |    |    |
+|....|####|....|####|....|....|####|....|....|~~~~|
+---------------------------------------------------
+|    | T  |    |    |    |    |    |    |    |    |
+|~~~~|....|####|^^^^|....|####|####|####|....|~~~~|
+---------------------------------------------------
+|    |    | ET | K  |    | FH |    |    |    | E  |
+|....|....|####|####|****|^^^^|^^^^|^^^^|~~~~|....|
+---------------------------------------------------
+|    | PF | E  | E  |    |    |    | T  | FT |    |
+|~~~~|....|^^^^|****|^^^^|****|####|....|....|~~~~|
+---------------------------------------------------
+|    |    |    | K  | K  |    |    | F  |    | H  |
+|~~~~|~~~~|####|^^^^|****|^^^^|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    | H  |    |    |    |    |    |    |    |    |
+|~~~~|~~~~|^^^^|####|^^^^|^^^^|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | KE |    |    |@   |    |
+|~~~~|....|^^^^|^^^^|####|####|^^^^|####|....|....|
+---------------------------------------------------
+|    |    |    | EE |    |    |    | H  |    |    |
+|....|....|####|....|....|####|~~~~|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | P  |    |    | E  |    |
+|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|....|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    | E  |    |    |    | E  |
+|~~~~|....|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | EE | HT |    |    |    |
+|~~~~|....|~~~~|....|....|....|....|....|....|~~~~|
+---------------------------------------------------
+| E  |    |    | TE |    |    |    |    |    |    |
+|~~~~|....|^^^^|####|....|####|####|^^^^|####|~~~~|
+---------------------------------------------------
+|    |    | F  |    |    |    |    |    | E  | KT |
+|~~~~|....|####|^^^^|^^^^|****|****|....|####|....|
+---------------------------------------------------
+|    | F  |    |@F  | H  | E  |    |    | HHT|    |
+|~~~~|....|^^^^|^^^^|^^^^|****|^^^^|####|....|....|
+---------------------------------------------------
+|    | P  |    | K  |    |    |    |    |    |    |
+|....|~~~~|####|^^^^|****|****|^^^^|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    | K  |    |    |    |    | K  |    |    |
+|~~~~|....|####|^^^^|####|****|^^^^|####|....|....|
+---------------------------------------------------
+|    | E  |    |    |    |    |    | P  |    |    |
+|~~~~|####|####|####|....|####|####|####|....|~~~~|
+---------------------------------------------------
+|    |    | K  |    |    |    | E  |    | F  |    |
+|~~~~|....|....|~~~~|....|....|####|####|~~~~|~~~~|
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|~~~~|....|....|####|####|####|....|....|....|....|
----------------------------------------------------
-|    |    |    |    | E  |    |@   | F  |    |    |
-|....|....|....|****|^^^^|^^^^|####|^^^^|~~~~|....|
----------------------------------------------------
-|    |    |    |    | K  |    |    | E  |    |    |
-|....|....|####|^^^^|****|****|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    | TE |    |
-|~~~~|....|####|****|****|****|****|####|~~~~|~~~~|
----------------------------------------------------
-|    | H  |    |    |    |    |    | P  |    | F  |
-|....|....|####|****|****|^^^^|****|####|....|~~~~|
----------------------------------------------------
-| HK |    |    |    |    |    |    | F  |    |    |
-|~~~~|....|####|####|####|^^^^|^^^^|^^^^|####|~~~~|
----------------------------------------------------
-|    |    |    | K  | E  |    |    |    |    |    |
-|~~~~|....|....|####|....|....|....|####|....|~~~~|
----------------------------------------------------
-| E  | E  | H  |    | ET |    |    | T  | P  |    |
-|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|....|~~~~|
+|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|~~~~|
 ---------------------------------------------------
 ---------------------------------------------------
-|    |    |    |    |    | H  |    |    |    | E  |
-|~~~~|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|
+| H  |    | H  | T  | E  | K  | P  |    |    |    |
+|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|....|....|....|
 ---------------------------------------------------
-| H  | F  |    | K  |    | T  |    |    |    |    |
-|~~~~|....|~~~~|....|....|~~~~|....|....|....|~~~~|
+|    |    | K  |    |    |    |    | F  |    |    |
+|~~~~|....|####|....|####|....|....|....|####|....|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |    | EE | K  |
-|~~~~|....|####|####|####|^^^^|####|####|~~~~|~~~~|
+|    |    |    |    |    | F  | E  |    |    |    |
+|~~~~|....|....|####|####|####|####|####|....|~~~~|
 ---------------------------------------------------
-|    | E  |    |    |    |    |@H  |    |    |    |
-|....|....|^^^^|****|****|^^^^|####|####|~~~~|~~~~|
+|    |    | K  |    | K  |    |    |    |    |    |
+|~~~~|....|####|####|^^^^|^^^^|^^^^|####|~~~~|~~~~|
 ---------------------------------------------------
-| F  |    |    |    |    | F  |    | T  |    |    |
-|~~~~|####|....|####|^^^^|****|####|####|~~~~|~~~~|
+|    | T  |    | K  |    |    |    | F  |    |    |
+|~~~~|....|####|^^^^|****|****|****|....|....|....|
 ---------------------------------------------------
-| E  |    |    |    | K  |    |    | H  | T  |    |
-|~~~~|~~~~|^^^^|^^^^|****|^^^^|^^^^|####|####|~~~~|
+|    |    |    |    |    |    |    | E  |    |    |
+|....|####|....|^^^^|^^^^|****|^^^^|^^^^|####|....|
 ---------------------------------------------------
-|    |    |    |    |    |    |    | P  |    | E  |
-|~~~~|....|####|####|####|####|####|####|....|~~~~|
+|    |    |    |    | E  | E  |    |    |    |    |
+|....|####|####|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
-| P  |    |    |    |    |    |    |    |    |    |
-|~~~~|....|####|^^^^|....|####|####|####|####|~~~~|
+|    | T  | H  |    | E  | E  |    |    |    |    |
+|~~~~|~~~~|^^^^|####|....|####|####|....|....|....|
 ---------------------------------------------------
-|    |    |    |    |    |    | F  |    |    |    |
-|~~~~|~~~~|....|~~~~|####|....|~~~~|####|####|....|
+|    |    |    |    | E  |    |    |    |    |    |
+|~~~~|....|....|~~~~|....|....|....|####|~~~~|~~~~|
 ---------------------------------------------------
-| E  |    | KE | T  | E  |    | K  | E  |    |    |
-|~~~~|....|....|~~~~|~~~~|....|....|....|....|~~~~|
+|    |    |    |    | PEH|@E  | FT |    |    |    |
+|~~~~|~~~~|....|....|....|~~~~|....|....|....|....|
 ---------------------------------------------------
 ---------------------------------------------------
-|    |    |    |    | T  |    | K  |    |    |    |
-|....|~~~~|~~~~|....|....|~~~~|~~~~|....|~~~~|....|
+|    | T  |    | FH |    |    |    |    | E  |    |
+|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|~~~~|~~~~|
 ---------------------------------------------------
-|    |    |    | H  |    |    |    |    |    |    |
-|....|....|####|~~~~|....|~~~~|....|~~~~|####|~~~~|
+|    | E  |    |    |    | KEE| H  |    | E  |    |
+|....|~~~~|....|####|~~~~|####|####|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    | K  |    |    |    | T  |    |    |
-|~~~~|####|####|^^^^|^^^^|....|^^^^|....|~~~~|~~~~|
+|    |    |    |    | P  |    | H  |    | KE |    |
+|....|....|####|^^^^|####|####|####|####|....|....|
+---------------------------------------------------
+|    |    |@   |    |    |    |    |    |    | K  |
+|....|....|####|^^^^|^^^^|^^^^|****|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    | E  |    |    |    |
+|....|....|####|^^^^|^^^^|****|####|####|####|~~~~|
+---------------------------------------------------
+| K  |    |    | E  | K  |    |    |    |    |    |
+|~~~~|~~~~|####|####|****|****|^^^^|####|....|~~~~|
+---------------------------------------------------
+| P  | F  | E  |    | T  |    |    |    |    |    |
+|~~~~|~~~~|####|^^^^|^^^^|****|****|####|####|~~~~|
+---------------------------------------------------
+|    | EF |    |    |    |    |    |    |    |    |
+|....|....|####|....|####|####|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | T  |    | F  |
+|....|~~~~|~~~~|....|....|....|....|....|....|....|
+---------------------------------------------------
+| T  |    |    |    |    | H  |    |    |    |    |
+|~~~~|....|....|....|....|~~~~|....|....|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    | P  | H  | K  | T  |    | E  |    |    |
+|~~~~|....|....|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|
+---------------------------------------------------
+|    |    | TE |    |    |    |    |    |    | K  |
+|....|....|####|....|....|~~~~|~~~~|....|....|~~~~|
+---------------------------------------------------
+|    |    | E  | E  |    | P  |    |    |    |    |
+|....|####|....|####|....|####|....|####|....|~~~~|
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|....|####|####|^^^^|####|****|****|....|....|....|
+|~~~~|....|####|^^^^|^^^^|^^^^|^^^^|^^^^|....|~~~~|
 ---------------------------------------------------
-|    |    |    | H  |    |    | E  |    | E  | T  |
-|....|~~~~|####|####|****|^^^^|^^^^|....|....|~~~~|
+|    | H  |    |    |@FE |    |    | TE |    |    |
+|~~~~|....|####|####|^^^^|^^^^|^^^^|####|####|~~~~|
 ---------------------------------------------------
-|    |    |    | H  |    |    |    |    | F  |    |
-|....|....|####|^^^^|****|****|****|####|~~~~|~~~~|
+|    |    |    |    |    | FE |    | E  |    | H  |
+|....|....|^^^^|^^^^|****|****|****|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    | EP |    |    | E  |
-|~~~~|~~~~|####|^^^^|####|^^^^|^^^^|####|....|~~~~|
+|    |    |    | T  |    |    |    |    | E  | K  |
+|....|~~~~|####|####|^^^^|####|****|####|....|~~~~|
 ---------------------------------------------------
-|    | F  |    |    |    |    |    |    | E  |    |
-|~~~~|....|####|####|####|####|^^^^|####|....|~~~~|
+|    |    | H  | E  | K  |    |    |    | F  |    |
+|~~~~|....|####|^^^^|####|####|####|####|....|....|
 ---------------------------------------------------
-| E  |    |@   | E  |    |    |    | K  | K  |    |
-|....|....|....|####|####|....|....|....|####|....|
+| F  |    |    |    |    |    |    |    |    |    |
+|~~~~|####|....|....|....|....|~~~~|####|....|~~~~|
 ---------------------------------------------------
-| F  | K  | T  | E  | F  |    | H  |    | P  | EE |
+|    |    |    |    |    |    |    |    |    | K  |
 |~~~~|....|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|
 ---------------------------------------------------
 ---------------------------------------------------
-|    | K  | E  |    |    |    |    | K  |    |    |
-|~~~~|~~~~|....|....|~~~~|....|~~~~|....|~~~~|....|
----------------------------------------------------
-| T  |    |    |    |    |    |    |    | H  |    |
-|....|....|~~~~|~~~~|....|####|....|....|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | H  |
-|~~~~|....|####|####|^^^^|^^^^|####|....|....|~~~~|
----------------------------------------------------
-|    | EK |    | T  |    |    |    |    |    |    |
-|....|~~~~|^^^^|^^^^|^^^^|^^^^|^^^^|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    | EF |    | E  | E  | E  |    |    |
-|~~~~|....|....|^^^^|****|^^^^|^^^^|....|....|....|
----------------------------------------------------
-|    | T  |    |    |    |    |    |    |    |    |
-|....|~~~~|####|^^^^|****|****|^^^^|^^^^|~~~~|....|
----------------------------------------------------
-|    |    |    | F  |    |    |@   | H  |    | T  |
-|~~~~|####|####|^^^^|^^^^|^^^^|^^^^|####|....|....|
----------------------------------------------------
-|    | E  |    |    | P  |    |    | P  | E  | E  |
-|~~~~|####|####|^^^^|....|####|^^^^|####|....|....|
----------------------------------------------------
-|    |    |    |    | K  | K  |    |    |    |    |
-|~~~~|....|....|####|....|####|....|....|####|....|
----------------------------------------------------
-| F  |    | E  |    |    | H  | F  |    |    |    |
-|....|....|....|~~~~|....|....|....|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    | E  |    | T  | E  |    |    |    |    | K  |
-|....|....|....|~~~~|....|~~~~|....|....|~~~~|~~~~|
----------------------------------------------------
-| H  |    |    |    |    |    |    |    | TT | H  |
-|....|....|....|####|....|....|####|####|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    |    | F  | H  |    |    |
-|....|....|####|####|####|....|^^^^|####|....|~~~~|
----------------------------------------------------
-| F  | K  |    |    |    |    | E  |    |    | E  |
-|....|....|####|****|^^^^|####|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    |    | E  |    |    |    |    |    | K  |
-|~~~~|~~~~|....|####|****|****|^^^^|....|....|....|
----------------------------------------------------
-|    | E  |    | KE |    |    |    |    |    |    |
-|....|~~~~|....|^^^^|^^^^|^^^^|^^^^|^^^^|....|~~~~|
----------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|^^^^|^^^^|^^^^|****|####|^^^^|~~~~|....|
+|~~~~|....|....|....|~~~~|....|....|....|~~~~|....|
 ---------------------------------------------------
-|    |    |    | F  |    |@   |    |    | E  | E  |
-|~~~~|####|####|####|####|....|####|####|....|....|
+|    |    | T  | F  |    | TE | E  |    |    |    |
+|~~~~|....|~~~~|....|....|....|....|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    | E  |    | F  |    |    |    |
-|....|....|....|....|~~~~|~~~~|....|~~~~|....|~~~~|
+|    |    | E  |@   |    |    | P  |    |    |    |
+|~~~~|....|^^^^|....|^^^^|^^^^|####|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    | PH | TP |    | K  |
-|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|....|
+| K  |    |    | F  |    |    |    |    |    |    |
+|~~~~|....|....|^^^^|####|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
+|    | TE |    | F  |    |    |    |    | PE | HHK|
+|~~~~|~~~~|####|####|****|****|^^^^|....|####|....|
 ---------------------------------------------------
-|    |    |    |    |    | E  |    | H  |    | E  |
-|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|
+|    |    |    |    |    | F  | E  |    |    |    |
+|~~~~|~~~~|####|^^^^|^^^^|****|####|####|####|....|
 ---------------------------------------------------
-|    |    | K  |    |    |    |    |    |    | EP |
-|~~~~|~~~~|####|####|....|....|####|~~~~|####|~~~~|
+|    |    | H  |    | K  |    |    |    | K  |    |
+|~~~~|....|^^^^|####|^^^^|####|^^^^|^^^^|....|~~~~|
 ---------------------------------------------------
-|    | K  |    |    | E  |    |    | K  |    |    |
-|....|....|....|####|....|^^^^|....|^^^^|~~~~|~~~~|
+|    |    |    |    | E  |    |    |    |    |    |
+|....|####|####|####|....|####|^^^^|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    | T  |    |    |
-|....|....|####|####|^^^^|^^^^|^^^^|....|~~~~|~~~~|
+| T  |    |    | K  | E  |    |    | E  |    |    |
+|~~~~|....|~~~~|~~~~|~~~~|....|....|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    | H  |    |    | E  |    | E  |    |
-|~~~~|~~~~|####|^^^^|****|****|^^^^|^^^^|####|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    | F  |    |    | E  |
-|....|....|....|^^^^|****|****|####|####|####|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    | T  |    |@P  |    |
-|~~~~|~~~~|####|****|^^^^|^^^^|####|^^^^|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    | F  |    |    | H  |    |
-|~~~~|....|####|####|####|....|^^^^|^^^^|....|~~~~|
----------------------------------------------------
-|    |    |    | EE |    | H  |    |    | T  | F  |
-|....|....|....|....|....|####|....|####|....|~~~~|
----------------------------------------------------
-|    |    | F  |    | K  |    |    | KE |    | T  |
-|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|....|....|
+| E  |    | H  |    |    |    |    |    |    |    |
+|~~~~|~~~~|~~~~|....|....|~~~~|....|....|~~~~|....|
 ---------------------------------------------------
 ---------------------------------------------------
-|    | TH |    |    |    |    |    | EF |    |    |
-|~~~~|....|....|....|....|....|~~~~|....|~~~~|~~~~|
+|    | H  | E  |    |    |    |    |    |    |    |
+|~~~~|~~~~|....|....|~~~~|~~~~|~~~~|....|~~~~|....|
 ---------------------------------------------------
-|    |    |    |    | H  | H  |    | K  |    | F  |
-|~~~~|####|####|~~~~|....|####|....|~~~~|####|~~~~|
+| P  |    |    |    |    | F  |    |    |    |    |
+|....|~~~~|....|....|....|####|....|~~~~|....|~~~~|
 ---------------------------------------------------
-| E  |    | E  |    |    | E  |    | T  | E  | P  |
-|~~~~|....|^^^^|....|####|####|^^^^|####|....|....|
+| F  |    | K  |    |    | EE |    | T  |    |    |
+|~~~~|####|####|####|####|####|####|....|####|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    | P  |    |    |
-|~~~~|....|####|^^^^|^^^^|****|****|####|....|....|
+|    |    |    | E  |    |    | H  |    |    |    |
+|~~~~|....|####|****|^^^^|****|^^^^|####|....|....|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|####|####|####|****|^^^^|####|^^^^|....|....|
+|    |    | TP |    | H  | E  |    |    |    |    |
+|~~~~|~~~~|####|^^^^|^^^^|^^^^|####|....|####|~~~~|
 ---------------------------------------------------
-| T  | E  |    |    |    |    |@T  | E  |    |    |
-|~~~~|####|^^^^|^^^^|****|****|^^^^|####|....|~~~~|
+|    |    |    |    | K  |    |    |    |    | K  |
+|~~~~|####|####|****|^^^^|****|^^^^|^^^^|....|~~~~|
 ---------------------------------------------------
-|    | K  |    |    |    |    |    |    |    | K  |
-|....|~~~~|####|^^^^|****|####|****|####|....|....|
+|    | E  | H  |    |    |    | T  | E  |    |    |
+|....|....|####|####|####|####|^^^^|####|####|....|
 ---------------------------------------------------
-|    |    |    |    |    |    | HK | E  |    |    |
-|....|....|####|####|....|....|....|....|####|....|
+|    | E  |    | T  |    |    | K  |    |    | F  |
+|~~~~|....|####|####|####|####|####|....|~~~~|~~~~|
 ---------------------------------------------------
-|    |    |    | K  |    |    |    |    |    |    |
-|~~~~|####|....|....|~~~~|....|....|####|####|....|
+|    |    | E  |    |    | E  |    |    |    |    |
+|....|####|....|~~~~|....|....|....|....|####|~~~~|
 ---------------------------------------------------
-| F  |    | F  | E  |    |    | E  |    |    |    |
-|~~~~|....|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-| PH |    |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|....|....|
----------------------------------------------------
-|    |    |    |    |    |    |    | FH |    |    |
-|....|....|....|####|####|....|####|....|~~~~|~~~~|
----------------------------------------------------
-|    | F  |    |    |    |    | E  |    |    |    |
-|~~~~|....|....|....|....|....|^^^^|####|~~~~|....|
----------------------------------------------------
-| E  |    |    | T  | E  |    |    | T  |    |    |
-|~~~~|~~~~|^^^^|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    |    | H  |    |    | F  |@   | K  |    |
-|~~~~|....|^^^^|^^^^|****|^^^^|^^^^|....|....|~~~~|
----------------------------------------------------
-| E  | T  | T  |    | E  |    |    |    | E  |    |
-|~~~~|~~~~|....|****|^^^^|****|####|....|~~~~|~~~~|
----------------------------------------------------
-| K  |    |    |    |    |    |    |    |    | E  |
-|~~~~|....|####|****|####|^^^^|^^^^|####|####|....|
----------------------------------------------------
-|    | E  |    | K  |    |    |    |    |    |    |
-|~~~~|....|####|^^^^|####|####|####|####|....|....|
----------------------------------------------------
-|    |    |    |    |    |    | F  |    |    |    |
-|~~~~|####|....|####|....|....|....|....|~~~~|....|
----------------------------------------------------
-|    | K  |    |    | HE |    | E  | P  |    | K  |
-|~~~~|....|....|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|
+| K  |    |    |    |    |    | F  |    |@   |    |
+|....|....|~~~~|~~~~|~~~~|~~~~|....|....|~~~~|....|
 ---------------------------------------------------
 ---------------------------------------------------
-|    | EK |    |    | H  | E  |    |    |    | P  |
-|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|~~~~|....|
+|    |    | E  |    | K  |    | F  |    | P  |    |
+|....|....|~~~~|~~~~|~~~~|~~~~|....|....|....|....|
 ---------------------------------------------------
-|    |    | KE |    |    |    |    | H  |    |    |
-|~~~~|....|~~~~|....|####|####|....|~~~~|~~~~|~~~~|
+| E  |    | F  |    |    |    |    |    |    |    |
+|~~~~|####|....|....|....|....|....|....|~~~~|....|
 ---------------------------------------------------
-|    |    | F  | EK | FE |    | E  | F  |    |    |
-|....|####|####|^^^^|....|....|####|####|....|~~~~|
+| H  |    | TT | K  |    | P  |    |    |    |    |
+|~~~~|....|^^^^|####|####|####|####|....|####|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    | T  |    | T  |
-|....|....|^^^^|^^^^|^^^^|****|^^^^|^^^^|....|~~~~|
+|    | EE |    |    |    |    | F  | H  |    |    |
+|~~~~|####|####|****|^^^^|^^^^|^^^^|....|....|~~~~|
 ---------------------------------------------------
-|    |    | H  |    |    |    |    |    |    |    |
-|~~~~|~~~~|####|^^^^|****|****|^^^^|####|....|....|
+|    |    |    |    |@   |    |    |    |    |    |
+|~~~~|....|....|****|****|****|^^^^|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    | K  |    |    |    |    |
-|~~~~|####|####|^^^^|^^^^|****|####|####|....|~~~~|
+|    | E  |    |    |    |    |    | K  |    |    |
+|....|....|####|^^^^|^^^^|^^^^|****|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    | F  |    | P  |    |    |
-|~~~~|....|####|****|^^^^|^^^^|****|....|....|~~~~|
+| E  | T  | E  | K  |    |    |    |    |    |    |
+|~~~~|....|####|^^^^|####|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
-| H  |    |    |    | T  |    |    | T  | K  | E  |
-|....|~~~~|####|####|^^^^|^^^^|....|####|~~~~|~~~~|
+|    | H  |    | E  |    |    |    |    |    |    |
+|....|~~~~|####|####|####|....|####|####|####|....|
 ---------------------------------------------------
-|    |    |    |    | E  |@   |    |    |    |    |
-|~~~~|~~~~|####|####|....|....|....|####|....|~~~~|
+|    | E  |    |    |    |    | E  |    |    |    |
+|~~~~|....|....|....|....|....|....|....|####|~~~~|
 ---------------------------------------------------
-|    |    | E  | E  |    |    |    |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|....|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    | E  | E  |    |    | E  |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|....|
----------------------------------------------------
-| E  |    |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|....|....|####|####|~~~~|....|####|....|
----------------------------------------------------
-| E  | F  |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|####|^^^^|####|####|^^^^|####|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    |    | F  |    |    | H  |
-|....|....|####|****|^^^^|****|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    | H  |    |    |    | P  |    |    | KH |
-|....|....|####|####|****|****|^^^^|....|....|....|
----------------------------------------------------
-|    | T  |    |    |    | F  |    | K  | K  |    |
-|~~~~|####|####|^^^^|****|****|^^^^|....|....|~~~~|
----------------------------------------------------
-|    |    |    | H  | K  |    | T  |    |    |    |
-|~~~~|....|####|^^^^|^^^^|^^^^|####|####|....|....|
----------------------------------------------------
-| E  | P  |    | T  |    |    | E  |    | T  |    |
-|....|~~~~|####|####|....|####|####|....|....|~~~~|
----------------------------------------------------
-|    |    | F  | E  |    | E  |    |    |    |    |
-|~~~~|~~~~|....|~~~~|....|####|....|....|....|~~~~|
----------------------------------------------------
-|    |    |    |    | K  |    | E  |    |@   |    |
+|    | F  |    | H  | K  |    |    | T  |    |    |
 |....|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|
 ---------------------------------------------------
 ---------------------------------------------------
-|    |    |    | E  |    |    |    | E  |    |    |
-|~~~~|....|~~~~|~~~~|~~~~|....|....|....|....|~~~~|
+|    | E  |    |    |    | F  |    |    |    |    |
+|~~~~|~~~~|....|~~~~|~~~~|....|....|~~~~|....|....|
 ---------------------------------------------------
-|    | T  |    |    | F  |    |    |    | P  |    |
-|....|....|####|####|####|....|....|####|~~~~|~~~~|
+|    |    |    |    |    | F  | K  |    | F  |    |
+|~~~~|~~~~|....|....|####|~~~~|....|....|....|~~~~|
 ---------------------------------------------------
-|    | K  |    |    | K  |    |    | E  | T  |    |
-|~~~~|....|####|####|####|####|^^^^|^^^^|####|....|
+| TK |    |    |    |    |    |    |    |    |    |
+|~~~~|....|....|^^^^|....|####|####|####|~~~~|~~~~|
 ---------------------------------------------------
-|    |    | E  |    |    | H  | E  | F  |    | E  |
-|....|~~~~|####|^^^^|^^^^|^^^^|^^^^|^^^^|....|....|
----------------------------------------------------
-|    | T  | P  | K  |    |    | E  |    |    |    |
-|....|~~~~|####|^^^^|****|****|^^^^|####|~~~~|~~~~|
----------------------------------------------------
-| K  |    |    |    |    |    |    |    |    |    |
-|....|....|####|^^^^|****|****|####|####|####|~~~~|
----------------------------------------------------
-|    | F  |    | H  |    |    | ET |    |    |    |
-|~~~~|####|....|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    |    | H  |    |    |    |    |    |    |
-|~~~~|####|^^^^|####|####|####|####|....|~~~~|~~~~|
----------------------------------------------------
-|    | EE |    |    |    |    |    |    | H  | F  |
-|~~~~|~~~~|....|####|....|~~~~|~~~~|....|....|....|
----------------------------------------------------
-| K  |    |    |    |    |    |    |    |@   |    |
-|~~~~|~~~~|....|~~~~|....|~~~~|....|~~~~|~~~~|....|
----------------------------------------------------
----------------------------------------------------
-| E  |    |    | K  | E  |    |    |    |    |    |
-|~~~~|....|....|~~~~|~~~~|~~~~|....|....|~~~~|~~~~|
----------------------------------------------------
-| E  |    | T  |    |    | K  |    |    |    | HE |
-|~~~~|~~~~|....|####|....|####|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | E  |
-|~~~~|....|^^^^|####|####|....|....|^^^^|....|~~~~|
----------------------------------------------------
-|    | E  | ET |    |    | F  |    |    |    |    |
-|....|....|####|^^^^|^^^^|^^^^|****|####|....|~~~~|
----------------------------------------------------
-|    |    | K  |    | E  | H  |    |    |    |    |
-|....|....|####|****|****|^^^^|****|####|....|~~~~|
----------------------------------------------------
-|    |    |    | E  |    |@   |    |    | K  |    |
-|~~~~|####|....|^^^^|****|****|^^^^|####|####|....|
----------------------------------------------------
-|    | F  | F  | P  |    |    | K  | F  |    |    |
-|~~~~|####|####|****|^^^^|****|^^^^|^^^^|....|~~~~|
----------------------------------------------------
-|    |    |    | H  |    |    |    |    | T  |    |
-|~~~~|####|^^^^|####|####|####|^^^^|^^^^|....|....|
----------------------------------------------------
-|    |    |    |    |    | T  | P  |    | H  | E  |
-|~~~~|....|####|~~~~|....|~~~~|....|~~~~|....|~~~~|
+|    |    |    | K  | P  |    |    |    |    |    |
+|~~~~|~~~~|....|####|****|^^^^|^^^^|####|~~~~|....|
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|....|....|....|....|....|....|....|....|....|....|
+|~~~~|....|####|^^^^|^^^^|****|^^^^|####|....|....|
 ---------------------------------------------------
+|    |    | E  | K  |    |@   | E  | H  |    |    |
+|....|....|####|^^^^|****|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
-| H  |    |    |    | T  |    |    |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|~~~~|
+| T  |    |    | E  | H  |    |    | EE | K  |    |
+|....|....|....|####|^^^^|^^^^|^^^^|####|####|~~~~|
 ---------------------------------------------------
-|    |    |    |    | F  |    | E  |    |    | T  |
-|~~~~|....|....|~~~~|####|....|....|....|....|~~~~|
+|    |    |    | E  |    |    |    |    | TH |    |
+|~~~~|....|####|####|####|####|####|....|~~~~|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |@   |    |    |
-|~~~~|....|####|####|....|####|####|####|....|....|
+|    |    |    |    |    | H  | P  |    |    |    |
+|~~~~|....|....|~~~~|....|....|~~~~|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    | E  | K  |    | EH | H  | P  |
-|~~~~|....|^^^^|^^^^|^^^^|^^^^|^^^^|####|~~~~|~~~~|
----------------------------------------------------
-| E  |    |    |    |    |    |    |    |    |    |
-|~~~~|####|^^^^|^^^^|^^^^|****|^^^^|....|....|~~~~|
----------------------------------------------------
-| E  | K  |    |    | K  |    |    |    |    | E  |
-|~~~~|....|####|****|****|****|^^^^|####|####|~~~~|
----------------------------------------------------
-|    |    |    |    | K  | E  | E  | F  | F  |    |
-|~~~~|....|####|^^^^|^^^^|^^^^|^^^^|....|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    | P  | T  | E  |    |    |
-|....|~~~~|####|####|####|^^^^|####|^^^^|####|~~~~|
----------------------------------------------------
-|    |    |    |    |    | K  | E  |    |    |    |
-|~~~~|....|####|....|####|....|~~~~|....|####|~~~~|
----------------------------------------------------
-|    |    | T  |    | F  | H  |    |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|....|....|
----------------------------------------------------
----------------------------------------------------
-|    | K  |    |    |    |    | P  |    |    |    |
-|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|....|~~~~|
----------------------------------------------------
-|    | E  | T  | HF |    |    |    |    |    | K  |
-|~~~~|####|~~~~|....|~~~~|....|####|....|~~~~|....|
----------------------------------------------------
-|    | E  | K  |    |    |    |    |    |    |    |
-|~~~~|####|^^^^|####|....|####|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|....|####|****|****|****|****|####|####|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | F  |
-|~~~~|....|####|####|^^^^|****|####|####|####|....|
----------------------------------------------------
-| E  |    |    |    |    | E  |    | T  | E  |    |
-|~~~~|....|####|####|****|****|****|####|....|~~~~|
----------------------------------------------------
-|    | E  | E  |    |    |    |    |    |    |    |
-|~~~~|~~~~|####|^^^^|^^^^|^^^^|^^^^|....|....|~~~~|
----------------------------------------------------
-| H  |    |    |    |    |    |    | F  |    |    |
-|....|....|####|####|####|^^^^|####|####|####|~~~~|
----------------------------------------------------
-|    | TK |    |    |    |    |    | P  | E  |    |
-|~~~~|~~~~|####|~~~~|####|~~~~|....|....|####|~~~~|
----------------------------------------------------
-|    |    |@EEH|    |    | T  |    | F  | H  | K  |
-|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    |    | K  |    |    |    |    |    |    |
-|....|~~~~|....|....|....|~~~~|....|....|....|....|
----------------------------------------------------
-|    | P  |    |    |    | E  | E  | T  |    |    |
-|~~~~|~~~~|####|....|....|....|####|####|~~~~|~~~~|
----------------------------------------------------
-| T  |    |    |    |    | E  |    | K  |    |    |
-|....|####|....|^^^^|####|####|####|####|####|~~~~|
----------------------------------------------------
-| E  | EE |    |    |    | E  |    |    |    |    |
-|~~~~|####|####|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    | TK |    |    |    |    |
-|~~~~|....|^^^^|****|****|****|****|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    | F  |    |    |    | P  |    |
-|~~~~|....|####|^^^^|****|****|****|^^^^|....|~~~~|
----------------------------------------------------
-|    | K  | K  |    |    | T  |    |    |    |    |
-|....|....|....|****|****|****|****|....|####|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |@   | F  |
-|~~~~|####|####|^^^^|####|....|####|^^^^|####|~~~~|
----------------------------------------------------
-|    | H  |    |    |    |    | HH | E  |    | E  |
-|~~~~|....|~~~~|....|....|....|....|~~~~|####|~~~~|
----------------------------------------------------
-| F  |    | H  |    |    |    |    | EF |    |    |
-|~~~~|....|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | T  |
-|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | H  |
-|....|....|####|....|~~~~|####|....|####|~~~~|....|
----------------------------------------------------
-|    |    |    |    | K  |    |    |    |    |    |
-|~~~~|....|^^^^|....|####|^^^^|####|####|....|~~~~|
----------------------------------------------------
-| F  |    |    | E  |    |    |    |@   |    |    |
-|~~~~|....|####|####|****|^^^^|^^^^|....|....|....|
----------------------------------------------------
-|    |    |    |    | K  |    |    | T  |    |    |
-|....|~~~~|....|^^^^|****|^^^^|^^^^|####|....|~~~~|
----------------------------------------------------
-|    |    | E  |    | KH |    |    |    |    | F  |
-|~~~~|####|####|****|****|^^^^|^^^^|....|....|~~~~|
----------------------------------------------------
-|    | E  |    |    |    | P  |    |    | HFH|    |
-|~~~~|....|####|^^^^|####|^^^^|****|^^^^|~~~~|....|
----------------------------------------------------
-|    |    | E  |    |    | TP |    |    | T  |    |
-|~~~~|~~~~|####|####|^^^^|####|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    | E  |    |    |    | K  | E  | F  |
-|....|####|####|....|####|....|####|~~~~|####|~~~~|
----------------------------------------------------
-| K  | E  |    | E  |    |    | E  |    |    |    |
-|~~~~|~~~~|~~~~|....|....|....|....|~~~~|....|~~~~|
----------------------------------------------------
----------------------------------------------------
-| T  |    |    |    |    |    |    |    | E  | FT |
-|....|....|....|....|~~~~|....|....|....|~~~~|~~~~|
----------------------------------------------------
-|    |    | H  |    | E  |    | F  | T  |    |    |
-|~~~~|....|....|~~~~|....|....|....|####|....|....|
----------------------------------------------------
-|    |    |    | E  |    |    |    | F  |    |    |
-|~~~~|....|####|....|####|####|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    | H  |    |    |    |@T  |
-|....|####|....|^^^^|****|^^^^|^^^^|####|~~~~|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    | H  | PP |
-|~~~~|~~~~|####|^^^^|^^^^|****|^^^^|####|####|....|
----------------------------------------------------
-|    |    |    |    | K  |    |    |    | E  |    |
-|~~~~|####|....|^^^^|****|****|^^^^|####|####|....|
----------------------------------------------------
-|    |    |    | E  | E  |    | EK | E  |    |    |
-|....|~~~~|####|####|^^^^|####|^^^^|####|~~~~|....|
----------------------------------------------------
-|    | K  |    | F  |    |    |    |    |    |    |
-|....|....|####|^^^^|####|^^^^|####|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    | H  |    |    |
-|....|....|....|....|~~~~|####|....|....|####|~~~~|
----------------------------------------------------
-|    |    |    |    |    | K  |    | EE | K  |    |
-|~~~~|~~~~|~~~~|....|~~~~|....|....|....|....|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    |    |    | F  |    |    |    |    |    |
-|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|
----------------------------------------------------
-|    | T  | T  |    |    |    | E  |    | K  |    |
-|....|~~~~|....|....|~~~~|....|####|####|....|....|
----------------------------------------------------
-| K  |    |    |    |    | F  |    |    |    |    |
-|~~~~|....|....|^^^^|^^^^|####|####|####|....|~~~~|
----------------------------------------------------
-| EH |    |    |    |    |    | T  |    |    |    |
-|~~~~|....|####|^^^^|****|^^^^|^^^^|####|....|....|
----------------------------------------------------
-| PH | E  |    | PE |    |    |    |    |    | FE |
-|....|~~~~|^^^^|****|****|^^^^|^^^^|####|~~~~|~~~~|
----------------------------------------------------
-|    |    | K  | H  |    |    |    |    | E  |@   |
-|~~~~|....|####|^^^^|^^^^|****|^^^^|####|....|~~~~|
----------------------------------------------------
-| K  |    |    |    |    |    |    |    |    | HE |
-|~~~~|~~~~|####|^^^^|^^^^|^^^^|****|####|....|~~~~|
----------------------------------------------------
-|    |    | E  |    |    |    |    | T  |    |    |
-|....|....|####|####|####|####|####|....|....|....|
----------------------------------------------------
-|    |    | E  |    | F  |    |    |    | K  |    |
-|~~~~|....|....|....|####|....|~~~~|....|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    | E  |
-|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-| E  |    |    |    | H  | K  |    | E  |    | E  |
-|~~~~|~~~~|~~~~|~~~~|....|....|....|~~~~|....|~~~~|
----------------------------------------------------
-|    |    | E  |    |    |    |    |    |    |    |
-|....|~~~~|....|....|....|....|####|....|....|....|
----------------------------------------------------
-|    | E  |    |    | P  |    |    |    |    |    |
-|....|....|....|....|....|####|####|....|####|~~~~|
----------------------------------------------------
-| H  |    |    | T  |    |    |    |    |    |    |
-|~~~~|####|....|****|****|####|****|####|####|~~~~|
----------------------------------------------------
-| P  |    |    |    | F  |    | E  |    |    |    |
-|....|~~~~|####|^^^^|****|****|####|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |@K  |    |    |    |
-|~~~~|....|^^^^|^^^^|^^^^|^^^^|^^^^|^^^^|....|~~~~|
----------------------------------------------------
-|    | K  |    |    |    |    | E  |    |    |    |
-|....|....|####|^^^^|####|####|^^^^|####|####|~~~~|
----------------------------------------------------
-|    |    |    | TE |    | H  | K  |    |    |    |
-|....|~~~~|####|....|####|^^^^|####|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    | TF |    | K  | T  |    |    |
-|~~~~|....|####|....|....|~~~~|####|####|....|....|
----------------------------------------------------
-|    |    | HEF|    |    |    | F  |    |    | E  |
-|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    | TF | E  |    | E  |    | K  |    |    |    |
-|~~~~|....|~~~~|~~~~|....|....|....|....|....|~~~~|
----------------------------------------------------
-| ET |    |    |    | F  |    |    | EK |    |    |
-|....|....|....|####|####|....|....|~~~~|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|^^^^|^^^^|....|^^^^|^^^^|....|....|....|
----------------------------------------------------
-| H  |    |    | E  |    |    |    |    |    | K  |
-|....|....|####|^^^^|####|****|####|####|~~~~|....|
----------------------------------------------------
-| E  |    |    |    | T  |    |    | H  |    |    |
-|~~~~|....|####|^^^^|****|****|^^^^|####|####|....|
----------------------------------------------------
-|    |    |    | F  |    |    | E  |    |    |    |
-|~~~~|....|....|^^^^|****|^^^^|^^^^|####|....|....|
----------------------------------------------------
-| T  | E  |    |    |    |    |@   |    |    | H  |
-|....|....|^^^^|^^^^|^^^^|^^^^|####|^^^^|####|~~~~|
----------------------------------------------------
-|    | E  |    |    |    | P  |    |    |    |    |
-|....|~~~~|^^^^|####|....|^^^^|####|####|....|....|
----------------------------------------------------
-| F  |    |    | K  | E  |    |    |    | K  |    |
-|~~~~|####|####|....|####|~~~~|....|....|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    | P  | H  |    |    |    |
-|....|~~~~|~~~~|....|~~~~|....|....|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    |    |    |    |    |    |    | K  |    |
-|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|
----------------------------------------------------
-|    |    |    | H  |    |    | P  | H  | TE | P  |
-|~~~~|....|....|....|~~~~|....|....|....|####|~~~~|
----------------------------------------------------
-|    | E  |    |    |    | E  | E  |    |    |    |
-|....|####|####|####|^^^^|^^^^|####|####|....|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|....|....|^^^^|^^^^|####|^^^^|^^^^|####|~~~~|
----------------------------------------------------
-|    |    |    |    | K  |    | F  |@   |    |    |
-|~~~~|####|####|####|****|^^^^|####|^^^^|....|~~~~|
----------------------------------------------------
-|    | KET| T  |    |    |    |    |    |    |    |
-|....|####|^^^^|****|^^^^|****|****|####|####|~~~~|
----------------------------------------------------
-| K  |    |    |    |    |    |    | F  | E  | H  |
-|....|####|####|****|####|****|####|####|~~~~|~~~~|
----------------------------------------------------
-| K  |    |    |    |    |    |    |    |    |    |
-|~~~~|....|####|....|....|....|....|....|....|....|
----------------------------------------------------
-|    |    | E  |    |    |    |    |    |    | E  |
-|~~~~|~~~~|....|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
-|    |    | F  | E  |    | H  | TE |    |    | F  |
-|....|~~~~|....|....|~~~~|....|....|....|....|....|
----------------------------------------------------
----------------------------------------------------
-|    |    |    | E  |    |    |    |    |    |    |
-|~~~~|~~~~|....|~~~~|~~~~|....|....|....|....|~~~~|
----------------------------------------------------
-|    | TK |    |    | K  |    |    |    |    |    |
-|~~~~|####|~~~~|....|####|####|....|~~~~|~~~~|~~~~|
----------------------------------------------------
-| E  |    |    |    |    | E  |    |    |    |    |
-|~~~~|~~~~|....|####|####|....|####|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|....|####|****|^^^^|****|****|....|####|....|
----------------------------------------------------
-|    |    |    | F  |    |    |    |    |    | E  |
-|~~~~|....|^^^^|****|****|^^^^|^^^^|####|....|....|
----------------------------------------------------
-|    | H  | H  |    |    |    |    |    |    |    |
-|....|....|####|^^^^|^^^^|****|^^^^|####|####|~~~~|
----------------------------------------------------
-|    |    |    |    |    | K  |    | E  | T  |    |
-|~~~~|~~~~|####|^^^^|****|####|^^^^|####|....|~~~~|
----------------------------------------------------
-|    | PE |    |    |    | E  | E  |    |    | P  |
-|....|....|####|....|####|^^^^|####|....|####|....|
----------------------------------------------------
-|    | K  |    |    |    | E  |    |    |    |    |
-|~~~~|~~~~|....|....|....|####|####|~~~~|....|~~~~|
----------------------------------------------------
-|    | HF | H  | K  | F  |    |@E  | F  | T  | T  |
-|....|~~~~|~~~~|....|~~~~|....|....|....|....|....|
+| T  | EF |    |    | E  |    | E  |    |    |    |
+|~~~~|~~~~|....|....|....|~~~~|~~~~|~~~~|~~~~|....|
 ---------------------------------------------------
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|....|~~~~|....|~~~~|....|....|~~~~|....|....|~~~~|
+|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|
 ---------------------------------------------------
-| E  |    |    |    |    |    |    | K  |    |    |
-|~~~~|....|~~~~|~~~~|....|....|####|####|####|~~~~|
+|    |    | T  |    | H  | P  |    |    |    | H  |
+|....|####|....|....|....|####|....|~~~~|####|~~~~|
 ---------------------------------------------------
-|    | H  |    |    |    |    |    | E  |    |    |
-|....|....|####|^^^^|####|^^^^|....|####|~~~~|....|
+|    |    |    |    |@   |    |    |    |    |    |
+|....|....|####|....|####|####|####|....|####|....|
 ---------------------------------------------------
-|    | F  |    |    |    | E  |    |    |    |    |
-|~~~~|~~~~|####|^^^^|^^^^|^^^^|####|....|....|~~~~|
+| E  |    |    | E  |    | E  |    | F  |    |    |
+|~~~~|....|####|^^^^|####|^^^^|####|####|~~~~|~~~~|
 ---------------------------------------------------
-|    | E  | K  | TE |    | E  |    | H  |    |    |
-|~~~~|....|####|^^^^|^^^^|^^^^|^^^^|....|####|....|
+| E  | K  |    | F  |    |    |    |    | EK |    |
+|~~~~|....|####|****|****|^^^^|^^^^|....|####|~~~~|
 ---------------------------------------------------
-|    |    |    |    | F  | K  |    |    |    |    |
-|....|....|####|####|****|^^^^|****|....|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    | P  | T  |    |
-|~~~~|....|####|####|****|^^^^|^^^^|^^^^|....|....|
----------------------------------------------------
-| H  |    |    |@E  | H  |    |    |    |    | E  |
-|~~~~|####|....|####|....|####|####|####|....|~~~~|
----------------------------------------------------
-| F  | F  |    |    | T  | E  |    |    |    | KT |
-|....|....|####|....|~~~~|....|....|....|....|~~~~|
----------------------------------------------------
-|    |    |    | P  |    |    |    |    | KE |    |
-|~~~~|~~~~|~~~~|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    |    | E  |    | K  |    |    |    |    |
-|~~~~|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|
----------------------------------------------------
-|    |    |    |    | E  |    |    | E  |    | FP |
-|~~~~|####|....|....|....|~~~~|....|....|....|~~~~|
----------------------------------------------------
-| T  | TE |    | K  | E  |    |    |    |    | H  |
-|~~~~|....|####|####|####|####|....|....|....|....|
----------------------------------------------------
-|    |    |    | P  | K  | E  | E  |    |    |    |
-|~~~~|....|####|^^^^|####|^^^^|****|....|....|~~~~|
----------------------------------------------------
-| H  |    |    |    | E  |    |    |    |    |    |
-|....|....|####|^^^^|****|^^^^|^^^^|####|....|....|
----------------------------------------------------
-|    |    |    |    |    |    |    | H  | K  |    |
-|~~~~|####|^^^^|^^^^|****|****|####|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    | F  |    | ET |    |
-|....|....|####|^^^^|****|^^^^|^^^^|####|####|....|
----------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|....|####|####|....|^^^^|####|####|^^^^|....|....|
----------------------------------------------------
-|    | T  |    |    | H  |    |    |    | K  |    |
-|~~~~|....|~~~~|....|....|####|....|....|....|~~~~|
----------------------------------------------------
-|    |    |@   |    | F  | F  |    |    | E  |    |
-|....|....|~~~~|~~~~|....|~~~~|....|....|~~~~|....|
----------------------------------------------------
----------------------------------------------------
-| E  |    |    |    |    |    |    |    |    |    |
-|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|
----------------------------------------------------
-|    |    |    | K  |    | F  |    |    |    | TFE|
-|....|....|....|....|####|~~~~|~~~~|####|....|~~~~|
----------------------------------------------------
-|    |    | H  |    | T  | T  |    |    |    |    |
-|~~~~|....|####|####|####|####|####|####|....|....|
----------------------------------------------------
-| HK |    |    |    |    |    | E  | E  |    |    |
-|~~~~|....|....|^^^^|^^^^|^^^^|^^^^|####|####|~~~~|
----------------------------------------------------
-|    |    | H  |    |    | P  |    |    |    |    |
-|~~~~|....|####|****|****|^^^^|^^^^|^^^^|####|....|
----------------------------------------------------
-| E  |    |    |    | F  |    |    |    | E  |    |
-|~~~~|....|####|****|****|****|####|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    | F  |    |    |    |    |    |
+| T  |    |    | P  | E  |    |    |    | F  | H  |
 |....|....|####|^^^^|****|^^^^|####|^^^^|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    | E  |    |    |    |    |@   |
-|....|~~~~|####|####|####|####|####|####|....|~~~~|
----------------------------------------------------
-| EK | E  |    | TK |    |    |    |    |    | P  |
-|~~~~|....|....|~~~~|####|....|####|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    | KE |    |    |    | H  |    |
-|~~~~|~~~~|~~~~|....|....|....|~~~~|~~~~|~~~~|....|
----------------------------------------------------
----------------------------------------------------
-|    | P  | T  |    |    |    | H  | P  |    |    |
-|~~~~|....|~~~~|....|~~~~|~~~~|....|~~~~|....|....|
----------------------------------------------------
-|    | T  | H  |    | E  |    |    |    |    | F  |
-|~~~~|~~~~|....|~~~~|~~~~|####|....|####|~~~~|....|
----------------------------------------------------
-| E  |    |    |    |    |    |    |    |    |    |
-|~~~~|....|^^^^|####|####|....|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    | T  |    |    |    |    | E  |
-|....|####|^^^^|####|####|^^^^|^^^^|....|....|~~~~|
----------------------------------------------------
-| KE | K  |    |    | F  |    | E  |    |    |    |
-|~~~~|~~~~|####|^^^^|****|****|****|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    | F  |    |
-|....|~~~~|####|^^^^|^^^^|^^^^|****|####|....|~~~~|
----------------------------------------------------
-| E  | F  |    |    | H  | T  |    |    | E  |    |
-|~~~~|....|####|^^^^|^^^^|^^^^|^^^^|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |    | E  | E  |
-|....|~~~~|^^^^|....|####|####|....|^^^^|....|....|
----------------------------------------------------
-|    |    |    | K  | K  |    |    | E  |    | H  |
-|~~~~|####|....|....|####|....|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    |    |@   | K  |    |
-|....|~~~~|....|~~~~|....|~~~~|....|....|....|~~~~|
----------------------------------------------------
----------------------------------------------------
-|    |    | E  | F  |    |    | H  |    | T  |    |
-|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    |    | E  |    |    |    |
-|~~~~|....|####|....|####|....|....|....|....|~~~~|
----------------------------------------------------
-|    |    |    | P  |    | T  |    |    |    |    |
-|~~~~|....|####|....|....|####|####|####|....|....|
----------------------------------------------------
-|    |    |    |    |    |    | T  | E  |    |    |
-|~~~~|####|^^^^|****|####|****|^^^^|####|####|....|
+|    |    | K  |    | EF | E  |    |    |    | K  |
+|....|....|####|^^^^|^^^^|####|^^^^|####|~~~~|~~~~|
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    | E  |    |
-|....|....|####|^^^^|^^^^|^^^^|****|####|....|~~~~|
+|~~~~|~~~~|####|####|####|^^^^|^^^^|####|....|....|
 ---------------------------------------------------
-|    |    |    |    |    |    | F  |    | P  |    |
-|~~~~|....|....|^^^^|^^^^|****|****|####|####|~~~~|
+|    |    |    |    |    |    | T  |    |    | H  |
+|....|####|~~~~|####|~~~~|....|####|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    | E  |    |    | K  | K  |    | H  |
-|~~~~|####|####|^^^^|^^^^|####|####|....|....|~~~~|
+|    | KT |    |    |    | E  |    |    |    |    |
+|....|....|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|
 ---------------------------------------------------
-|    |    | E  | EK |    | F  | H  |    |    |    |
-|~~~~|....|####|####|^^^^|....|....|####|....|~~~~|
----------------------------------------------------
-|    |    |    | T  |    | E  | E  |    |    |    |
-|....|....|....|~~~~|~~~~|....|....|####|~~~~|~~~~|
----------------------------------------------------
-|    |    | K  |    |@EK | H  | F  |    |    |    |
-|~~~~|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|
----------------------------------------------------
----------------------------------------------------
-| P  |    |    |    |    |    |    |    |    |    |
-|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|
----------------------------------------------------
-| F  | E  |    | F  | H  |    |    | P  | T  |    |
-|....|....|....|~~~~|....|....|....|....|....|~~~~|
----------------------------------------------------
-| F  |    |    |    |    | E  |    |    |    |    |
-|~~~~|....|####|....|####|^^^^|....|####|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    | F  |    |    |    |    |
-|~~~~|....|####|^^^^|^^^^|^^^^|^^^^|^^^^|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    | H  |    |    |    |    |
-|....|....|....|####|****|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
 |    |    |    |    | E  |    |    |    |    | K  |
-|....|####|####|####|****|^^^^|^^^^|####|####|....|
+|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|....|~~~~|
 ---------------------------------------------------
-| K  | E  |    | K  |    |    |@KT |    |    | EH |
-|....|....|^^^^|^^^^|^^^^|####|****|####|....|~~~~|
+|    |    |    |    |    |    |    |    |    |    |
+|....|....|~~~~|####|....|....|....|~~~~|~~~~|~~~~|
 ---------------------------------------------------
-| EE |    |    |    |    | E  |    |    |    |    |
-|....|....|####|....|####|####|^^^^|^^^^|....|~~~~|
+| F  |    |    |    |    |    |    |    |    |    |
+|....|....|^^^^|....|####|....|^^^^|####|....|~~~~|
 ---------------------------------------------------
-|    |    | TT | K  |    | E  |    |    |    |    |
-|....|....|~~~~|....|....|....|....|####|....|~~~~|
+|    |    |    |    | H  |    | E  | P  | K  | T  |
+|~~~~|....|####|####|####|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
-|    | E  |    | H  |    |    |    |    |    |    |
-|....|....|....|~~~~|....|....|....|....|~~~~|~~~~|
+| KE | H  |    |    | E  |    |    |    | F  |    |
+|....|....|....|^^^^|****|^^^^|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    | H  |    | E  | E  |    |    |    |
+|~~~~|....|^^^^|****|^^^^|^^^^|****|^^^^|....|....|
+---------------------------------------------------
+| E  |    | T  | PT |    |    | H  |    |    | E  |
+|~~~~|####|####|^^^^|####|^^^^|****|####|....|~~~~|
+---------------------------------------------------
+| F  |    | K  |@   |    |    |    |    |    |    |
+|~~~~|~~~~|####|####|####|....|....|....|~~~~|....|
+---------------------------------------------------
+| ET | F  |    |    |    |    | E  |    |    |    |
+|~~~~|....|....|....|####|####|~~~~|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    | K  |    |    |    |
+|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|....|
 ---------------------------------------------------
 ---------------------------------------------------
-|    | E  |    |    |    |    |    |    | E  | E  |
-|....|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|
+| H  | E  |    |    |    |    |    | T  |    |    |
+|~~~~|~~~~|~~~~|....|....|....|~~~~|~~~~|....|~~~~|
 ---------------------------------------------------
-|    |    | P  |    | H  |    |    | F  | K  |    |
-|~~~~|....|....|####|####|~~~~|~~~~|####|....|....|
+|    | F  | K  |    | K  |    |    |    | E  | E  |
+|~~~~|....|....|....|....|....|....|....|####|~~~~|
 ---------------------------------------------------
-|    |    |    | T  |    | E  |    |    |    | E  |
-|~~~~|....|^^^^|^^^^|####|####|....|^^^^|~~~~|~~~~|
+|    |    |    |    |    |    |    | F  |    | K  |
+|~~~~|~~~~|^^^^|####|....|####|####|....|....|....|
 ---------------------------------------------------
-|    |    |    |    |    | E  |    |    |    |    |
-|~~~~|####|####|####|^^^^|^^^^|****|^^^^|~~~~|~~~~|
+|    |    |    |    |    |    |    |    |    |    |
+|~~~~|~~~~|^^^^|^^^^|^^^^|^^^^|^^^^|####|~~~~|~~~~|
 ---------------------------------------------------
-| F  |    |    | H  |    |    |    | K  |    |    |
-|....|....|....|^^^^|^^^^|****|^^^^|....|####|....|
+| H  |    |    | H  |    |    |    | K  |    |    |
+|....|....|....|^^^^|****|****|^^^^|####|....|....|
 ---------------------------------------------------
-| K  |    |    |    |    |    |    |    |    | H  |
-|~~~~|....|####|^^^^|****|****|####|####|....|....|
+|    |    |    |    | P  |    | E  |    | E  |    |
+|....|....|####|^^^^|****|****|^^^^|....|~~~~|~~~~|
 ---------------------------------------------------
-|    |    | T  |@   |    |    |    |    |    |    |
-|....|....|####|^^^^|^^^^|^^^^|^^^^|....|....|~~~~|
+|    |    |    | E  |    | T  |    |    | E  | E  |
+|~~~~|....|....|^^^^|^^^^|^^^^|####|####|....|....|
 ---------------------------------------------------
-|    |    | F  |    |    |    | P  |    | H  | T  |
-|~~~~|....|^^^^|####|^^^^|####|^^^^|....|....|~~~~|
+| P  |    |    | T  |    |    |    |    |    |    |
+|~~~~|####|####|^^^^|....|####|....|####|~~~~|....|
 ---------------------------------------------------
-|    |    |    |    |    | E  |    | E  |    | E  |
-|~~~~|....|~~~~|....|....|....|....|~~~~|....|~~~~|
+| E  | K  |    |    |    |    |    |    | F  |    |
+|~~~~|....|....|....|....|....|~~~~|....|....|....|
 ---------------------------------------------------
-| TE |    |    | K  |    |    |    | K  |    | F  |
+|    |    | F  | H  |@T  |    |    |    | E  |    |
+|~~~~|....|....|~~~~|~~~~|....|~~~~|....|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    |    |    | T  |    |    |
+|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | H  | E  |    |    |    |
+|~~~~|....|####|....|....|####|....|....|~~~~|....|
+---------------------------------------------------
+|    |    | HE |    |    | E  |    |    |    |    |
+|~~~~|~~~~|####|....|####|####|^^^^|^^^^|....|~~~~|
+---------------------------------------------------
+|    | K  |    |    |    |    |    |    |    |    |
+|....|....|####|^^^^|^^^^|^^^^|****|^^^^|~~~~|....|
+---------------------------------------------------
+|    |    |    |    |    | H  | E  | P  |    |    |
+|....|....|^^^^|^^^^|****|^^^^|****|####|....|~~~~|
+---------------------------------------------------
+| F  |    | K  |    |    | F  |    |    |    |    |
+|~~~~|....|^^^^|^^^^|^^^^|****|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+|    | P  |    |    |    |    |    | K  | ET |    |
+|~~~~|~~~~|....|^^^^|^^^^|^^^^|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    | H  |    |    | F  |    |@   |    |
+|....|....|####|^^^^|####|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+| EK | E  | E  | K  |    |    | F  |    |    | T  |
+|~~~~|~~~~|....|~~~~|~~~~|....|....|....|~~~~|....|
+---------------------------------------------------
+|    | E  | E  |    |    |    | T  |    |    |    |
+|....|....|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|....|
+---------------------------------------------------
+---------------------------------------------------
+|    | TE |    | E  |    |    |    | T  | E  |    |
+|....|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|....|
+---------------------------------------------------
+| K  | H  | E  |    |    |    |    | E  |    |    |
+|....|....|....|####|~~~~|....|~~~~|....|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | T  |    |    |
+|....|~~~~|####|^^^^|^^^^|^^^^|####|####|~~~~|~~~~|
+---------------------------------------------------
+|    |    | E  |    |    |    | P  |    |    |    |
+|~~~~|....|####|^^^^|####|^^^^|****|####|####|~~~~|
+---------------------------------------------------
+|    |    | E  |    |    | TH |    |    |    |    |
+|~~~~|~~~~|####|####|****|****|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | H  | K  |    |    |    |
+|~~~~|....|####|^^^^|****|^^^^|^^^^|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | K  |    |    | F  |    |
+|~~~~|....|....|^^^^|^^^^|####|****|....|....|....|
+---------------------------------------------------
+| E  | K  |    | E  | F  |    |    |    | P  |    |
+|....|~~~~|^^^^|####|####|....|^^^^|####|....|....|
+---------------------------------------------------
+|    |    | K  |@   |    | H  | E  |    | F  |    |
+|~~~~|....|~~~~|~~~~|....|....|~~~~|~~~~|....|....|
+---------------------------------------------------
+|    |    |    | F  |    |    |    |    |    |    |
+|~~~~|....|....|~~~~|....|....|....|....|....|....|
+---------------------------------------------------
+---------------------------------------------------
+|    | E  |    |    |    | H  |    |    |    |    |
+|....|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|....|
+---------------------------------------------------
+| E  |    |    |    |    |    |    | E  |    |    |
+|~~~~|....|....|....|....|####|....|....|~~~~|....|
+---------------------------------------------------
+| E  |    |    | KT |    |    |    |    |    |    |
+|....|####|^^^^|####|####|....|....|####|####|~~~~|
+---------------------------------------------------
+|    |    | E  | F  |    | K  | K  |    |    |    |
+|~~~~|....|^^^^|####|####|^^^^|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+| P  | K  |    |    |    |    | H  |    |    | E  |
+|~~~~|....|^^^^|^^^^|^^^^|****|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    | H  |    |    |    |    |    |
+|~~~~|....|####|^^^^|^^^^|****|^^^^|####|####|~~~~|
+---------------------------------------------------
+| F  | K  |    |    |    |    | F  |    | T  | H  |
+|....|....|####|^^^^|^^^^|^^^^|####|....|....|....|
+---------------------------------------------------
+| E  |    |    |    | TE |    | T  |@F  |    |    |
+|~~~~|####|^^^^|....|####|####|####|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | P  |    |    |
+|....|....|~~~~|....|~~~~|....|####|####|....|....|
+---------------------------------------------------
+|    | E  |    |    |    | E  |    |    |    |    |
+|....|....|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    | H  |    |    |    |    |    | E  |
+|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|
+---------------------------------------------------
+|    |    |    |    |    |    | E  | EK |    |    |
+|~~~~|....|....|####|~~~~|....|####|....|....|~~~~|
+---------------------------------------------------
+|    |    |    | T  |    |    | H  | E  |    |    |
+|....|....|####|....|####|^^^^|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    | E  |    |    |    |    | P  |    |
+|~~~~|....|....|^^^^|****|^^^^|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+| F  |    |    | E  |    | TE |    |    | T  |    |
+|....|~~~~|....|^^^^|^^^^|^^^^|^^^^|####|~~~~|....|
+---------------------------------------------------
+| K  |    |    |    |    |    |    | K  |    |    |
+|....|~~~~|####|****|****|^^^^|^^^^|^^^^|####|~~~~|
+---------------------------------------------------
+|    |    |    |    | E  |    |    | K  |    |    |
+|~~~~|~~~~|....|^^^^|####|####|####|####|....|....|
+---------------------------------------------------
+| P  |    |    |    | E  |    | F  | K  |    | T  |
+|~~~~|....|####|....|####|####|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    | H  |    |
+|~~~~|####|....|....|~~~~|####|....|....|####|....|
+---------------------------------------------------
+|    | F  |    | E  |    |    |@F  | H  |    |    |
+|....|~~~~|....|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    | F  |    |    |    |    |
+|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|
+---------------------------------------------------
+|    |    |    | H  | K  |    |    |    |    | T  |
+|....|....|####|~~~~|....|....|####|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    | FE |    |    |    | E  |    |
+|~~~~|....|....|^^^^|^^^^|^^^^|####|####|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | FE |    | E  |    |    |
+|~~~~|....|^^^^|^^^^|^^^^|^^^^|****|....|....|~~~~|
+---------------------------------------------------
+|    | T  | E  |    |    |    |    |    | T  | HF |
+|....|....|####|^^^^|****|****|^^^^|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    | E  |    |    | E  |    | P  |    |
+|....|####|####|^^^^|****|****|####|####|####|~~~~|
+---------------------------------------------------
+| T  |    |    |    |    |    |    |    |    | E  |
+|~~~~|~~~~|####|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    | H  | K  |    |    | EE |    |
+|~~~~|....|####|....|....|####|####|^^^^|....|~~~~|
+---------------------------------------------------
+| K  |    |    |    | K  |    |    |    |    |    |
+|....|....|####|~~~~|....|....|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |@H  |    |    |    | K  |    | P  |    |
+|~~~~|....|....|~~~~|~~~~|~~~~|....|....|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    |    |    |    |    |    |
+|~~~~|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+|    |    |    | F  |    |    |    |    | TK |    |
+|~~~~|....|....|....|....|....|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+| T  |    |    |    | F  |    | P  |    |    |    |
+|~~~~|####|....|....|....|####|....|####|....|....|
+---------------------------------------------------
+|    |    |    |    |@   |    | F  | E  | P  |    |
+|....|....|####|****|^^^^|####|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    | EE |    |    |    | H  |    |    |    |
+|....|....|^^^^|^^^^|****|****|^^^^|....|....|....|
+---------------------------------------------------
+| E  |    | K  |    | H  |    |    | EK |    |    |
+|....|....|....|****|****|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    | EK |    | K  |    |    |    |    | T  |    |
+|~~~~|~~~~|....|^^^^|^^^^|^^^^|^^^^|^^^^|####|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    | T  | E  |
+|....|####|####|....|####|^^^^|####|####|####|~~~~|
+---------------------------------------------------
+|    |    | F  |    |    |    |    | E  |    |    |
+|~~~~|~~~~|....|####|~~~~|####|~~~~|....|....|~~~~|
+---------------------------------------------------
+|    |    |    | HH | EE |    |    |    |    |    |
+|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    | E  |    |    |    |    | E  |    |    | F  |
+|~~~~|~~~~|....|~~~~|....|....|~~~~|~~~~|~~~~|....|
+---------------------------------------------------
+|    | P  |    |    |    |    |    |    |    |    |
+|~~~~|####|....|~~~~|~~~~|....|....|....|####|....|
+---------------------------------------------------
+|    |    |    |@   | F  |    |    |    | T  |    |
+|~~~~|~~~~|....|####|####|....|####|####|....|....|
+---------------------------------------------------
+|    |    |    |    | H  |    |    |    |    |    |
+|....|~~~~|^^^^|####|####|^^^^|****|....|....|....|
+---------------------------------------------------
+|    |    |    |    |    | K  |    |    |    |    |
+|....|####|^^^^|^^^^|****|****|####|....|....|....|
+---------------------------------------------------
+|    |    |    | EE | T  | EP | K  | T  |    |    |
+|~~~~|####|....|^^^^|^^^^|^^^^|^^^^|....|~~~~|~~~~|
+---------------------------------------------------
+| F  | F  | H  |    | KT |    |    | EE |    |    |
+|....|####|....|^^^^|####|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    | H  |    |    |    |
+|~~~~|####|####|....|####|####|####|....|~~~~|~~~~|
+---------------------------------------------------
+| KH |    |    |    |    | E  |    | K  | E  |    |
+|~~~~|####|....|~~~~|~~~~|....|....|~~~~|####|~~~~|
+---------------------------------------------------
+|    |    |    |    | E  |    |    |    |    |    |
 |....|~~~~|....|....|....|~~~~|~~~~|....|....|~~~~|
 ---------------------------------------------------
 ---------------------------------------------------
-|    |    |    |    |    | E  |    |    |    |    |
-|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|~~~~|....|
+|    | E  | P  |    |    | E  |    |    | E  |    |
+|....|~~~~|....|....|....|~~~~|~~~~|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    | T  | F  |    |    |    |    |    |
-|....|....|....|....|~~~~|....|....|....|....|....|
+|    |    |    |    | F  |    |    | K  | K  |    |
+|....|....|~~~~|####|....|....|####|....|~~~~|~~~~|
+---------------------------------------------------
+|    |    | H  |    |    |    |    |    | E  |    |
+|....|....|....|^^^^|^^^^|####|^^^^|####|....|....|
+---------------------------------------------------
+| E  |    |    |    |    |    | F  |    |    |    |
+|~~~~|....|....|^^^^|****|####|####|####|~~~~|....|
+---------------------------------------------------
+|    |    |    | E  |    | H  |    |    |    |    |
+|~~~~|~~~~|####|****|****|****|****|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    | F  |    |    | E  |    | F  |    |
+|~~~~|~~~~|####|****|****|****|^^^^|####|....|....|
+---------------------------------------------------
+| E  | K  |    | H  |    |@   | K  |    | T  |    |
+|~~~~|....|####|####|^^^^|^^^^|^^^^|....|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | T  |    |    | P  |    |
+|....|....|####|####|....|####|####|####|....|~~~~|
+---------------------------------------------------
+| T  | T  | E  |    |    |    | K  | H  |    |    |
+|....|~~~~|####|~~~~|~~~~|~~~~|####|....|....|~~~~|
+---------------------------------------------------
+|    |    | E  |    |    |    |    |    |    |    |
+|~~~~|....|~~~~|~~~~|~~~~|~~~~|....|....|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    | E  | T  | F  | E  | E  | H  |    | K  |
+|....|....|....|~~~~|....|....|....|....|~~~~|....|
+---------------------------------------------------
+|    |    |    |    | F  |    |    |    |    |    |
+|....|....|####|....|####|....|....|....|####|~~~~|
+---------------------------------------------------
+|    |    | K  | E  |    |    |    |    |    |    |
+|....|....|....|####|....|^^^^|####|####|....|....|
+---------------------------------------------------
+|    |    |    | K  | T  | EE |    |    | E  | EK |
+|~~~~|....|####|****|^^^^|####|####|####|....|....|
+---------------------------------------------------
+|    | H  |    |    |    |    | P  | E  |    |    |
+|....|....|####|^^^^|****|^^^^|^^^^|####|####|~~~~|
+---------------------------------------------------
+|    |    | K  |    |    |    |    | T  |    |    |
+|~~~~|....|####|^^^^|^^^^|****|####|####|....|~~~~|
+---------------------------------------------------
+|    | F  |    | E  |    |    |    |    | P  | H  |
+|~~~~|~~~~|####|****|^^^^|^^^^|####|####|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | H  |    |    |
+|~~~~|~~~~|####|^^^^|....|####|####|####|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    |    |    |
+|....|####|~~~~|....|....|....|....|....|....|~~~~|
+---------------------------------------------------
+|    | T  |@   | F  |    |    |    |    |    |    |
+|~~~~|....|....|~~~~|....|....|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    | TEK| H  | F  |    |    |    |
+|....|~~~~|~~~~|....|~~~~|....|....|....|....|....|
+---------------------------------------------------
+| EE |    |    |    |    | P  |    |    |    |    |
+|~~~~|####|....|####|####|....|....|....|~~~~|....|
+---------------------------------------------------
+|    | F  | T  | K  | T  | E  |    | E  |    |    |
+|....|....|####|####|....|####|####|####|~~~~|~~~~|
+---------------------------------------------------
+| F  |    |    |    |    |    | T  |    |    |    |
+|....|....|####|****|^^^^|^^^^|^^^^|####|....|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    |    | K  |
+|....|....|....|^^^^|^^^^|^^^^|****|^^^^|....|....|
+---------------------------------------------------
+|    | PH |    |    |    |    | K  |    |    |    |
+|....|....|####|####|****|^^^^|****|....|####|~~~~|
+---------------------------------------------------
+|    |    |    | E  | EE |    | H  |@   |    | H  |
+|~~~~|....|####|^^^^|^^^^|^^^^|####|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    |    |    |
+|~~~~|~~~~|....|####|^^^^|^^^^|####|####|....|~~~~|
+---------------------------------------------------
+|    |    | F  |    |    |    |    |    |    |    |
+|~~~~|####|....|....|~~~~|....|....|~~~~|####|~~~~|
+---------------------------------------------------
+|    | E  |    |    |    | EK |    |    |    |    |
+|~~~~|~~~~|....|....|~~~~|~~~~|....|~~~~|~~~~|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    | T  |    |    |    |    |    | EE |    |    |
+|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|....|
+---------------------------------------------------
+|    | E  |    |    |    |    |    | K  | H  |    |
+|....|....|....|....|####|####|....|....|####|~~~~|
+---------------------------------------------------
+|    |    | K  |    |    |    |    |    |    | EK |
+|~~~~|....|####|....|....|####|####|####|....|....|
+---------------------------------------------------
+|    |    |    |    | E  |    |    |    | TK | P  |
+|....|~~~~|####|****|####|^^^^|^^^^|^^^^|####|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | F  |    |    |
+|~~~~|....|####|^^^^|****|****|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | K  |    |    |    |    |
+|~~~~|~~~~|....|####|^^^^|^^^^|^^^^|####|####|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    | E  |    |    |
+|~~~~|....|####|^^^^|****|^^^^|####|....|....|....|
+---------------------------------------------------
+| E  |    |    |    |    |    |    | E  | T  |    |
+|~~~~|....|####|....|####|^^^^|####|^^^^|....|~~~~|
+---------------------------------------------------
+| P  | E  |@   |    |    |    | F  |    |    |    |
+|~~~~|....|####|....|~~~~|####|####|....|....|~~~~|
+---------------------------------------------------
+|    |    | H  |    |    | H  | H  | FT | EF |    |
+|~~~~|....|~~~~|~~~~|....|....|....|~~~~|~~~~|....|
+---------------------------------------------------
+---------------------------------------------------
+| E  | EP |    | E  | E  |    |    |    | E  |    |
+|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+|    |    | K  |    |    |    |    |    | T  | H  |
+|....|....|....|....|####|....|####|####|....|~~~~|
+---------------------------------------------------
+| F  |    |    |    |    |    |    | K  |    |    |
+|....|....|....|####|####|####|....|....|####|~~~~|
+---------------------------------------------------
+|    |    |    |    | H  |    |    |    |    |    |
+|....|####|####|^^^^|^^^^|^^^^|^^^^|####|####|....|
+---------------------------------------------------
+|    |    |    |    | K  |    |    |    |    |    |
+|....|....|....|####|****|^^^^|****|####|~~~~|....|
+---------------------------------------------------
+|    | P  |    |    | HE |    |    |    |    |    |
+|....|....|####|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+| FE |    |    |    | F  |    |@   |    | K  |    |
+|~~~~|####|####|****|^^^^|####|****|....|####|~~~~|
+---------------------------------------------------
+| E  |    |    | E  |    | T  | T  |    |    |    |
+|....|~~~~|####|####|####|....|....|....|....|~~~~|
+---------------------------------------------------
+| T  | K  |    |    |    |    |    | E  | H  |    |
+|~~~~|....|....|....|~~~~|~~~~|~~~~|~~~~|####|~~~~|
+---------------------------------------------------
+| F  |    |    |    |    |    |    |    |    |    |
+|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|~~~~|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    | K  |    |    |    |    | H  |    |    | E  |
+|....|~~~~|~~~~|~~~~|....|....|....|....|....|~~~~|
+---------------------------------------------------
+| E  |    |    |    | EET| E  | P  |    |    | K  |
+|~~~~|....|....|....|####|....|~~~~|####|....|....|
+---------------------------------------------------
+| E  |    |    | E  |    |    |    |    |    | H  |
+|....|~~~~|....|####|####|....|####|....|....|~~~~|
+---------------------------------------------------
+|    |    | T  |    |    |    |    |    |    |    |
+|....|####|....|****|####|^^^^|^^^^|####|~~~~|~~~~|
+---------------------------------------------------
+| F  | K  |    |    | H  |    | TK |    |    |    |
+|~~~~|####|####|^^^^|****|^^^^|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    |    |    | H  |    |    |    | T  |    |    |
+|....|~~~~|####|^^^^|****|^^^^|^^^^|####|....|....|
+---------------------------------------------------
+|    | E  | EF |    |    |    |    |    |    |    |
+|....|....|####|^^^^|^^^^|^^^^|####|....|~~~~|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    | F  | E  |    |
+|~~~~|~~~~|####|####|####|####|####|^^^^|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    | K  |    |@   | F  |
+|~~~~|....|....|####|....|....|####|####|....|~~~~|
+---------------------------------------------------
+| P  |    |    |    |    |    |    |    |    |    |
+|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|....|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    |    |    | E  |    |    | P  |    |
+|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | T  | FE | H  |
+|~~~~|####|....|....|~~~~|....|....|~~~~|....|....|
+---------------------------------------------------
+|    |    | K  |    |    |    |    | F  | E  |    |
+|....|....|####|####|^^^^|....|####|####|~~~~|....|
+---------------------------------------------------
+| T  |    |    |    |    |    |    |    | E  | HE |
+|....|....|^^^^|^^^^|^^^^|****|####|####|....|....|
+---------------------------------------------------
+| H  | P  |    |    | EK | E  |    |    |@   |    |
+|~~~~|~~~~|####|####|^^^^|^^^^|****|^^^^|....|....|
+---------------------------------------------------
+|    |    |    |    |    |    |    | K  | F  |    |
+|....|....|####|****|****|****|^^^^|^^^^|####|~~~~|
+---------------------------------------------------
+|    | K  |    |    |    |    |    |    | K  |    |
+|~~~~|....|####|****|****|####|^^^^|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    | T  | T  |    | EE |    |    |    |    |
+|....|....|####|####|####|####|####|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | E  |    | H  |
+|~~~~|####|~~~~|....|####|....|....|....|~~~~|....|
+---------------------------------------------------
+|    |    |    |    |    |    | F  |    |    |    |
+|~~~~|~~~~|~~~~|....|~~~~|~~~~|....|~~~~|~~~~|....|
+---------------------------------------------------
+---------------------------------------------------
+|    |    |    | E  |    |    |    |    |    |    |
+|~~~~|~~~~|~~~~|....|....|....|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+| E  |    |    | KT |    | F  |    | K  |    |    |
+|~~~~|####|~~~~|....|####|....|....|....|~~~~|~~~~|
+---------------------------------------------------
+|    | P  |    |    |    |    |    |    |    | K  |
+|~~~~|....|####|####|####|####|####|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    | E  |    |
+|~~~~|~~~~|....|^^^^|^^^^|^^^^|****|####|####|~~~~|
+---------------------------------------------------
+| K  | F  |    | HE |    |    | H  | FE |    |    |
+|~~~~|....|^^^^|****|^^^^|****|####|####|####|~~~~|
+---------------------------------------------------
+|    |    | H  |    |    |@ETE| T  |    |    | T  |
+|~~~~|....|....|^^^^|****|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    | H  |    |    |
+|~~~~|....|^^^^|^^^^|####|****|^^^^|....|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    |    |    |    | F  |    |
+|....|....|^^^^|####|^^^^|####|####|....|....|....|
+---------------------------------------------------
+|    |    | E  |    |    | K  | P  | E  |    |    |
+|~~~~|....|####|####|....|....|....|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    |    | E  |    |    |    |    |
+|....|~~~~|....|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|
+---------------------------------------------------
+---------------------------------------------------
+| F  | E  |    | KH |    |    |    |    |    |    |
+|~~~~|~~~~|~~~~|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|
+---------------------------------------------------
+|    |    |    |    | P  |    |    |    | H  |    |
+|....|####|....|....|####|....|....|####|####|~~~~|
+---------------------------------------------------
+| E  | F  | T  |    |    |    |    |    |    |    |
+|....|~~~~|^^^^|####|^^^^|####|####|^^^^|....|~~~~|
+---------------------------------------------------
+|    |    | E  | P  |    |    |    |    |    |    |
+|....|....|####|^^^^|^^^^|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    | T  | K  | H  |    |@   |    |    | T  |    |
+|....|~~~~|####|####|****|^^^^|^^^^|####|....|~~~~|
+---------------------------------------------------
+| E  |    |    |    |    |    |    |    | E  | K  |
+|~~~~|....|....|^^^^|^^^^|^^^^|^^^^|####|~~~~|....|
+---------------------------------------------------
+| E  |    | F  |    | K  |    |    |    |    |    |
+|~~~~|....|####|####|^^^^|****|^^^^|####|....|~~~~|
+---------------------------------------------------
+|    |    |    |    | T  | E  | F  |    | E  |    |
+|....|~~~~|^^^^|^^^^|^^^^|^^^^|####|^^^^|~~~~|....|
+---------------------------------------------------
+|    | K  |    |    | EH |    |    |    |    |    |
+|~~~~|####|....|....|....|....|....|....|....|~~~~|
 ---------------------------------------------------
 |    | E  |    |    |    |    |    |    |    |    |
-|....|....|####|^^^^|....|^^^^|####|####|....|....|
+|~~~~|~~~~|....|~~~~|....|....|....|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    | T  |    |    |    |    | H  |    |
-|~~~~|####|....|^^^^|####|^^^^|^^^^|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    | E  | E  | E  |    |    |
-|....|~~~~|^^^^|^^^^|^^^^|****|****|####|....|....|
+| F  | P  |    | FH |    |    |    |    | K  |    |
+|~~~~|....|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|
 ---------------------------------------------------
-| E  | E  | K  | T  |    | E  |    |    |    |    |
-|~~~~|....|####|^^^^|****|****|^^^^|....|####|~~~~|
+|    | T  |    |    |    | E  |    |    | E  |    |
+|~~~~|....|....|....|####|####|....|....|####|~~~~|
 ---------------------------------------------------
-| H  |    |    | K  |    |    |    |    | K  | P  |
-|~~~~|####|####|^^^^|^^^^|^^^^|####|####|####|~~~~|
----------------------------------------------------
-|    |    | H  |    | EK | P  |@   | F  | F  | T  |
-|....|####|....|^^^^|^^^^|....|####|....|....|~~~~|
+|    |    |    |    |    |    | T  |    |    | E  |
+|~~~~|....|####|^^^^|####|####|####|####|....|~~~~|
 ---------------------------------------------------
 |    |    |    |    |    |    |    |    |    |    |
-|....|####|####|~~~~|....|####|....|....|....|~~~~|
+|~~~~|....|....|^^^^|^^^^|####|^^^^|####|....|....|
 ---------------------------------------------------
-| F  | H  |    |    | K  |    |    |    | E  |    |
-|....|....|....|~~~~|....|~~~~|~~~~|~~~~|....|~~~~|
+| H  |    |    | F  |    |    |    |    | K  |    |
+|~~~~|~~~~|....|****|****|****|####|####|....|....|
 ---------------------------------------------------
+|    |    |    |    | E  | K  |    |    |@   |    |
+|....|....|####|####|****|****|^^^^|^^^^|....|~~~~|
 ---------------------------------------------------
-|    | H  | H  |    | K  |    |    |    |    |    |
-|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|~~~~|....|....|....|
+|    | E  |    |    |    |    |    | H  | T  |    |
+|~~~~|....|^^^^|****|^^^^|^^^^|^^^^|####|~~~~|....|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|....|....|....|....|~~~~|####|....|~~~~|....|....|
+|    | E  |    | P  | K  | F  |    |    |    |    |
+|~~~~|....|....|####|....|....|####|####|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |@   |    |    |
-|~~~~|....|^^^^|####|####|^^^^|####|^^^^|....|~~~~|
+|    |    | T  |    |    |    |    |    | H  |    |
+|....|....|....|~~~~|....|....|####|....|....|~~~~|
 ---------------------------------------------------
-|    |    |    |    |    |    |    |    |    |    |
-|~~~~|~~~~|....|^^^^|^^^^|####|****|^^^^|....|~~~~|
----------------------------------------------------
-| H  |    | K  |    |    |    |    |    |    |    |
-|~~~~|....|####|^^^^|****|^^^^|^^^^|####|....|~~~~|
----------------------------------------------------
-|    | P  | K  |    | E  |    |    |    | H  |    |
-|~~~~|~~~~|####|^^^^|****|^^^^|^^^^|....|~~~~|~~~~|
----------------------------------------------------
-|    |    |    |    |    | T  |    |    | E  | E  |
-|....|....|^^^^|****|^^^^|^^^^|****|####|####|....|
----------------------------------------------------
-|    |    | F  |    |    | TE |    |    |    | K  |
-|~~~~|~~~~|^^^^|####|####|####|^^^^|####|####|~~~~|
----------------------------------------------------
-| E  | P  | E  |    |    | E  | KT |    | F  |    |
-|....|####|....|....|~~~~|~~~~|~~~~|....|####|....|
----------------------------------------------------
-| F  | E  | FE |    |    |    |    | E  |    | T  |
-|~~~~|~~~~|....|~~~~|....|....|~~~~|....|....|....|
+| E  |    | E  | K  |    |    |    |    | E  | E  |
+|~~~~|....|~~~~|....|~~~~|~~~~|....|....|~~~~|~~~~|
 ---------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
