@@ -365,15 +365,24 @@ Description | Reproduced By |Solved (How) | When
 --- | --- | --- | ---
 Ability to have JLabel icons as the icons for the occupants and terrain | You can only have one icon in a JLabel not two, making it required for the images of the player, the terrain and the occupants to be merged prior to updating the GridSquare Panel | We have solved this issue by making the game screen fixed size. Making the game fixed size allows for the iconsets we designed to be rendered in their natural ratio. | 1st June Meeting/Mobbing
 ![alt text](./resources/bug.png "On new game player remains") | A current bug regarding the basic png for the player that on death and game reload causes this issue. | We have fixed this issue by discussing a new piece of functionality for an endgame display. This will allow us to display (department of) conversation resources. As well as give users a post game feeling. | Discussed on the 18th Mobbing.
-Game loading very slowly not being able to update. | This was a technical challenge we faced with the grid square panel class. We would be trying to customize the class to change the graphics, however the way we would use jlabel icons would slow the game down. | Ee looked to create an image loading class to make the icons load smoothly. | 1st June Meeting/Mobbing.
+Game loading very slowly not being able to update. | This was a technical challenge we faced with the grid square panel class. We would be trying to customize the class to change the graphics, however the way we would use jlabel icons would slow the game down. | We looked to create an image loading class to make the icons load smoothly. | 1st June Meeting/Mobbing.
+End Game | Wouldn't open when the game was over and would cause the game to close. | We added an endgame to solve our bug relating to the instant new game at the end of a previous game. This gives the user that ability to choose  to play a new game or view important conservation websites. The problem was solved by making the endgame it's own new Jframe. | 1st June
+
 ### Results Matrix 3
 
 |Things for ITERATION 3| Result on Sunday 4th | User Stories Completed |
 |---|---|---|
- 
+| Icons for Occupants | Complete, all different types of occupants now have their own images. When occupants that can be collected are collected they are removed from the map | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+| Icons for Player | Complete, the player will icon will work with both occupant and terrain icons. | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+| Icons for Terrain | Complete, the terrain icons no have a layer of depth and also have the ability to render players and occupants onto the terrain. | As a player I want the GUI to have more visual appeal so that I can find the game more intricate and attractive when playing for longer periods of time. |
+| Predators Killed on Trap | Complete, thanks to the logic Andre did with the icons. The predator icon will be removed when a predator is trapped. |  As a user I want to be able to trap predators and to kill them so that they are removed from the current game. | 
+| Vision Item | | |
+| Predators Moving | | |
+
 ### Retrospective 3
 
 #### Andre
+The final iteration showed a continuing improvement from both the second and first iteration. We meet more frequently and worked together to better understand the product we where adding to. I believe the team begun to enter a performing stage of the tuckerman stages of team development. We had difficulties allocating time at the start of the iteration due to other papers having earlier due dates, but our meetings helped resolve this by keeping Team xD fresh in all of our minds. I feel that this was a good final iteration for both myself and the team, as we where able to refine our process and work more collaboratively.
 
 #### Ben
 
@@ -384,8 +393,11 @@ Game loading very slowly not being able to update. | This was a technical challe
 ## Evaluation of Process Improvements
 
 ### Team Programming
+The Mob/Pair Programming we did was definetly a big improvement to the teams collaboration. We spent most of this time together going over the code we added as well as addressing classes that needed to refactored or improved. WE would say that we used this time more for code review purposes than actually adding code. However it helped the team identify troublesome parts of our solution and draft plans to fix them. In particular with the icon issues we faced with our graphical changes. 
+This was measured in the number of team meetings/mob programming time we spent together. The time spent shows that as a team we where able to collaborate and discuss kiwiisland more as a team.
 
 ### Github Documentation
+Working on github to do our documentation was a big improvement for the team. It allowed us to review one another's changes to the document. Work on this document in unison and then merge our work. Github also was a lot faster and less bloated than using MS One Note and it allowed the project to be present in a single place. We should have looked to utilize more features of github like the wiki or issues. But as it was many of the team's first real time using git and github working with markdown files was enough of a learning curve for creating clean documentation. The level of our documentation from all of our iterations compared to what we had in onenote for our first iteration shows clearly that this process improvement made a big impact in how the team was able to work on this project.
 
 ## Team Project Retrospective
 
