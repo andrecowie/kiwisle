@@ -23,3 +23,4 @@ Week 11 - Meeting on how to finish our final submissision and iteration
 
 Week 12 - Been busy with other assignments as well as SE - worked on some of the codings and the documents 
           Online meeting with the team working on the docs.
+          Working on Predator can move user story.
