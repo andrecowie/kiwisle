@@ -70,6 +70,10 @@ public class Tool extends Item
       return name.equalsIgnoreCase("Screwdriver"); 
     }
     
+    public boolean isBinoculars() {
+       String name = this.getName();
+      return name.equalsIgnoreCase("Binoculars"); 
+    }
     
     @Override
     public String getStringRepresentation() 

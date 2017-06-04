@@ -6,7 +6,7 @@
             <url>src/nz/ac/aut/ense701/gui/PreGame.java</url>
             <bookmark id="11">
                 <name/>
-                <line>72</line>
+                <line>73</line>
                 <key/>
             </bookmark>
         </file>
@@ -16,7 +16,9 @@
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Terrain.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Position.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/EndGame.java</file>
+            <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Kiwi.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/KiwiCountUI.java</file>
+            <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/ImagePanel.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/main/Main.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/GridSquarePanel.java</file>
             <file>file:/home/dre/github/KiwiIsland/README.md</file>
@@ -26,6 +28,7 @@
             <file>file:/home/dre/github/KiwiIsland/test/nz/ac/aut/ense701/gameModel/FaunaTest.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Item.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Occupant.java</file>
+            <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Island.java</file>
             <file>file:/home/dre/github/KiwiIsland/src/nz/ac/aut/ense701/gui/PreGame.java</file>
         </group>
     </open-files>

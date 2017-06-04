@@ -99,7 +99,6 @@ public class EndGame extends JFrame{
         JLabel message = new JLabel("Thanks for playing KiwiIsland!", SwingConstants.CENTER);
         ImagePanel kiwi = new ImagePanel("resources/kiwi-bird.png", "resources/nz.png");
         
-        
         JButton start = new JButton();
         JButton exit = new JButton();
         JButton doc = new JButton();

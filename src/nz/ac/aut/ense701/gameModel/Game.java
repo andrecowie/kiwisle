@@ -340,6 +340,9 @@ public class Game
                 {
                     result = player.getTrap().isBroken();
                 }
+                else if(tool.isBinoculars()){
+                    result = true;
+                }
                 else
                 {
                     result = false;
@@ -478,6 +481,50 @@ public class Game
                         Tool trap = player.getTrap();
                         trap.fix();
                     }
+            }else if(tool.isBinoculars()){
+                int playerRow = player.getPosition().getRow();
+                int playerCol = player.getPosition().getColumn();
+                
+                if(playerRow > 0+2 && playerRow < island.getNumRows()-2 && playerCol > 0+2 && playerCol < island.getNumColumns()-2){
+                    GridSquare block11 = island.getGridSquare(new Position(island, playerRow + 1, playerCol +2));                    
+                    GridSquare block12 = island.getGridSquare(new Position(island, playerRow    , playerCol +2));                    
+                    GridSquare block13 = island.getGridSquare(new Position(island, playerRow - 1, playerCol +2));                    
+                    GridSquare block14 = island.getGridSquare(new Position(island, playerRow - 2, playerCol +2));
+                    GridSquare block21 = island.getGridSquare(new Position(island, playerRow - 2, playerCol +1));                    
+                    GridSquare block22 = island.getGridSquare(new Position(island, playerRow - 2, playerCol));                    
+                    GridSquare block23 = island.getGridSquare(new Position(island, playerRow - 2, playerCol -1));                    
+                    GridSquare block24 = island.getGridSquare(new Position(island, playerRow - 2, playerCol -2));                    
+                    GridSquare block31 = island.getGridSquare(new Position(island, playerRow - 1, playerCol - 2));                    
+                    GridSquare block32 = island.getGridSquare(new Position(island, playerRow    , playerCol - 2));                    
+                    GridSquare block33 = island.getGridSquare(new Position(island, playerRow + 1, playerCol - 2));                    
+                    GridSquare block34 = island.getGridSquare(new Position(island, playerRow + 2, playerCol - 2));
+                    GridSquare block41 = island.getGridSquare(new Position(island, playerRow + 2, playerCol -1));                    
+                    GridSquare block42 = island.getGridSquare(new Position(island, playerRow + 2, playerCol));                    
+                    GridSquare block43 = island.getGridSquare(new Position(island, playerRow + 2, playerCol +1));                    
+                    GridSquare block44 = island.getGridSquare(new Position(island, playerRow + 2, playerCol +2));                    
+                    block11.setExplored();
+                    block12.setExplored();
+                    block13.setExplored();
+                    block14.setExplored();
+                    block21.setExplored();
+                    block22.setExplored();
+                    block23.setExplored();
+                    block24.setExplored();
+                    block31.setExplored();
+                    block32.setExplored();
+                    block33.setExplored();
+                    block34.setExplored();
+                    block41.setExplored();
+                    block42.setExplored();
+                    block43.setExplored();
+                    block44.setExplored();
+                   
+                }else{
+                    System.out.print("Cant use bino here.");
+                }
+                
+                
+                
             }
         }
         updateGameState();
@@ -1352,7 +1399,7 @@ public class Game
         a = new String[5];
         a[0] = "T";
         Random rand = new Random();
-        switch(rand.nextInt(2)+1){
+        switch(rand.nextInt(3)+1){
             case 1:
                 a[1] = "Trap";
                 a[2] = "A trap for predators";
@@ -1364,6 +1411,12 @@ public class Game
                 a[2] = "A screwdriver that is useful for fixing traps";
                 a[3] = "0.5";
                 a[4] = "0.75";
+                break;
+            case 3:
+                a[1] = "Binoculars";
+                a[2] = "Binoculars to see infront of you.";
+                a[3] = "1.0";
+                a[4] = "1.0";
                 break;
         }
         return a;
