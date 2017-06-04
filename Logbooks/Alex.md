@@ -18,3 +18,11 @@
 ||||
 |---|---|---|
 | 14/05/2017 | 2 hours | Dynamic map task completed by Andre therefore moving to: Finishing up on the documentation ready for upload. |
+
+||||
+|---|---|---|
+| 20/05/2017 | 1 hour | Adding update to risk registers |
+
+||||
+|---|---|---|
+| 4/06/2017 | 2 hours | Adding final updates to all deliverables for project closure |
