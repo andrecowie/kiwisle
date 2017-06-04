@@ -387,6 +387,7 @@ The final iteration showed a continuing improvement from both the second and fir
 #### Ben
 
 #### Alex
+The final iteration of the project saw a project team that was more focused and was able to get tasks completed within a more timely manner. Laying out a foundation after the close of iteration 2 on what we did well and more importantly, what we needed to improve on was something that helped us greatly. After the close of iteration 1, we did try some different planning techniques but we did not layout a strategy. I think we learned from this after iteration 2 and developed a plan and stuck to it. We decided to increase the frequency of out meetings to twice a week. One meeting was during the week in person and the other was done digitally via a Facebook group call. The digital meeting enable us to be more flexible as we did not need to be on AUT grounds to meet. Meeting twice a week worked well as we were able to keep track of where the project was tracking how each individaul team member was doing. Other commitments such as other papers and slowed us down but this was easier to manage with more frequent meetings. I think overall, identifying our failings in other iterations and acting on improving them filtered down into a higher quality output.
 
 #### Ete
 
